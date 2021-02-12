@@ -27,42 +27,45 @@ function Routing() {
         return (
             <Router>
                 <Switch>
-                    <Route exact path="/">
-                        <Homepage
-                            readingGuideData={dataByLearningGoal}
-                            sortedData={dataByWeek}
-                        />
-                    </Route>
+                    <FadeIn>
+                        <Route exact path="/">
+                            <Homepage
+                                readingGuideData={dataByLearningGoal}
+                                sortedData={dataByWeek}
+                            />
+                        </Route>
 
-                    <Route exact path="/leeswijzer">
-                        <div className="">
-                            <Leeswijzer data={dataByLearningGoal} />
-                        </div>
-                    </Route>
+                        <Route exact path="/leeswijzer">
+                            <div className="">
+                                <Leeswijzer data={dataByLearningGoal} />
+                            </div>
+                        </Route>
 
-                    <Route
-                        path="/page/:pageId"
-                        render={({ match }) => {
-                            const Component = components[match.params.pageId];
-                            return <Component />;
-                        }}
-                    />
-                    <div className="container">
                         <Route
-                            path="/documents/:documentId"
-                            render={({ match }) => (
-                                <Document
-                                    pDocument={dataByWeek
-                                        .flatMap((w) => w.documents)
-                                        .find(
-                                            (document) =>
-                                                document.id ===
-                                                match.params.documentId
-                                        )}
-                                />
-                            )}
+                            path="/page/:pageId"
+                            render={({ match }) => {
+                                const Component =
+                                    components[match.params.pageId];
+                                return <Component />;
+                            }}
                         />
-                    </div>
+                        <div className="container">
+                            <Route
+                                path="/documents/:documentId"
+                                render={({ match }) => (
+                                    <Document
+                                        pDocument={dataByWeek
+                                            .flatMap((w) => w.documents)
+                                            .find(
+                                                (document) =>
+                                                    document.id ===
+                                                    match.params.documentId
+                                            )}
+                                    />
+                                )}
+                            />
+                        </div>
+                    </FadeIn>
                 </Switch>
             </Router>
         );
