@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+$spacing-line: 3px;
+$spacing-extra-small: 7.5px;
+$spacing-small: 15px;
+$spacing-medium: 22.5px;
+$spacing-large: 30px;
+$spacing-extra-large: 45px;
+$spacing-huge: 90px;
+
+$color-black: #121214;
+$color-white: #ffffff;
+$color-grey: #dddddd;
+$color-grey-light: #f2f2f2;
+
+$color-light-blue: #6eaef9;
+$color-blue: #3680f7;
+$color-dark-blue: #0041f4;
+
+$font-huge: 3rem;
+$font-big: 2rem;
+$font-large: 1.5rem;
+$font-normal: 1rem;
+
+$border-regular: 4px;
+$border-table-header: 4px 4px 0 0;
+$border-table-body: 0 0 4px 4px;
+
+$shadow-regular: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+  0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+$transition-basic-quick: 0.3s;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  background-color: $color-grey-light;
+  background-image: url("../../img/background.png");
+}
+body {
+  font-size: 1em;
+  line-height: 1.75em;
+  font-family: "Montserrat", sans-serif;
+}
+.container {
+  padding: $spacing-medium 0;
+  width: 80%;
+  margin: 0 auto;
+  font-family: "Montserrat", sans-serif;
+}
+button {
+  transition: $transition-basic-quick;
+  cursor: pointer;
+  width: fit-content;
+  background: unset;
+  border: unset;
+  &:focus {
+    outline: unset;
+  }
+  &:hover {
+    color: $color-light-blue;
+  }
+  &:disabled {
+    cursor: unset;
+    color: $color-grey;
+    &:hover {
+      color: $color-grey;
+    }
+  }
+}
+.block {
+  margin-top: $spacing-large;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+h1 {
+  color: $color-light-blue;
+}
+p {
+  margin: $spacing-small 0;
+}
+a {
+  color: $color-light-blue;
+}
+.proof {
+  text-align: center;
+  margin-top: $spacing-huge;
+  margin-bottom: $spacing-large;
+}
+.center {
+  text-align: center;
+}
+.pointer {
+  cursor: pointer;
+}
+.quote {
+  font-style: italic;
+  font-size: 1.2em;
+}

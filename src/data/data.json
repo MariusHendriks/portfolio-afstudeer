@@ -1,0 +1,56 @@
+{
+    "documents": [
+        {
+            "name": "Kritische vragen",
+            "page": "KritischeVragen",
+            "id": "kritische-vragen",
+            "week": 1,
+            "learningGoals": [
+                {
+                    "id": 1,
+                    "why": "Dit hoort bij oordeelsvorming omdat dit product tot een betere probleemanalyse heeft geleid. "
+                }
+            ]
+        },
+        {
+            "name": "Leeswijzer",
+            "id": "reading-guide",
+            "week": 9,
+            "page": "ReadingGuide",
+            "learningGoals": [
+                {
+                    "id": 7,
+                    "why": "Dit hoort bij professionele houding omdat hier gereflecteerd word op de werkzaamheden."
+                }
+            ]
+        }
+    ],
+    "courses": [
+        {
+            "name": "SCO",
+            "learningGoals": [
+                { "name": "Oordeelsvorming", "id": 1 },
+                { "name": "Concept", "id": 2 },
+                { "name": "Business model", "id": 3 },
+                { "name": "Marketing", "id": 4 },
+                { "name": "Communicatie", "id": 6 }
+            ]
+        },
+        {
+            "name": "PRO",
+            "learningGoals": [{ "name": "Professionele ontwikkeling", "id": 7 }]
+        },
+        {
+            "name": "UXU",
+            "learningGoals": [
+                { "name": "User Experience", "id": 8 },
+                { "name": "Gebruikers- onderzoek", "id": 9 },
+                { "name": "Design", "id": 10 }
+            ]
+        },
+        {
+            "name": "DED",
+            "learningGoals": [{ "name": "Programmeren", "id": 11 }]
+        }
+    ]
+}

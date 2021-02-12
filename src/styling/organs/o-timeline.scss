@@ -1,0 +1,33 @@
+.o-timeline {
+  margin-top: $spacing-huge;
+  color: $color-white;
+  p {
+    color: $color-white;
+  }
+  &__icon {
+    width: 100%;
+    padding: $spacing-small;
+  }
+  h1 {
+    text-align: center;
+    margin-bottom: $spacing-large;
+  }
+  h3 {
+    color: white;
+    img {
+      width: 30px;
+      margin-right: 5px;
+    }
+  }
+  &__product {
+    color: $color-white;
+    margin-top: $spacing-medium;
+  }
+  a {
+    color: $color-dark-blue;
+
+    &:hover {
+      font-weight: 600;
+    }
+  }
+}

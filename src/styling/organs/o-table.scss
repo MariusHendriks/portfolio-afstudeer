@@ -1,0 +1,66 @@
+.o-table__container {
+  width: 24%;
+}
+.o-table {
+  box-shadow: $shadow-regular;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  background-color: $color-white;
+  border-radius: $border-table-body;
+  padding: 0 $spacing-medium;
+  h2 {
+    color: $color-light-blue;
+    padding: $spacing-large 0 0 0;
+  }
+  &__header {
+    padding: $spacing-medium 0;
+    display: flex;
+    border-radius: $border-table-header;
+    padding-bottom: $spacing-small;
+    font-weight: bold;
+    border-bottom: 1px solid $color-grey;
+  }
+
+  &__row {
+    display: flex;
+    padding: $spacing-small 0;
+    border-bottom: 1px solid $color-grey;
+    &__learning_goal {
+      padding: $spacing-line 0;
+      &__bewijs {
+        padding: $spacing-line 0;
+      }
+    }
+    a {
+      color: unset;
+      text-decoration: unset;
+      &:hover {
+        color: $color-light-blue;
+        transition: 0.2s;
+      }
+    }
+    &:last-child {
+      border-bottom: unset;
+    }
+  }
+  &__left {
+    width: 40%;
+    word-break: break-word;
+  }
+  &__right {
+    width: 60%;
+    a {
+      color: $color-dark-blue;
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .o-table {
+    &__container {
+      width: 100%;
+      margin-bottom: $spacing-medium;
+    }
+  }
+}
