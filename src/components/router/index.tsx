@@ -9,8 +9,9 @@ import {
 import FadeIn from "react-fade-in";
 import data from "../../data/data.json";
 import Leeswijzer from "../readingGuide/Index";
-
 import Template from "../pages/Template";
+import Projectplan from "../pages/Projectplan"
+import LeeswijzerRedirect from "../pages/LeeswijzerRedirect";
 
 function Routing() {
     let dataByWeek: iWeek[];
@@ -18,6 +19,8 @@ function Routing() {
 
     const components: any = {
         Template,
+        LeeswijzerRedirect,
+        Projectplan
     };
 
     if (typeof data !== "undefined") {

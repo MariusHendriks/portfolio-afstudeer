@@ -18,7 +18,7 @@ import Milestone1 from "../../img/milestone1.png";
 import Milestone2 from "../../img/milestone2.png";
 import Milestone3 from "../../img/milestone3.png";
 import Milestone4 from "../../img/milestone4.png";
-
+import Tooltip from "../common/Tooltip";
 interface Props {
     sortedData?: iWeek[];
 }
@@ -142,6 +142,7 @@ const Producten: React.FC<Props> = ({ sortedData }) => {
             <div className="o-timeline">
                 <h1>Verloop project</h1>
                 <div className="">
+                    <Tooltip deelvraag={1} ></Tooltip>
                     <div className="">
                         <VerticalTimeline>
                             {sortedData.map((week) => {
