@@ -37,3 +37,30 @@
 ol{
     margin-left: 30px;
 }
+
+.sidebar{
+    position: fixed;
+    box-shadow: $shadow-regular;
+    width: 25vw;
+    height: 100vh;
+    z-index: 100;
+    background-color: #fff;
+    img{
+        width: 100%;
+    }
+    .cross{
+        cursor: pointer;
+        position: fixed;
+        left: 26%;
+        z-index: 101;
+        top: 1%;
+        background-color: #fff;
+        border-radius: 50%;
+        padding: 10px;
+        height: 15px;
+        width: 15px;
+        line-height: 10px;
+        text-align: center;
+        box-shadow: $shadow-regular;
+    }
+}

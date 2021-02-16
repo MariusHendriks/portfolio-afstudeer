@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Homepage from "../homepage/Index";
 import Document from "../document/Index";
@@ -12,8 +12,11 @@ import Leeswijzer from "../readingGuide/Index";
 import Template from "../pages/Template";
 import Projectplan from "../pages/Projectplan"
 import LeeswijzerRedirect from "../pages/LeeswijzerRedirect";
+import Sidebar from "../sidebar/Index";
 
 function Routing() {
+    const [open, setOpen] = useState(false);
+
     let dataByWeek: iWeek[];
     let dataByLearningGoal: iCourseReadingGuide[];
 
@@ -23,6 +26,10 @@ function Routing() {
         Projectplan
     };
 
+    const toggleOpen = () => {
+        setOpen(!open);
+    }
+
     if (typeof data !== "undefined") {
         dataByWeek = SortDataByWeek(data);
         dataByLearningGoal = SortDataByCourse(data);
@@ -31,6 +38,7 @@ function Routing() {
             <Router>
                 <Switch>
                     <FadeIn>
+                        <Sidebar openInfographic={toggleOpen} open={open} />
                         <Route exact path="/">
                             <Homepage
                                 readingGuideData={dataByLearningGoal}
@@ -49,7 +57,7 @@ function Routing() {
                             render={({ match }) => {
                                 const Component =
                                     components[match.params.pageId];
-                                return <Component />;
+                                return <Component openInfographic={toggleOpen} />;
                             }}
                         />
                         <div className="container">

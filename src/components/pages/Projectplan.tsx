@@ -10,7 +10,12 @@ import Zoom from "react-medium-image-zoom";
 const scrollToRef = (ref: any, offset: number) =>
   window.scrollTo({ top: ref.current.offsetTop + offset, behavior: "smooth" });
 
-const Page: React.FC = () => {
+interface Props {
+  openInfographic: any
+}
+
+
+const Page: React.FC<Props> = ({ openInfographic }) => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -28,7 +33,7 @@ const Page: React.FC = () => {
   };
   let deelvragen: any = [];
   data.deelvragen.forEach(deelvraag => {
-    deelvragen.push(<li>{deelvraag}</li>)
+    deelvragen.push(<li key={deelvraag}>{deelvraag}</li>)
   });
 
   return (
@@ -331,7 +336,7 @@ const Page: React.FC = () => {
               <div>
                 <h3>3.4 Onderdeel 3: Realisatie</h3>
                 <p>
-                  Zodra het ontwerp is goedgekeurd zal het ontwerp gerealiseerd worden. Dit houdt in dat er op de stofloos manier van werken (met <a href="https://lit-element.polymer-project.org/">lit elementen</a>) met enorm kleine, ruim inzetbare, componenten gewerkt wordt. De code moet aan veel eisen voldoen om correct in het Data panel platform gebruikt kan worden.
+                  Zodra het ontwerp is goedgekeurd zal het ontwerp gerealiseerd worden. Dit houdt in dat er op de stofloos manier van werken (met <a rel="noopener noreferrer" href="https://lit-element.polymer-project.org/" >lit elementen</a>) met enorm kleine, ruim inzetbare, componenten gewerkt wordt. De code moet aan veel eisen voldoen om correct in het Data panel platform gebruikt kan worden.
                   </p>
               </div>
               <div>
@@ -348,37 +353,37 @@ const Page: React.FC = () => {
                 <div>
                   <i>Interviews - Veld</i>
                   <p>
-                    <a target="_blank" href="https://cmdmethods.nl/cards/field/interview">Interviews</a> worden gebruikt voor deelvraag 3. Er zullen interviews uitgevoerd worden om erachter te komen wat de klanten momenteel fijn en niet fijn vinden aan Data panel. De conclusies van de interviews kunnen door middel van een bieb onderzoek verder onderzocht en onderbouwd worden. De interviews worden zo spoedig mogelijk gehouden aan het begin van het project.
+                    <a target="_blank" rel="noopener noreferrer" href="https://cmdmethods.nl/cards/field/interview">Interviews</a> worden gebruikt voor deelvraag 3. Er zullen interviews uitgevoerd worden om erachter te komen wat de klanten momenteel fijn en niet fijn vinden aan Data panel. De conclusies van de interviews kunnen door middel van een bieb onderzoek verder onderzocht en onderbouwd worden. De interviews worden zo spoedig mogelijk gehouden aan het begin van het project.
                     </p>
                 </div>
                 <div>
                   <i>Design pattern search - Bieb</i>
                   <p>
-                    <a target="_blank" href="https://cmdmethods.nl/cards/library/design-pattern-search">Design pattern search </a>search wordt gebruikt voor deelvraag 1 en 2. Door Design Pattern Search uit te voeren wordt het inzichtelijk wat voor specifieke onderdelen de gebruikelijke methode is om het op te lossen. Er zal gekeken worden naar UI-elementen die zullen dienen voor de vervangers van de JSON elementen. Design pattern search zal worden uitgevoerd in de eerste fase van het onderzoek.
+                    <a rel="noopener noreferrer" target="_blank" href="https://cmdmethods.nl/cards/library/design-pattern-search">Design pattern search </a>search wordt gebruikt voor deelvraag 1 en 2. Door Design Pattern Search uit te voeren wordt het inzichtelijk wat voor specifieke onderdelen de gebruikelijke methode is om het op te lossen. Er zal gekeken worden naar UI-elementen die zullen dienen voor de vervangers van de JSON elementen. Design pattern search zal worden uitgevoerd in de eerste fase van het onderzoek.
                     </p>
                 </div>
                 <div>
                   <i>Prototyping - Werkplaats & Thinking aloud - Veld</i>
                   <p>
-                    <a target="_blank" href="https://cmdmethods.nl/cards/workshop/prototyping">Prototyping </a> met daarbij Thinking aloud worden gebruikt voor deelvraag 1 en 3. Door te prototypen kan een concept snel getest worden door de gebruikers. Met deze resultaten kan er met minder moeite een beter resultaat behaald worden. Door gebruik te maken van de thinking out loud methode tijdens een gebruikerstest kunnen onduidelijkheden en imperfecties gevonden worden. Prototyping en Thinking aloud wordt gedaan in de ontwerpfase.
+                    <a target="_blank" rel="noopener noreferrer" href="https://cmdmethods.nl/cards/workshop/prototyping">Prototyping </a> met daarbij Thinking aloud worden gebruikt voor deelvraag 1 en 3. Door te prototypen kan een concept snel getest worden door de gebruikers. Met deze resultaten kan er met minder moeite een beter resultaat behaald worden. Door gebruik te maken van de thinking out loud methode tijdens een gebruikerstest kunnen onduidelijkheden en imperfecties gevonden worden. Prototyping en Thinking aloud wordt gedaan in de ontwerpfase.
                     </p>
                 </div>
                 <div>
                   <i>Usability testing  - Lab</i>
                   <p>
-                    <a target="_blank" href="https://cmdmethods.nl/cards/lab/usability-testing">Usability testing </a>wordt gebruikt voor deelvraag 1 en 3. Door usability testing uit te voeren kan er gecontroleerd worden of het prototype aan de verwachtingen van de gebruiker voldoet (deelvraag 3). Daarnaast kan er gekeken worden of de gebruikers zelfstandig de aanpassingen kunnen maken aan de dashboards, zelfs als ze geen kennis hebben van JSON (deelvraag 1). Usability testing wordt gedaan als het ontwerp/prototype af is, en nogmaals als de implementatie gemaakt is.
+                    <a target="_blank" rel="noopener noreferrer" href="https://cmdmethods.nl/cards/lab/usability-testing">Usability testing </a>wordt gebruikt voor deelvraag 1 en 3. Door usability testing uit te voeren kan er gecontroleerd worden of het prototype aan de verwachtingen van de gebruiker voldoet (deelvraag 3). Daarnaast kan er gekeken worden of de gebruikers zelfstandig de aanpassingen kunnen maken aan de dashboards, zelfs als ze geen kennis hebben van JSON (deelvraag 1). Usability testing wordt gedaan als het ontwerp/prototype af is, en nogmaals als de implementatie gemaakt is.
                     </p>
                 </div>
                 <div>
                   <i>Literature study - Bieb</i>
                   <p>
-                    <a target="_blank" href="https://cmdmethods.nl/cards/library/literature-study">Literature study</a> wordt gebruikt om antwoorden van andere onderzoeken te checken. Als er twijfels zijn of niet voldoende bewijs voor de conclusie van een deelvraag, kan een literature study meer steun en bevestiging geven aan de conclusie.
+                    <a target="_blank" rel="noopener noreferrer" href="https://cmdmethods.nl/cards/library/literature-study">Literature study</a> wordt gebruikt om antwoorden van andere onderzoeken te checken. Als er twijfels zijn of niet voldoende bewijs voor de conclusie van een deelvraag, kan een literature study meer steun en bevestiging geven aan de conclusie.
                     </p>
                 </div>
                 <div>
                   <i>Pitch - Showroom</i>
                   <p>
-                    Een <a target="_blank" href="https://cmdmethods.nl/cards/showroom/pitch">Pitch</a> wordt gebruikt om resultaten te presenteren van de gemaakte onderzoeken. Er zal aan het eind van de onderzoeksfase en aan het einde van de ontwerpfase een pitch gegeven worden aan Stofloos en de stagecoördinator. Bij akkoord van beide partijen zal de volgende fase beginnen.
+                    Een <a target="_blank" rel="noopener noreferrer" href="https://cmdmethods.nl/cards/showroom/pitch">Pitch</a> wordt gebruikt om resultaten te presenteren van de gemaakte onderzoeken. Er zal aan het eind van de onderzoeksfase en aan het einde van de ontwerpfase een pitch gegeven worden aan Stofloos en de stagecoördinator. Bij akkoord van beide partijen zal de volgende fase beginnen.
                     </p>
                 </div>
               </div>

@@ -23,7 +23,6 @@ export function SortDataByCourse(data: any) {
       let containedDocuments = documents.filter((document) =>
         document.learningGoals.find((item: any) => item.id === learningGoal.id)
       );
-      console.log("containedDocuments :", containedDocuments);
       if (containedDocuments && containedDocuments.length > 0) {
         if (!learningGoal.documents) {
           learningGoal.documents = [];
