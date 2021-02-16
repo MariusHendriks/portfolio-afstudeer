@@ -4,6 +4,8 @@ import "react-medium-image-zoom/dist/styles.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 import data from "../../data/data.json";
+import Gitflow from "../../img/gitflow.png";
+import Zoom from "react-medium-image-zoom";
 
 const scrollToRef = (ref: any, offset: number) =>
   window.scrollTo({ top: ref.current.offsetTop + offset, behavior: "smooth" });
@@ -214,228 +216,241 @@ const Page: React.FC = () => {
                 <p>
                   Bij de uitvoering van deze opdracht wordt de watervalmethode gebruikt. De watervalmethode is gekozen omdat er na elke fase een zekerheid is dat producten zijn afgerond. Scrum wordt gebruikt door Stofloos, en ik zal hier ook aan deelnemen. Echter zullen mijn taken niet op het scrumbord komen omdat mijn project los staat van de werkzaamheden die bij Stofloos uitgevoerd worden. Tijdens het programmeren wordt gitflow gebruikt. Dit betekent dat voor elke feature een aparte branch word gemaakt, zoals te zien op figure [x].
                 </p>
-                <div>
-                  <table>
-                    <tbody>
-                      <tr>
-                        <td>
-                          <h4>Onderzoeksfase</h4>
-                        </td>
-                        <td>&nbsp;</td>
-                        <td>&nbsp;</td>
-                        <td>&nbsp;</td>
-                      </tr>
-                      <tr>
-                        <td>
-                          <p><span>Hier worden de genoemde onderzoeken uitgevoerd. Er worden conclusies gegeven op de deelvragen zodat de hoofdvraag beantwoord kan worden.</span></p>
-                        </td>
-                        <td>&nbsp;</td>
-                        <td>&nbsp;</td>
-                        <td>&nbsp;</td>
-                      </tr>
-                      <tr>
-                        <td>
-                          <p><span>Week 1-7</span></p>
-                        </td>
-                        <td>
-                          <h4>Ontwerpfase</h4>
-                        </td>
-                        <td>&nbsp;</td>
-                        <td>&nbsp;</td>
-                      </tr>
-                      <tr>
-                        <td>&nbsp;</td>
-                        <td>
-                          <p><span>In deze fase ga ik met de wensen van de gebruiker het ontwerp maken. Daarnaast wordt dit ontwerp getoetst bij de gebruiker door middel van user tests.</span></p>
-                        </td>
-                        <td>&nbsp;</td>
-                        <td>&nbsp;</td>
-                      </tr>
-                      <tr>
-                        <td>&nbsp;</td>
-                        <td>
-                          <p><span>Week 8-11</span></p>
-                        </td>
-                        <td>
-                          <h4>Realisatiefase</h4>
-                        </td>
-                        <td>&nbsp;</td>
-                      </tr>
-                      <tr>
-                        <td>&nbsp;</td>
-                        <td>&nbsp;</td>
-                        <td>
-                          <p><span>In deze fase ga ik het volledig geteste design uitwerken in code.&nbsp;</span></p>
-                        </td>
-                        <td>&nbsp;</td>
-                      </tr>
-                      <tr>
-                        <td>&nbsp;</td>
-                        <td>&nbsp;</td>
-                        <td>
-                          <p><span>Week 12-18</span></p>
-                        </td>
-                        <td>
-                          <h4>Evaluatiefase</h4>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>&nbsp;</td>
-                        <td>&nbsp;</td>
-                        <td>&nbsp;</td>
-                        <td>
-                          <p><span>Hier wordt getest of klanten zelfstandig bedrijfsprocessen en dashboards kunnen beheren. Er zal worden gekeken of ze de gemaakt features weten te gebruiken.</span></p>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>&nbsp;</td>
-                        <td>&nbsp;</td>
-                        <td>&nbsp;</td>
-                        <td>
-                          <p><span>Week 19-20</span></p>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
+                <div className="s-page__content__img__container">
+                  <div className="s-page__content__img__container__img">
+                    <h3>How might we</h3>
+                    <Zoom>
+                      <img
+                        className="s-page__content__img__full"
+                        alt="How might we"
+                        src={Gitflow}
+                      />
+                    </Zoom>
+                  </div>
+
                 </div>
               </div>
               <div>
-                <div>
-                  <h3>3.2 Onderdeel 1: Onderzoek</h3>
-                  <p>
-                    Als eerst zullen de onderzoeken uitgevoerd worden die geen betrekking hebben tot het ontwerp/prototype of de realisatie. Dus de Interviews, Design pattern search en eventuele literature studies. Door de onderzoeken uit te voeren kan er een beter beeld geschetst worden van een potentiële oplossingen. Wanneer het onderzoek is afgerond zal dit gepresenteerd worden aan de stakeholders en de stagecoördinator. Bij akkoord van beide partijen zal de volgende fase beginnen.
+                <table>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <h4>Onderzoeksfase</h4>
+                      </td>
+                      <td>&nbsp;</td>
+                      <td>&nbsp;</td>
+                      <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <p><span>Hier worden de genoemde onderzoeken uitgevoerd. Er worden conclusies gegeven op de deelvragen zodat de hoofdvraag beantwoord kan worden.</span></p>
+                      </td>
+                      <td>&nbsp;</td>
+                      <td>&nbsp;</td>
+                      <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <p><span>Week 1-7</span></p>
+                      </td>
+                      <td>
+                        <h4>Ontwerpfase</h4>
+                      </td>
+                      <td>&nbsp;</td>
+                      <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td>&nbsp;</td>
+                      <td>
+                        <p><span>In deze fase ga ik met de wensen van de gebruiker het ontwerp maken. Daarnaast wordt dit ontwerp getoetst bij de gebruiker door middel van user tests.</span></p>
+                      </td>
+                      <td>&nbsp;</td>
+                      <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td>&nbsp;</td>
+                      <td>
+                        <p><span>Week 8-11</span></p>
+                      </td>
+                      <td>
+                        <h4>Realisatiefase</h4>
+                      </td>
+                      <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td>&nbsp;</td>
+                      <td>&nbsp;</td>
+                      <td>
+                        <p><span>In deze fase ga ik het volledig geteste design uitwerken in code.&nbsp;</span></p>
+                      </td>
+                      <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td>&nbsp;</td>
+                      <td>&nbsp;</td>
+                      <td>
+                        <p><span>Week 12-18</span></p>
+                      </td>
+                      <td>
+                        <h4>Evaluatiefase</h4>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>&nbsp;</td>
+                      <td>&nbsp;</td>
+                      <td>&nbsp;</td>
+                      <td>
+                        <p><span>Hier wordt getest of klanten zelfstandig bedrijfsprocessen en dashboards kunnen beheren. Er zal worden gekeken of ze de gemaakt features weten te gebruiken.</span></p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>&nbsp;</td>
+                      <td>&nbsp;</td>
+                      <td>&nbsp;</td>
+                      <td>
+                        <p><span>Week 19-20</span></p>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div>
+              <div>
+                <h3>3.2 Onderdeel 1: Onderzoek</h3>
+                <p>
+                  Als eerst zullen de onderzoeken uitgevoerd worden die geen betrekking hebben tot het ontwerp/prototype of de realisatie. Dus de Interviews, Design pattern search en eventuele literature studies. Door de onderzoeken uit te voeren kan er een beter beeld geschetst worden van een potentiële oplossingen. Wanneer het onderzoek is afgerond zal dit gepresenteerd worden aan de stakeholders en de stagecoördinator. Bij akkoord van beide partijen zal de volgende fase beginnen.
                   </p>
-                </div>
-                <div>
-                  <h3>3.3 Onderdeel 2: Ontwerp</h3>
-                  <p>
-                    In de ontwerpfase zal er met de behaalde resultaten van de onderzoeksfase een ontwerp/prototype gemaakt worden voor de onderdelen die ontworpen moeten worden (dit wordt vastgesteld bij deelvraag 1). Daarnaast zal het ontwerp getoetst worden door usability testing en de thinking aloud methode. Dit verifiëren de conclusies van de deelvragen.
+              </div>
+              <div>
+                <h3>3.3 Onderdeel 2: Ontwerp</h3>
+                <p>
+                  In de ontwerpfase zal er met de behaalde resultaten van de onderzoeksfase een ontwerp/prototype gemaakt worden voor de onderdelen die ontworpen moeten worden (dit wordt vastgesteld bij deelvraag 1). Daarnaast zal het ontwerp getoetst worden door usability testing en de thinking aloud methode. Dit verifiëren de conclusies van de deelvragen.
                   </p>
-                </div>
-                <div>
-                  <h3>3.4 Onderdeel 3: Realisatie</h3>
-                  <p>
-                    Zodra het ontwerp is goedgekeurd zal het ontwerp gerealiseerd worden. Dit houdt in dat er op de stofloos manier van werken (met lit elementen) met enorm kleine, ruim inzetbare, componenten gewerkt wordt. De code moet aan veel eisen voldoen om correct in het Data panel platform gebruikt kan worden.
+              </div>
+              <div>
+                <h3>3.4 Onderdeel 3: Realisatie</h3>
+                <p>
+                  Zodra het ontwerp is goedgekeurd zal het ontwerp gerealiseerd worden. Dit houdt in dat er op de stofloos manier van werken (met <a href="https://lit-element.polymer-project.org/">lit elementen</a>) met enorm kleine, ruim inzetbare, componenten gewerkt wordt. De code moet aan veel eisen voldoen om correct in het Data panel platform gebruikt kan worden.
                   </p>
-                </div>
-                <div>
-                  <h3>3.5 Onderdeel 4: Implementatie</h3>
-                  <p>
-                    Als de gerealiseerde code aan de eisen van Stofloos voldoet zal het in de development tak worden toegevoegd. Hier zal er nog een usability test uitgevoerd worden met gebruikers om potentiële bugs te vinden.
+              </div>
+              <div>
+                <h3>3.5 Onderdeel 4: Implementatie</h3>
+                <p>
+                  Als de gerealiseerde code aan de eisen van Stofloos voldoet zal het in de development tak worden toegevoegd. Hier zal er nog een usability test uitgevoerd worden met gebruikers om potentiële bugs te vinden.
                   </p>
-                </div>
-                <div>
-                  <h3>3.6 Te verrichten onderzoek</h3>
-                  <p>
-                    Om de genoemde onderzoeken meer context te geven waar ze voor worden ingezet, is hier een uitleg per onderzoek.
+              </div>
+              <div>
+                <h3>3.6 Te verrichten onderzoek</h3>
+                <p>
+                  Om de genoemde onderzoeken meer context te geven waar ze voor worden ingezet, is hier een uitleg per onderzoek.
                   </p>
-                  <div>
-                    <i>Interviews - Veld</i>
-                    <p>
-                      Interviews worden gebruikt voor deelvraag 3. Er zullen interviews uitgevoerd worden om erachter te komen wat de klanten momenteel fijn en niet fijn vinden aan Data panel. De conclusies van de interviews kunnen door middel van een bieb onderzoek verder onderzocht en onderbouwd worden. De interviews worden zo spoedig mogelijk gehouden aan het begin van het project.
+                <div>
+                  <i>Interviews - Veld</i>
+                  <p>
+                    <a target="_blank" href="https://cmdmethods.nl/cards/field/interview">Interviews</a> worden gebruikt voor deelvraag 3. Er zullen interviews uitgevoerd worden om erachter te komen wat de klanten momenteel fijn en niet fijn vinden aan Data panel. De conclusies van de interviews kunnen door middel van een bieb onderzoek verder onderzocht en onderbouwd worden. De interviews worden zo spoedig mogelijk gehouden aan het begin van het project.
                     </p>
-                  </div>
-                  <div>
-                    <i>Design pattern search - Bieb</i>
-                    <p>
-                      Design pattern search wordt gebruikt voor deelvraag 1 en 2. Door Design Pattern Search uit te voeren wordt het inzichtelijk wat voor specifieke onderdelen de gebruikelijke methode is om het op te lossen. Er zal gekeken worden naar UI-elementen die zullen dienen voor de vervangers van de JSON elementen. Design pattern search zal worden uitgevoerd in de eerste fase van het onderzoek.
-                    </p>
-                  </div>
-                  <div>
-                    <i>Prototyping - Werkplaats & Thinking aloud - Veld</i>
-                    <p>
-                      Prototyping met daarbij Thinking aloud worden gebruikt voor deelvraag 1 en 3. Door te prototypen kan een concept snel getest worden door de gebruikers. Met deze resultaten kan er met minder moeite een beter resultaat behaald worden. Door gebruik te maken van de thinking out loud methode tijdens een gebruikerstest kunnen onduidelijkheden en imperfecties gevonden worden. Prototyping en Thinking aloud wordt gedaan in de ontwerpfase.
-                    </p>
-                  </div>
-                  <div>
-                    <i>Usability testing  - Lab</i>
-                    <p>
-                      Usability testing wordt gebruikt voor deelvraag 1 en 3. Door usability testing uit te voeren kan er gecontroleerd worden of het prototype aan de verwachtingen van de gebruiker voldoet (deelvraag 3). Daarnaast kan er gekeken worden of de gebruikers zelfstandig de aanpassingen kunnen maken aan de dashboards, zelfs als ze geen kennis hebben van JSON (deelvraag 1). Usability testing wordt gedaan als het ontwerp/prototype af is, en nogmaals als de implementatie gemaakt is.
-                    </p>
-                  </div>
-                  <div>
-                    <i>Literature study - Bieb</i>
-                    <p>
-                      Literature study wordt gebruikt om antwoorden van andere onderzoeken te checken. Als er twijfels zijn of niet voldoende bewijs voor de conclusie van een deelvraag, kan een literature study meer steun en bevestiging geven aan de conclusie.
-                    </p>
-                  </div>
-                  <div>
-                    <i>Pitch - Showroom</i>
-                    <p>
-                      Een Pitch wordt gebruikt om resultaten te presenteren van de gemaakte onderzoeken. Er zal aan het eind van de onderzoeksfase en aan het einde van de ontwerpfase een pitch gegeven worden aan Stofloos en de stagecoördinator. Bij akkoord van beide partijen zal de volgende fase beginnen.
-                    </p>
-                  </div>
                 </div>
                 <div>
-                  <h3>3.6 Planning</h3>
-                  <div>
-                    <p>
-                      Dit is de globale planning voor het uitvoeren van dit project.
+                  <i>Design pattern search - Bieb</i>
+                  <p>
+                    <a target="_blank" href="https://cmdmethods.nl/cards/library/design-pattern-search">Design pattern search </a>search wordt gebruikt voor deelvraag 1 en 2. Door Design Pattern Search uit te voeren wordt het inzichtelijk wat voor specifieke onderdelen de gebruikelijke methode is om het op te lossen. Er zal gekeken worden naar UI-elementen die zullen dienen voor de vervangers van de JSON elementen. Design pattern search zal worden uitgevoerd in de eerste fase van het onderzoek.
                     </p>
-                    <div>
-                      <i>Week 1  (8 februari tot 14 februari)</i>
-                      <ul className="c-double-ul">
-                        <li>Projectdocument</li>
-                        <li>Opzetten environments en projecten</li>
-                        <li>Juiste software installeren die vanuit Stofloos aangeleverd is</li>
-                        <li>Eerste opzet van portfolio bouwen</li>
-                      </ul>
-                    </div>
-                    <div>
-                      <i>Week 2 - 7 (15 februari  tot 27 maart)</i>
-                      <ul className="c-double-ul">
-                        <li>Onderzoek: Interviews</li>
-                        <li>Onderzoek: Design pattern search</li>
-                        <li>Onderzoek: Literature study</li>
-                        <li>Pitch: Onderzoek</li>
-                      </ul>
-                    </div>
-                    <div>
-                      <i>Week 8 - 11 (29 maart tot 25 april)</i>
-                      <ul className="c-double-ul">
-                        <li>Ontwerpen</li>
-                        <li>A/B tests indien nodig</li>
-                        <li>Onderzoek: Thinking aloud</li>
-                        <li>Onderzoek: Usability test (1/2)</li>
-                        <li>Pitch: Ontwerp</li>
-                      </ul>
-                    </div>
-                    <div>
-                      <i>Week 12 - 18</i>
-                      <ul className="c-double-ul">
-                        <li>Realisatie ontwerp</li>
-                      </ul>
-                    </div>
-                    <div>
-                      <i>Week 19 - 20</i>
-                      <ul className="c-double-ul">
-                        <li>Onderzoek: Usability test (2/2)</li>
-                        <li>Pitch: Eindpresentatie</li>
-                      </ul>
-                    </div>
-                    <div>
-                      <i>Alle weken</i>
-                      <ul className="c-double-ul">
-                        <li>Logboek bijhouden</li>
-                        <li>Portfolio aanvullen</li>
-                      </ul>
-                    </div>
+                </div>
+                <div>
+                  <i>Prototyping - Werkplaats & Thinking aloud - Veld</i>
+                  <p>
+                    <a target="_blank" href="https://cmdmethods.nl/cards/workshop/prototyping">Prototyping </a> met daarbij Thinking aloud worden gebruikt voor deelvraag 1 en 3. Door te prototypen kan een concept snel getest worden door de gebruikers. Met deze resultaten kan er met minder moeite een beter resultaat behaald worden. Door gebruik te maken van de thinking out loud methode tijdens een gebruikerstest kunnen onduidelijkheden en imperfecties gevonden worden. Prototyping en Thinking aloud wordt gedaan in de ontwerpfase.
+                    </p>
+                </div>
+                <div>
+                  <i>Usability testing  - Lab</i>
+                  <p>
+                    <a target="_blank" href="https://cmdmethods.nl/cards/lab/usability-testing">Usability testing </a>wordt gebruikt voor deelvraag 1 en 3. Door usability testing uit te voeren kan er gecontroleerd worden of het prototype aan de verwachtingen van de gebruiker voldoet (deelvraag 3). Daarnaast kan er gekeken worden of de gebruikers zelfstandig de aanpassingen kunnen maken aan de dashboards, zelfs als ze geen kennis hebben van JSON (deelvraag 1). Usability testing wordt gedaan als het ontwerp/prototype af is, en nogmaals als de implementatie gemaakt is.
+                    </p>
+                </div>
+                <div>
+                  <i>Literature study - Bieb</i>
+                  <p>
+                    <a target="_blank" href="https://cmdmethods.nl/cards/library/literature-study">Literature study</a> wordt gebruikt om antwoorden van andere onderzoeken te checken. Als er twijfels zijn of niet voldoende bewijs voor de conclusie van een deelvraag, kan een literature study meer steun en bevestiging geven aan de conclusie.
+                    </p>
+                </div>
+                <div>
+                  <i>Pitch - Showroom</i>
+                  <p>
+                    Een <a target="_blank" href="https://cmdmethods.nl/cards/showroom/pitch">Pitch</a> wordt gebruikt om resultaten te presenteren van de gemaakte onderzoeken. Er zal aan het eind van de onderzoeksfase en aan het einde van de ontwerpfase een pitch gegeven worden aan Stofloos en de stagecoördinator. Bij akkoord van beide partijen zal de volgende fase beginnen.
+                    </p>
+                </div>
+              </div>
+              <div>
+                <h3>3.6 Planning</h3>
+                <div>
+                  <p>
+                    Dit is de globale planning voor het uitvoeren van dit project.
+                    </p>
+                  <div>
+                    <i>Week 1  (8 februari tot 14 februari)</i>
+                    <ul className="c-double-ul">
+                      <li>Projectdocument</li>
+                      <li>Opzetten environments en projecten</li>
+                      <li>Juiste software installeren die vanuit Stofloos aangeleverd is</li>
+                      <li>Eerste opzet van portfolio bouwen</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <i>Week 2 - 7 (15 februari  tot 27 maart)</i>
+                    <ul className="c-double-ul">
+                      <li>Onderzoek: Interviews</li>
+                      <li>Onderzoek: Design pattern search</li>
+                      <li>Onderzoek: Literature study</li>
+                      <li>Pitch: Onderzoek</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <i>Week 8 - 11 (29 maart tot 25 april)</i>
+                    <ul className="c-double-ul">
+                      <li>Ontwerpen</li>
+                      <li>A/B tests indien nodig</li>
+                      <li>Onderzoek: Thinking aloud</li>
+                      <li>Onderzoek: Usability test (1/2)</li>
+                      <li>Pitch: Ontwerp</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <i>Week 12 - 18</i>
+                    <ul className="c-double-ul">
+                      <li>Realisatie ontwerp</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <i>Week 19 - 20</i>
+                    <ul className="c-double-ul">
+                      <li>Onderzoek: Usability test (2/2)</li>
+                      <li>Pitch: Eindpresentatie</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <i>Alle weken</i>
+                    <ul className="c-double-ul">
+                      <li>Logboek bijhouden</li>
+                      <li>Portfolio aanvullen</li>
+                    </ul>
                   </div>
                 </div>
-                <div ref={Conclusie}>
-                  <h2>4.0 Overig</h2>
-                  <ul className="c-double-ul">
-                    <li>
-                      Door corona zal ik twee dagen per week op kantoor zijn en drie dagen vanuit thuis werken.
+              </div>
+              <div ref={Conclusie}>
+                <h2>4.0 Overig</h2>
+                <ul className="c-double-ul">
+                  <li>
+                    Door corona zal ik twee dagen per week op kantoor zijn en drie dagen vanuit thuis werken.
                     </li>
-                    <li>
-                      Er is geen sprake van overhandiging van het project na afsluiting omdat ik direct in het project werk, dus ze hebben het werk al. Dit geldt voor zowel documentatie als code.
+                  <li>
+                    Er is geen sprake van overhandiging van het project na afsluiting omdat ik direct in het project werk, dus ze hebben het werk al. Dit geldt voor zowel documentatie als code.
                     </li>
-                    <li>
-                      In de laatste week van het project zullen er aanbevelingen geschreven worden voor juiste voortgang van het project.
+                  <li>
+                    In de laatste week van het project zullen er aanbevelingen geschreven worden voor juiste voortgang van het project.
                     </li>
-                  </ul>
-                </div>
+                </ul>
               </div>
             </div>
           </FadeIn>
