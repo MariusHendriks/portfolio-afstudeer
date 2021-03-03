@@ -34,6 +34,7 @@
 .table-basic {
     display: flex;
 }
+
 ol{
     margin-left: 30px;
 }
@@ -62,5 +63,58 @@ ol{
         line-height: 10px;
         text-align: center;
         box-shadow: $shadow-regular;
+    }
+}
+
+.__react_component_tooltip{
+    max-width: 250px;
+}
+
+.loginPopup{
+    z-index: 100000;
+    height: 100vh;
+    width: 100vw;
+    background-color: orange;
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    h1, h2{
+        margin-bottom: 30px;
+        color: black;
+    } 
+
+    input[type=text], select {
+        width: 20%;
+        padding: 12px 20px;
+        margin-bottom: 30px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+    input[type=submit] {
+        width: 10%;
+        background-color: white;
+        color: black;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    .wrongcode{
+        color: red;
+        font-weight: bold;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .table-basic {
+        flex-wrap: wrap;
     }
 }

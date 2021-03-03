@@ -2,7 +2,8 @@
     "deelvragen": [
         "Deelvraag 1: Welke componenten zijn nodig, en hoe zien deze componenten eruit, om klanten de mogelijkheid te geven zelfstandig hun bedrijfsprocessen en dashboards te kunnen laten beheren?",
         "Deelvraag 2: Hoe kunnen de bevindingen omgezet worden in een high-fidelity prototype?",
-        "Deelvraag 3: Hoe kan het high-fidelity prototype omgezet worden tot een gerealiseerd product?"
+        "Deelvraag 3: Hoe kan het high-fidelity prototype omgezet worden tot een gerealiseerd product?",
+        "Deelvraag 4: Wat zijn minimale user experience elementen die toegevoegd moeten worden om het nieuwe ontwerp aan de verwachtingen van de gebruikers te laten voldoen? "
     ],
     "documents": [
         {
@@ -34,28 +35,62 @@
         {
             "name": "SCO",
             "learningGoals": [
-                { "name": "Oordeelsvorming", "id": 1 },
-                { "name": "Concept", "id": 2 },
-                { "name": "Business model", "id": 3 },
-                { "name": "Marketing", "id": 4 },
-                { "name": "Communicatie", "id": 6 }
+                {
+                    "name": "Oordeelsvorming",
+                    "id": 1
+                },
+                {
+                    "name": "Concept",
+                    "id": 2
+                },
+                {
+                    "name": "Business model",
+                    "id": 3
+                },
+                {
+                    "name": "Marketing",
+                    "id": 4
+                },
+                {
+                    "name": "Communicatie",
+                    "id": 6
+                }
             ]
         },
         {
             "name": "PRO",
-            "learningGoals": [{ "name": "Professionele ontwikkeling", "id": 7 }]
+            "learningGoals": [
+                {
+                    "name": "Professionele ontwikkeling",
+                    "id": 7
+                }
+            ]
         },
         {
             "name": "UXU",
             "learningGoals": [
-                { "name": "User Experience", "id": 8 },
-                { "name": "Gebruikers- onderzoek", "id": 9 },
-                { "name": "Design", "id": 10 }
+                {
+                    "name": "User Experience",
+                    "id": 8
+                },
+                {
+                    "name": "Gebruikers- onderzoek",
+                    "id": 9
+                },
+                {
+                    "name": "Design",
+                    "id": 10
+                }
             ]
         },
         {
             "name": "DED",
-            "learningGoals": [{ "name": "Programmeren", "id": 11 }]
+            "learningGoals": [
+                {
+                    "name": "Programmeren",
+                    "id": 11
+                }
+            ]
         }
     ]
 }

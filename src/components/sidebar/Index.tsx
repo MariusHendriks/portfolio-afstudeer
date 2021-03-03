@@ -1,5 +1,5 @@
-import Zoom from "react-medium-image-zoom";
-import React, { useState } from 'react'
+//import Zoom from "react-medium-image-zoom";
+import React from 'react'
 import Infographic from "../../img/infographic.png";
 import FadeIn from "react-fade-in";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";

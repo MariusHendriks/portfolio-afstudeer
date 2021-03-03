@@ -6,6 +6,7 @@ import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 import data from "../../data/data.json";
 import Gitflow from "../../img/gitflow.png";
 import Zoom from "react-medium-image-zoom";
+import Tooltip from "../common/Tooltip";
 
 const scrollToRef = (ref: any, offset: number) =>
   window.scrollTo({ top: ref.current.offsetTop + offset, behavior: "smooth" });
@@ -148,22 +149,22 @@ const Page: React.FC<Props> = ({ openInfographic }) => {
                   </p>
                   <ul className="c-double-ul">
                     <li>
-                      Het uitvoeren van een kwalitatief onderzoek naar UI-onderdelen om te achterhalen welke UI-onderdelen voor welke mogelijkheden gebruikt kunnen worden. Dit zal  toevoeging leveren aan de conclusie van deelvraag 1.
+                      Het uitvoeren van een kwalitatief onderzoek naar UI-onderdelen om te achterhalen welke UI-onderdelen voor welke mogelijkheden gebruikt kunnen worden. Dit zal  toevoeging leveren aan de conclusie van {<Tooltip deelvraag={1} />}.
                     </li>
                     <li>
-                      Het uitvoeren van een kwalitatief onderzoek naar bestaande klanten, wat gebruikt wordt voor deelvraag 3.
+                      Het uitvoeren van een kwalitatief onderzoek naar bestaande klanten, wat gebruikt wordt voor {<Tooltip deelvraag={3} />}.
                     </li>
                     <li>
                       Het uitvoeren van een literatuuronderzoek naar concurrenten om deelvraag 2 te concluderen.
                     </li>
                     <li>
-                      Het uitvoeren van een literatuuronderzoek naar bestaand UI-componenten die de JSON configuraties kunnen vervangen. Dit zal gebruikt worden voor deelvraag 1.
+                      Het uitvoeren van een literatuuronderzoek naar bestaand UI-componenten die de JSON configuraties kunnen vervangen. Dit zal gebruikt worden voor {<Tooltip deelvraag={1} />}.
                     </li>
                     <li>Het geven van een presentatie over de conclusies van de afgeronde deelvragen. </li>
-                    <li>Het maken van een ontwerp/prototype nadat de resultaten van de presentatie zijn goedgekeurd. Dit is deelvraag 4.
+                    <li>Het maken van een ontwerp/prototype nadat de resultaten van de presentatie zijn goedgekeurd. Dit is {<Tooltip deelvraag={4} />}.
                     </li>
-                    <li>Het functioneel realiseren van het ontwerp nadat het ontwerp is goedgekeurd. Dit is deelvraag 5. </li>
-                    <li>Het testen van de realisatie. Dit valideert deelvraag 5.</li>
+                    <li>Het functioneel realiseren van het ontwerp nadat het ontwerp is goedgekeurd. Dit is {<Tooltip deelvraag={5} />}. </li>
+                    <li>Het testen van de realisatie. Dit valideert {<Tooltip deelvraag={5} />}.</li>
                   </ul>
                 </div>
                 <div>
@@ -219,11 +220,10 @@ const Page: React.FC<Props> = ({ openInfographic }) => {
                 <h2>3.0 Aanpak</h2>
                 <h3>3.1 Methodiek</h3>
                 <p>
-                  Bij de uitvoering van deze opdracht wordt de watervalmethode gebruikt. De watervalmethode is gekozen omdat er na elke fase een zekerheid is dat producten zijn afgerond. Scrum wordt gebruikt door Stofloos, en ik zal hier ook aan deelnemen. Echter zullen mijn taken niet op het scrumbord komen omdat mijn project los staat van de werkzaamheden die bij Stofloos uitgevoerd worden. Tijdens het programmeren wordt gitflow gebruikt. Dit betekent dat voor elke feature een aparte branch word gemaakt, zoals te zien op figure [x].
-                </p>
+                  Bij de uitvoering van deze opdracht wordt de watervalmethode gebruikt. De watervalmethode is gekozen omdat er na elke fase een zekerheid is dat producten zijn afgerond. Scrum wordt gebruikt door Stofloos, en ik zal hier ook aan deelnemen. Echter zullen mijn taken niet op het scrumbord komen omdat mijn project los staat van de werkzaamheden die bij Stofloos uitgevoerd worden. Tijdens het programmeren wordt gitflow gebruikt. Dit betekent dat voor elke feature een aparte branch word gemaakt, zoals te zien op figuur 1.                </p>
                 <div className="s-page__content__img__container">
                   <div className="s-page__content__img__container__img">
-                    <h3>How might we</h3>
+                    <h3>Figuur 1: Git flow</h3>
                     <Zoom>
                       <img
                         className="s-page__content__img__full"
@@ -330,7 +330,7 @@ const Page: React.FC<Props> = ({ openInfographic }) => {
               <div>
                 <h3>3.3 Onderdeel 2: Ontwerp</h3>
                 <p>
-                  In de ontwerpfase zal er met de behaalde resultaten van de onderzoeksfase een ontwerp/prototype gemaakt worden voor de onderdelen die ontworpen moeten worden (dit wordt vastgesteld bij deelvraag 1). Daarnaast zal het ontwerp getoetst worden door usability testing en de thinking aloud methode. Dit verifiëren de conclusies van de deelvragen.
+                  In de ontwerpfase zal er met de behaalde resultaten van de onderzoeksfase een ontwerp/prototype gemaakt worden voor de onderdelen die ontworpen moeten worden (dit wordt vastgesteld bij {<Tooltip deelvraag={1} />}). Daarnaast zal het ontwerp getoetst worden door usability testing en de thinking aloud methode. Dit verifiëren de conclusies van de deelvragen.
                   </p>
               </div>
               <div>
@@ -353,25 +353,25 @@ const Page: React.FC<Props> = ({ openInfographic }) => {
                 <div>
                   <i>Interviews - Veld</i>
                   <p>
-                    <a target="_blank" rel="noopener noreferrer" href="https://cmdmethods.nl/cards/field/interview">Interviews</a> worden gebruikt voor deelvraag 3. Er zullen interviews uitgevoerd worden om erachter te komen wat de klanten momenteel fijn en niet fijn vinden aan Data panel. De conclusies van de interviews kunnen door middel van een bieb onderzoek verder onderzocht en onderbouwd worden. De interviews worden zo spoedig mogelijk gehouden aan het begin van het project.
+                    <a target="_blank" rel="noopener noreferrer" href="https://cmdmethods.nl/cards/field/interview">Interviews</a> worden gebruikt voor {<Tooltip deelvraag={3} />}. Er zullen interviews uitgevoerd worden om erachter te komen wat de klanten momenteel fijn en niet fijn vinden aan Data panel. De conclusies van de interviews kunnen door middel van een bieb onderzoek verder onderzocht en onderbouwd worden. De interviews worden zo spoedig mogelijk gehouden aan het begin van het project.
                     </p>
                 </div>
                 <div>
                   <i>Design pattern search - Bieb</i>
                   <p>
-                    <a rel="noopener noreferrer" target="_blank" href="https://cmdmethods.nl/cards/library/design-pattern-search">Design pattern search </a>search wordt gebruikt voor deelvraag 1 en 2. Door Design Pattern Search uit te voeren wordt het inzichtelijk wat voor specifieke onderdelen de gebruikelijke methode is om het op te lossen. Er zal gekeken worden naar UI-elementen die zullen dienen voor de vervangers van de JSON elementen. Design pattern search zal worden uitgevoerd in de eerste fase van het onderzoek.
+                    <a rel="noopener noreferrer" target="_blank" href="https://cmdmethods.nl/cards/library/design-pattern-search">Design pattern search </a>search wordt gebruikt voor {<Tooltip deelvraag={1} />} en {<Tooltip deelvraag={2} />}. Door Design Pattern Search uit te voeren wordt het inzichtelijk wat voor specifieke onderdelen de gebruikelijke methode is om het op te lossen. Er zal gekeken worden naar UI-elementen die zullen dienen voor de vervangers van de JSON elementen. Design pattern search zal worden uitgevoerd in de eerste fase van het onderzoek.
                     </p>
                 </div>
                 <div>
                   <i>Prototyping - Werkplaats & Thinking aloud - Veld</i>
                   <p>
-                    <a target="_blank" rel="noopener noreferrer" href="https://cmdmethods.nl/cards/workshop/prototyping">Prototyping </a> met daarbij Thinking aloud worden gebruikt voor deelvraag 1 en 3. Door te prototypen kan een concept snel getest worden door de gebruikers. Met deze resultaten kan er met minder moeite een beter resultaat behaald worden. Door gebruik te maken van de thinking out loud methode tijdens een gebruikerstest kunnen onduidelijkheden en imperfecties gevonden worden. Prototyping en Thinking aloud wordt gedaan in de ontwerpfase.
+                    <a target="_blank" rel="noopener noreferrer" href="https://cmdmethods.nl/cards/workshop/prototyping">Prototyping </a> met daarbij Thinking aloud worden gebruikt voor {<Tooltip deelvraag={1} />} en {<Tooltip deelvraag={3} />}. Door te prototypen kan een concept snel getest worden door de gebruikers. Met deze resultaten kan er met minder moeite een beter resultaat behaald worden. Door gebruik te maken van de thinking out loud methode tijdens een gebruikerstest kunnen onduidelijkheden en imperfecties gevonden worden. Prototyping en Thinking aloud wordt gedaan in de ontwerpfase.
                     </p>
                 </div>
                 <div>
                   <i>Usability testing  - Lab</i>
                   <p>
-                    <a target="_blank" rel="noopener noreferrer" href="https://cmdmethods.nl/cards/lab/usability-testing">Usability testing </a>wordt gebruikt voor deelvraag 1 en 3. Door usability testing uit te voeren kan er gecontroleerd worden of het prototype aan de verwachtingen van de gebruiker voldoet (deelvraag 3). Daarnaast kan er gekeken worden of de gebruikers zelfstandig de aanpassingen kunnen maken aan de dashboards, zelfs als ze geen kennis hebben van JSON (deelvraag 1). Usability testing wordt gedaan als het ontwerp/prototype af is, en nogmaals als de implementatie gemaakt is.
+                    <a target="_blank" rel="noopener noreferrer" href="https://cmdmethods.nl/cards/lab/usability-testing">Usability testing </a>wordt gebruikt voor {<Tooltip deelvraag={1} />} en {<Tooltip deelvraag={3} />}. Door usability testing uit te voeren kan er gecontroleerd worden of het prototype aan de verwachtingen van de gebruiker voldoet ({<Tooltip deelvraag={3} />}). Daarnaast kan er gekeken worden of de gebruikers zelfstandig de aanpassingen kunnen maken aan de dashboards, zelfs als ze geen kennis hebben van JSON ({<Tooltip deelvraag={1} />}). Usability testing wordt gedaan als het ontwerp/prototype af is, en nogmaals als de implementatie gemaakt is.
                     </p>
                 </div>
                 <div>
