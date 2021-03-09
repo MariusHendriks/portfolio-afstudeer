@@ -12,15 +12,15 @@ const CourseTable: React.FC<Props> = ({ data }) => {
         <div className="o-table">
           <h2>{data.name}</h2>
           <div className="o-table__header">
-            <div className="o-table__header__item o-table__left">Criteria</div>
-            <div className="o-table__header__item">Bewijs</div>
+            {data.learningGoals[0].name !== "" ? <div className="o-table__header__item o-table__left">Sub-deelvraag</div> : <></>}
+            <div className="o-table__header__item">Uitvoering</div>
           </div>
           {data.learningGoals.map((learningGoal) => {
             return (
               <div key={learningGoal.id} className="o-table__row">
-                <div className="o-table__row__learning_goal o-table__left">
+                {learningGoal.name !== "" ? <div className="o-table__row__learning_goal o-table__left">
                   {learningGoal.name}
-                </div>
+                </div> : <></>}
                 <div className="o-table__right">
                   {typeof learningGoal.documents !== "undefined" &&
                     learningGoal.documents !== [] ? (

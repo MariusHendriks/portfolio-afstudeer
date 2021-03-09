@@ -22,7 +22,7 @@ const LoginPopup: React.FC = () => {
         <div className="loginPopup">
             <h1>hey!</h1>
             <h2>Please use the login code, provided by Mark Hendriks!</h2>
-            <input type="text" value={cookieToSet} onChange={e => setCookie(e.target.value)} />
+            <input placeholder="code..." type="text" value={cookieToSet} onChange={e => setCookie(e.target.value)} />
             <input onClick={handleClick} type="submit" value="Submit"></input>
             {wrong}
         </div>

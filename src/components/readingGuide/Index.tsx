@@ -11,7 +11,7 @@ const Homepage: React.FC<Props> = ({ data }) => {
     return (
       <div className="">
         <Leeswijzer />
-        <h1 className="proof">Bewijs</h1>
+        <h1 className="proof">Onderzoeken</h1>
         <div className="s-tables">
           {data.map((course) => {
             return <CourseTable key={course.name} data={course} />;

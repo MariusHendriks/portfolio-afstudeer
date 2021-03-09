@@ -39,6 +39,58 @@ ol{
     margin-left: 30px;
 }
 
+.tooltip{
+    color: #6eaef9;
+    font-weight: 500;
+}
+
+.link{
+    text-decoration: underline;
+}
+
+.vertical-timeline-element-content{
+    box-shadow: $shadow-regular!important;
+}
+
+.tables{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    table{  
+        border: 1px solid #6eaef9;  
+        margin-bottom: 2%;
+        max-width: 48%;
+        display: block;
+        td{
+            margin-left: -1px;
+            &:first-child{
+                width: 20%;
+            }
+            &:not(:first-child){
+                width: 80%;
+            }
+        }
+        td, th {
+            padding: 15px;
+        }
+        tr:nth-child(odd){background-color: #f2f2f2;}
+        &:nth-child(odd){
+            margin-right: 1%;
+        }
+        &:nth-child(even){
+            margin-left: 1%;
+        }
+
+        .table-header {
+            background-color: #6eaef9;  
+            color: white;
+            margin: 0;
+            padding: 15px;
+        }
+    }
+    
+}
+
 .sidebar{
     position: fixed;
     box-shadow: $shadow-regular;

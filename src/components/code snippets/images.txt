@@ -1,0 +1,22 @@
+<div className="s-page__content__img__container">
+   <div className="s-page__content__img__container__img">
+       <h3>Foto</h3>
+       <Zoom>
+           <img
+               className="s-page__content__img__full"
+               alt="brainstorm"
+               src={Brainstorm1}
+           />
+       </Zoom>
+   </div>
+   <div className="s-page__content__img__container__img">
+       <h3>How might we</h3>
+       <Zoom>
+           <img
+               className="s-page__content__img__full"
+               alt="How might we"
+               src={Brainstorm2}
+           />
+        </Zoom>
+    </div>
+</div>

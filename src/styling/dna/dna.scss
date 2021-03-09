@@ -26,8 +26,7 @@ $border-regular: 4px;
 $border-table-header: 4px 4px 0 0;
 $border-table-body: 0 0 4px 4px;
 
-$shadow-regular: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
-  0 6px 20px 0 rgba(0, 0, 0, 0.19);
+$shadow-regular: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 
 $transition-basic-quick: 0.3s;
 
@@ -38,6 +37,7 @@ $transition-basic-quick: 0.3s;
 html {
   background-color: $color-grey-light;
   background-image: url("../../img/background.png");
+  background-size: 100vw;
 }
 body {
   font-size: 1em;

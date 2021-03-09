@@ -142,7 +142,6 @@ const Producten: React.FC<Props> = ({ sortedData }) => {
             <div className="o-timeline">
                 <h1>Verloop project</h1>
                 <div className="">
-                    <Tooltip deelvraag={1} ></Tooltip>
                     <div className="">
                         <VerticalTimeline>
                             {sortedData.map((week) => {
@@ -184,24 +183,24 @@ const Producten: React.FC<Props> = ({ sortedData }) => {
                                             <div className="o-timeline__product">
                                                 Producten:
                                                 {week.documents.map(
-                                                    (document) => {
-                                                        return (
-                                                            <Link
-                                                                key={
-                                                                    document.id
+                                                (document) => {
+                                                    return (
+                                                        <Link
+                                                            key={
+                                                                document.id
+                                                            }
+                                                            to={`/page/${document.page}`}
+                                                        >
+                                                            <div className="">
+                                                                -{" "}
+                                                                {
+                                                                    document.name
                                                                 }
-                                                                to={`/page/${document.page}`}
-                                                            >
-                                                                <div className="">
-                                                                    -{" "}
-                                                                    {
-                                                                        document.name
-                                                                    }
-                                                                </div>
-                                                            </Link>
-                                                        );
-                                                    }
-                                                )}
+                                                            </div>
+                                                        </Link>
+                                                    );
+                                                }
+                                            )}
                                             </div>
                                         </div>
                                     </VerticalTimelineElement>

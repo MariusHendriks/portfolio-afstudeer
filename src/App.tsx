@@ -9,7 +9,6 @@ https://portal.fhict.nl/Blokboeken/s6_media_blokboek_2020.pdf
 */
 const cookies = new Cookies();
 const cookieCode = cookies.get('code');
-console.log('cookieCode', cookieCode);
 const popup = cookieCode !== '1337' ? <LoginPopup /> : <></>;
 
 function App() {

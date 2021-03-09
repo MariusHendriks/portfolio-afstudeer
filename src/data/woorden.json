@@ -1,0 +1,14 @@
+[
+    {
+        "woord": "hoofdgebruiker",
+        "betekenis": "De hoofdgebruiker is Frederik Venneman. Frederik voert de beheerstaken uit voor klanten. Daarnaast maake Frederik de eerste versie van het platform voor klanten van Data panel."
+    },
+    {
+        "woord": "json",
+        "betekenis": "JSON is een afkorting voor JavaScript Object Notation. Stofloos gebruikt JSON om al hun configuraties op de website mee te doen. Er wordt door deze JSON bepaald welke data op welke pagina moet, en hoe die data er uit moet zien, maar ook welke velden formulieren hebben. Alles wat er te zien is op de pagina, is daar door een JSON configuratie."
+    },
+    {
+        "woord": "renderen",
+        "betekenis": "Renderen is het weergeven van stukken visuele code."
+    }
+]

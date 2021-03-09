@@ -9,10 +9,14 @@ import {
 import FadeIn from "react-fade-in";
 import data from "../../data/data.json";
 import Leeswijzer from "../readingGuide/Index";
+import Sidebar from "../sidebar/Index";
+
+
 import Template from "../pages/Template";
 import Projectplan from "../pages/Projectplan"
 import LeeswijzerRedirect from "../pages/LeeswijzerRedirect";
-import Sidebar from "../sidebar/Index";
+import DesignSpecifications from "../pages/DesignSpecifications";
+import DataAnalyse from "../pages/DataAnalyse"
 
 function Routing() {
     const [open, setOpen] = useState(false);
@@ -23,7 +27,9 @@ function Routing() {
     const components: any = {
         Template,
         LeeswijzerRedirect,
-        Projectplan
+        Projectplan,
+        DesignSpecifications,
+        DataAnalyse
     };
 
     const toggleOpen = () => {

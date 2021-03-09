@@ -1,20 +1,45 @@
 {
     "deelvragen": [
-        "Deelvraag 1: Welke componenten zijn nodig, en hoe zien deze componenten eruit, om klanten de mogelijkheid te geven zelfstandig hun bedrijfsprocessen en dashboards te kunnen laten beheren?",
-        "Deelvraag 2: Hoe kunnen de bevindingen omgezet worden in een high-fidelity prototype?",
-        "Deelvraag 3: Hoe kan het high-fidelity prototype omgezet worden tot een gerealiseerd product?",
-        "Deelvraag 4: Wat zijn minimale user experience elementen die toegevoegd moeten worden om het nieuwe ontwerp aan de verwachtingen van de gebruikers te laten voldoen? "
+        "Wat is er nodig om de update van Data panel te realiseren om klanten de mogelijkheid te geven zelfstandig hun bedrijfsprocessen en dashboards te kunnen laten beheren?",
+        "Hoe kunnen de bevindingen omgezet worden in een high-fidelity prototype?",
+        "Hoe kan het high-fidelity prototype omgezet worden tot een gerealiseerd product?"
+    ],
+    "subdeelvragen": [
+        "Welke categorieën zijn er binnen Data panel waar JSON aangepast kan worden, en in welke categorie ontstaat de grootste werkdruk?",
+        "Wat voor componenten gebruiken concurrenten/soortgelijke platformen, en hoe kunnen de positieve aspecten hiervan gebruikt worden voor Data panel?",
+        "Hoe gaat bedrijfsprocessen beheren nu?"
     ],
     "documents": [
         {
             "name": "Projectplan",
             "page": "Projectplan",
-            "id": "projectplan",
+            "id": "project-plan",
             "week": 1,
+            "learningGoals": [
+                {}
+            ]
+        },
+        {
+            "name": "Design specifications",
+            "page": "DesignSpecifications",
+            "id": "design-specifications",
+            "week": 2,
             "learningGoals": [
                 {
                     "id": 1,
-                    "why": "Projectplan"
+                    "why": "in te vullen"
+                }
+            ]
+        },
+        {
+            "name": "Data analyse",
+            "page": "DataAnalyse",
+            "id": "data-analyse",
+            "week": 2,
+            "learningGoals": [
+                {
+                    "id": 1,
+                    "why": "in te vullen"
                 }
             ]
         },
@@ -25,7 +50,7 @@
             "page": "LeeswijzerRedirect",
             "learningGoals": [
                 {
-                    "id": 7,
+                    "id": 0,
                     "why": "Dit hoort bij professionele houding omdat hier gereflecteerd word op de werkzaamheden."
                 }
             ]
@@ -33,62 +58,37 @@
     ],
     "courses": [
         {
-            "name": "SCO",
+            "name": "Wat is er nodig om de update van Data panel te realiseren om klanten de mogelijkheid te geven zelfstandig hun bedrijfsprocessen en dashboards te kunnen laten beheren?",
             "learningGoals": [
                 {
-                    "name": "Oordeelsvorming",
+                    "name": "Welke categorieën zijn er binnen Data panel waar JSON aangepast kan worden, en in welke categorie ontstaat de grootste werkdruk?",
                     "id": 1
                 },
                 {
-                    "name": "Concept",
+                    "name": "Wat voor componenten gebruiken concurrenten/soortgelijke platformen, en hoe kunnen de positieve aspecten hiervan gebruikt worden voor Data panel?",
                     "id": 2
                 },
                 {
-                    "name": "Business model",
+                    "name": "Hoe gaat bedrijfsprocessen beheren nu?",
                     "id": 3
-                },
+                }
+            ]
+        },
+        {
+            "name": "Hoe kunnen de bevindingen omgezet worden in een high-fidelity prototype?",
+            "learningGoals": [
                 {
-                    "name": "Marketing",
+                    "name": "",
                     "id": 4
-                },
-                {
-                    "name": "Communicatie",
-                    "id": 6
                 }
             ]
         },
         {
-            "name": "PRO",
+            "name": "Hoe gaat bedrijfsprocessen beheren nu?",
             "learningGoals": [
                 {
-                    "name": "Professionele ontwikkeling",
-                    "id": 7
-                }
-            ]
-        },
-        {
-            "name": "UXU",
-            "learningGoals": [
-                {
-                    "name": "User Experience",
-                    "id": 8
-                },
-                {
-                    "name": "Gebruikers- onderzoek",
-                    "id": 9
-                },
-                {
-                    "name": "Design",
-                    "id": 10
-                }
-            ]
-        },
-        {
-            "name": "DED",
-            "learningGoals": [
-                {
-                    "name": "Programmeren",
-                    "id": 11
+                    "name": "",
+                    "id": 5
                 }
             ]
         }

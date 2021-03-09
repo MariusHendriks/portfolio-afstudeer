@@ -1,5 +1,5 @@
 .o-table__container {
-  width: 24%;
+  width: 30%;
 }
 .o-table {
   box-shadow: $shadow-regular;
@@ -8,9 +8,10 @@
   text-align: left;
   background-color: $color-white;
   border-radius: $border-table-body;
-  padding: 0 $spacing-medium;
+  padding: 0 $spacing-large;
   h2 {
     color: $color-light-blue;
+    line-height: 200%;
     padding: $spacing-large 0 0 0;
   }
   &__header {
