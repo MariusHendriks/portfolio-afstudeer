@@ -17,8 +17,8 @@ import Projectplan from "../pages/Projectplan"
 import LeeswijzerRedirect from "../pages/LeeswijzerRedirect";
 import DesignSpecifications from "../pages/DesignSpecifications";
 import DataAnalyse from "../pages/DataAnalyse";
-import ExpertInterviewRobin from "../pages/ExpertInterviewFrederik";
-import ExpertInterviewFrederik from "../pages/ExpertInterviewRobin"
+import ExpertInterviewRobin from "../pages/ExpertInterviewRobin";
+import ExpertInterviewFrederik from "../pages/ExpertInterviewFrederik"
 
 function Routing() {
     const [open, setOpen] = useState(false);

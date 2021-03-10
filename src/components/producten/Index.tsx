@@ -77,7 +77,7 @@ const Producten: React.FC<Props> = ({ sortedData }) => {
                 header = (
                     <h3>
                         <img src={Milestone1} alt="milestone one" />
-                        Deelvraag 1a onderzoek
+                        Deelvraag 1a
                     </h3>
                 );
                 aanvulling = (
@@ -86,14 +86,19 @@ const Producten: React.FC<Props> = ({ sortedData }) => {
                     </p>
                 );
                 break;
-            case 7:
+            case 3:
                 header = (
                     <h3>
-                        <img src={Milestone2} alt="milestone two" />
-                        [pakkende titel voor week 3]
+                        <img src={Milestone1} alt="milestone one" />
+                         Deelvraag 1b
                     </h3>
                 );
-                aanvulling = <p>[stuff van week 3]</p>;
+                aanvulling =
+                    (
+                        <p>
+                            <Tooltip subDeelvraag={2} white={true} />.
+                        </p>
+                    );
                 break;
             case 4:
                 header = (

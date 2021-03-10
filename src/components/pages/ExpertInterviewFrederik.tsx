@@ -74,7 +74,7 @@ const Page: React.FC = () => {
                                         [Lijst item]
                   </li>
                                     <li>
-                                        [Lijst item]
+                                        [Lijst item]aA
                   </li>
                                 </ol>
                             </div>
