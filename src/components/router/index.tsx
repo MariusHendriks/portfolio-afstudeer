@@ -16,7 +16,9 @@ import Template from "../pages/Template";
 import Projectplan from "../pages/Projectplan"
 import LeeswijzerRedirect from "../pages/LeeswijzerRedirect";
 import DesignSpecifications from "../pages/DesignSpecifications";
-import DataAnalyse from "../pages/DataAnalyse"
+import DataAnalyse from "../pages/DataAnalyse";
+import ExpertInterviewRobin from "../pages/ExpertInterviewFrederik";
+import ExpertInterviewFrederik from "../pages/ExpertInterviewRobin"
 
 function Routing() {
     const [open, setOpen] = useState(false);
@@ -29,7 +31,9 @@ function Routing() {
         LeeswijzerRedirect,
         Projectplan,
         DesignSpecifications,
-        DataAnalyse
+        DataAnalyse,
+        ExpertInterviewRobin,
+        ExpertInterviewFrederik
     };
 
     const toggleOpen = () => {

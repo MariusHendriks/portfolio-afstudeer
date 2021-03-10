@@ -42,7 +42,7 @@ const Page: React.FC = () => {
             Uitvoering
           </button>
           <button onClick={() => executeScroll(GeheleOnderzoek, 120)}>
-            Verantwoording
+            Gehele onderzoek
           </button>
           <button onClick={() => executeScroll(Conclusie, 120)}>
             Conclusie

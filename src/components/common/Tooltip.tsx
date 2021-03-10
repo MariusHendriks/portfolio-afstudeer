@@ -8,9 +8,16 @@ interface Props {
   deelvraag?: number | undefined;
   subDeelvraag?: number | undefined;
   woord?: string | undefined;
+  white?: boolean | undefined;
 }
-const Tooltip: React.FC<Props> = ({ tooltip, text, deelvraag, subDeelvraag, woord }) => {
+const Tooltip: React.FC<Props> = ({ tooltip, text, deelvraag, subDeelvraag, woord, white }) => {
+  let setWhite = false;
 
+  if (typeof white !== "undefined") {
+    setWhite = false;
+  } else {
+    setWhite = true;
+  }
 
   const findWoord = (woord: string) => {
     for (var i = 0; i < woordenlijst.length; i++) {
@@ -25,8 +32,8 @@ const Tooltip: React.FC<Props> = ({ tooltip, text, deelvraag, subDeelvraag, woor
 
   if (typeof deelvraag !== "undefined" && deelvraag < 5) {
     content = <> <ReactTooltip /><span data-tip={data.deelvragen[deelvraag - 1]}>deelvraag {deelvraag}</span> </>
-  } else if (typeof subDeelvraag !== "undefined" && subDeelvraag < 5) {
-    content = <> <ReactTooltip /><span data-tip={data.deelvragen[subDeelvraag - 1]}>deelvraag {subDeelvraag}</span> </>
+  } else if (typeof subDeelvraag !== "undefined") {
+    content = <> <Tooltip deelvraag={1} white={setWhite} />, <ReactTooltip /><span data-tip={data.subdeelvragen[subDeelvraag - 1]}>subdeelvraag {subDeelvraag}</span> </>
   } else if (typeof woord !== "undefined" && woord !== "") {
     content = <> <ReactTooltip /><span data-tip={findWoord(woord)}>{woord}</span> </>
   } else if (typeof tooltip !== "undefined" && typeof text !== "undefined") {
@@ -39,7 +46,7 @@ const Tooltip: React.FC<Props> = ({ tooltip, text, deelvraag, subDeelvraag, woor
   } else {
     content = <>Foutje?</>
   }
-  return <span className="tooltip">{content}</span>;
+  return <span className={setWhite ? "tooltip" : "tooltip white"}>{content}</span>;
 
 };
 export default Tooltip;

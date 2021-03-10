@@ -456,9 +456,8 @@ const Page: React.FC = () => {
                     </tbody>
                   </table>
                   <table>
-
+                    <p className="table-header">I - Pagina verandering</p>
                     <tbody>
-                      <p className="table-header">I - Pagina verandering</p>
                       <tr>
                         <td>
                           <p>Huidige situatie</p>

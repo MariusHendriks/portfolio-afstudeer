@@ -18,6 +18,7 @@ import Milestone1 from "../../img/milestone1.png";
 import Milestone2 from "../../img/milestone2.png";
 import Milestone3 from "../../img/milestone3.png";
 import Milestone4 from "../../img/milestone4.png";
+import Tooltip from "../common/Tooltip";
 interface Props {
     sortedData?: iWeek[];
 }
@@ -69,24 +70,23 @@ const Producten: React.FC<Props> = ({ sortedData }) => {
                     </h3>
                 );
                 aanvulling = (
-                    <p>[text van stuff dat aan het begin is gebeurt]</p>
+                    <p>Om het project te beginnen is allereest het projectdocument gemaakt.</p>
                 );
                 break;
             case 2:
                 header = (
                     <h3>
                         <img src={Milestone1} alt="milestone one" />
-                        Inspiration Fase
+                        Deelvraag 1a onderzoek
                     </h3>
                 );
                 aanvulling = (
                     <p>
-                        Uit de initialisatiefase zijn veel hypotheses gekomen.
-                        Deze hypotheses zijn onderzocht in 4 duo's.
+                        Als eerst is <Tooltip subDeelvraag={1} white={true} /> onderzocht. Daar is voor gekozen omdat de resultaten hiervan nodig zijn om <Tooltip white={true} subDeelvraag={2} /> te beantwoorden.
                     </p>
                 );
                 break;
-            case 3:
+            case 7:
                 header = (
                     <h3>
                         <img src={Milestone2} alt="milestone two" />
@@ -163,8 +163,8 @@ const Producten: React.FC<Props> = ({ sortedData }) => {
                                                 "7px solid  rgb(110, 174, 249)",
                                         }}
                                         date={
-                                            week.weekNummer === 6
-                                                ? "Week 6 tot 8"
+                                            week.weekNummer === 2
+                                                ? "Week 2 tot 5"
                                                 : "Week " + week.weekNummer
                                         }
                                         iconStyle={{

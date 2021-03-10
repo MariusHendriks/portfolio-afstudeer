@@ -44,6 +44,30 @@
             ]
         },
         {
+            "name": "Expert interview Robin",
+            "page": "ExpertInterviewRobin",
+            "id": "expert-intervew-robin",
+            "week": 2,
+            "learningGoals": [
+                {
+                    "id": 1,
+                    "why": "in te vullen"
+                }
+            ]
+        },
+        {
+            "name": "Expert interview Frederik",
+            "page": "ExpertInterviewFrederik",
+            "id": "expert-intervew-frederik",
+            "week": 2,
+            "learningGoals": [
+                {
+                    "id": 1,
+                    "why": "in te vullen"
+                }
+            ]
+        },
+        {
             "name": "Leeswijzer",
             "id": "reading-guide",
             "week": 9,
