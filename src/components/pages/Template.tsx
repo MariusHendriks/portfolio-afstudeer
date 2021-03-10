@@ -1,7 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import FadeIn from "react-fade-in";
-import Brainstorm1 from "../../img/brainstorm1.jpg";
-import Brainstorm2 from "../../img/brainstorm2.jpg";
+import TableDefault from "../../img/a-TableDefault.jpg";
 import Zoom from "react-medium-image-zoom";
 import "react-medium-image-zoom/dist/styles.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -109,7 +108,7 @@ const Page: React.FC = () => {
                       <img
                         className="s-page__content__img__full"
                         alt="brainstorm"
-                        src={Brainstorm1}
+                        src={TableDefault}
                       />
                     </Zoom>
                   </div>
@@ -119,7 +118,7 @@ const Page: React.FC = () => {
                       <img
                         className="s-page__content__img__full"
                         alt="How might we"
-                        src={Brainstorm2}
+                        src={TableDefault}
                       />
                     </Zoom>
                   </div>

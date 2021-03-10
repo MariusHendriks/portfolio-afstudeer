@@ -1,9 +1,11 @@
 import React, { useEffect, useRef } from "react";
 import FadeIn from "react-fade-in";
-import Brainstorm1 from "../../img/brainstorm1.jpg";
-import Brainstorm2 from "../../img/brainstorm2.jpg";
-import Brainstorm3 from "../../img/brainstorm3.jpg";
-import Brainstorm4 from "../../img/brainstorm4.jpg";
+import ImgTableDefault from "../../img/a-TableDefault.jpg";
+import ImgForm from "../../img/b-Form.jpg";
+import ImgMenuItem from "../../img/c-MenuItem.jpg";
+import ImgActies from "../../img/d-Acties.jpg";
+import ImgFilters from "../../img/e-Filters.jpg";
+import ImgTabs from "../../img/f-Tabs.jpg";
 import Zoom from "react-medium-image-zoom";
 import "react-medium-image-zoom/dist/styles.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -94,7 +96,15 @@ const Page: React.FC = () => {
                           <p>Render</p>
                         </td>
                         <td>
-                          <p>[a-TableDefault.jpg]</p>
+                          <div className="s-page__content__img__container__img">
+                            <Zoom>
+                              <img
+                                className="s-page__content__img__full"
+                                alt="How might we"
+                                src={ImgTableDefault}
+                              />
+                            </Zoom>
+                          </div>
                         </td>
                       </tr>
                       <tr>
@@ -131,7 +141,15 @@ const Page: React.FC = () => {
                           <p>Render</p>
                         </td>
                         <td>
-                          <p>[e-Filters.JPG]</p>
+                          <div className="s-page__content__img__container__img">
+                            <Zoom>
+                              <img
+                                className="s-page__content__img__full"
+                                alt="How might we"
+                                src={ImgFilters}
+                              />
+                            </Zoom>
+                          </div>
                         </td>
                       </tr>
                       <tr>
@@ -168,7 +186,15 @@ const Page: React.FC = () => {
                           <p>Render</p>
                         </td>
                         <td>
-                          <p>[b-Form.JPG]</p>
+                          <div className="s-page__content__img__container__img">
+                            <Zoom>
+                              <img
+                                className="s-page__content__img__full"
+                                alt="How might we"
+                                src={ImgForm}
+                              />
+                            </Zoom>
+                          </div>
                         </td>
                       </tr>
                       <tr>
@@ -207,7 +233,15 @@ const Page: React.FC = () => {
                           <p>Render</p>
                         </td>
                         <td>
-                          <p>[c-MenuItem.JPG]</p>
+                          <div className="s-page__content__img__container__img">
+                            <Zoom>
+                              <img
+                                className="s-page__content__img__full"
+                                alt="How might we"
+                                src={ImgMenuItem}
+                              />
+                            </Zoom>
+                          </div>
                         </td>
                       </tr>
                       <tr>
@@ -244,7 +278,15 @@ const Page: React.FC = () => {
                           <p>Render</p>
                         </td>
                         <td>
-                          <p>[f-Tabs.JPG]</p>
+                          <div className="s-page__content__img__container__img">
+                            <Zoom>
+                              <img
+                                className="s-page__content__img__full"
+                                alt="How might we"
+                                src={ImgTabs}
+                              />
+                            </Zoom>
+                          </div>
                         </td>
                       </tr>
                       <tr>
@@ -318,7 +360,15 @@ const Page: React.FC = () => {
                           <p>Render</p>
                         </td>
                         <td>
-                          <p>[d-Acties.JPG]</p>
+                          <div className="s-page__content__img__container__img">
+                            <Zoom>
+                              <img
+                                className="s-page__content__img__full"
+                                alt="How might we"
+                                src={ImgActies}
+                              />
+                            </Zoom>
+                          </div>
                         </td>
                       </tr>
                       <tr>
@@ -406,8 +456,9 @@ const Page: React.FC = () => {
                     </tbody>
                   </table>
                   <table>
-                    <p className="table-header">I - Pagina verandering</p>
+
                     <tbody>
+                      <p className="table-header">I - Pagina verandering</p>
                       <tr>
                         <td>
                           <p>Huidige situatie</p>

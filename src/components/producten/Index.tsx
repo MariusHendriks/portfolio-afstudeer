@@ -18,7 +18,6 @@ import Milestone1 from "../../img/milestone1.png";
 import Milestone2 from "../../img/milestone2.png";
 import Milestone3 from "../../img/milestone3.png";
 import Milestone4 from "../../img/milestone4.png";
-import Tooltip from "../common/Tooltip";
 interface Props {
     sortedData?: iWeek[];
 }

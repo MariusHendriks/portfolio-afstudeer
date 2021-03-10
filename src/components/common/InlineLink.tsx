@@ -1,8 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import ReactTooltip from "react-tooltip";
-import data from "../../data/data.json"
-import woordenlijst from "../../data/woorden.json"
 interface Props {
     text: string;
     link: string;

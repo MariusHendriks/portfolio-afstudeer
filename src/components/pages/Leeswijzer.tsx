@@ -3,8 +3,6 @@ import FadeIn from "react-fade-in";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
-import Dev from "../../img/dev.png";
-import App from "../../img/app.png";
 
 const scrollToRef = (ref: any, offset: number) =>
     window.scrollTo({
@@ -106,37 +104,6 @@ const Page: React.FC = () => {
                             <div ref={Resultaat}>
                                 <h2>Resultaat</h2>
 
-                                <p>Kijk je kan ook images toevoegen!!!!!</p>
-                                <div className="s-page__content__img__container">
-                                    <div className="s-page__content__img__container__img">
-                                        <h3>image 1</h3>
-                                        <a
-                                            target="_blank"
-                                            rel="noopener noreferrer"
-                                            href="https://google.nl/"
-                                        >
-                                            <img
-                                                className="s-page__content__img__full"
-                                                alt="Development"
-                                                src={Dev}
-                                            />
-                                        </a>
-                                    </div>
-                                    <div className="s-page__content__img__container__img">
-                                        <h3>image 2</h3>
-                                        <a
-                                            target="_blank"
-                                            rel="noopener noreferrer"
-                                            href="google.nl"
-                                        >
-                                            <img
-                                                className="s-page__content__img__full"
-                                                alt="App"
-                                                src={App}
-                                            />
-                                        </a>
-                                    </div>
-                                </div>
                             </div>
                             <div ref={Reflectie}>
                                 <h2>Reflectie</h2>
