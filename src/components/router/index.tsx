@@ -19,6 +19,7 @@ import DesignSpecifications from "../pages/DesignSpecifications";
 import DataAnalyse from "../pages/DataAnalyse";
 import ExpertInterviewRobin from "../pages/ExpertInterviewRobin";
 import ExpertInterviewFrederik from "../pages/ExpertInterviewFrederik"
+import AntwoordDeelvraag1a from "../pages/AntwoordDeelvraag1a"
 
 function Routing() {
     const [open, setOpen] = useState(false);
@@ -33,7 +34,8 @@ function Routing() {
         DesignSpecifications,
         DataAnalyse,
         ExpertInterviewRobin,
-        ExpertInterviewFrederik
+        ExpertInterviewFrederik,
+        AntwoordDeelvraag1a
     };
 
     const toggleOpen = () => {

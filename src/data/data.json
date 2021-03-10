@@ -68,6 +68,18 @@
             ]
         },
         {
+            "name": "Antwoord deelvraag 1a",
+            "page": "AntwoordDeelvraag1a",
+            "id": "antwoord-deelvraag-1-a",
+            "week": 2,
+            "learningGoals": [
+                {
+                    "id": 1,
+                    "why": "in te vullen"
+                }
+            ]
+        },
+        {
             "name": "Leeswijzer",
             "id": "reading-guide",
             "week": 9,
