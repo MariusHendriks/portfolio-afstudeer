@@ -18,8 +18,9 @@ import LeeswijzerRedirect from "../pages/LeeswijzerRedirect";
 import DesignSpecifications from "../pages/DesignSpecifications";
 import DataAnalyse from "../pages/DataAnalyse";
 import ExpertInterviewRobin from "../pages/ExpertInterviewRobin";
-import ExpertInterviewFrederik from "../pages/ExpertInterviewFrederik"
-import AntwoordDeelvraag1a from "../pages/AntwoordDeelvraag1a"
+import ExpertInterviewFrederik from "../pages/ExpertInterviewFrederik";
+import AntwoordDeelvraag1a from "../pages/AntwoordDeelvraag1a";
+import DesignPatternSearchForms from "../pages/DesignPatternSearchForms"
 
 function Routing() {
     const [open, setOpen] = useState(false);
@@ -35,7 +36,8 @@ function Routing() {
         DataAnalyse,
         ExpertInterviewRobin,
         ExpertInterviewFrederik,
-        AntwoordDeelvraag1a
+        AntwoordDeelvraag1a,
+        DesignPatternSearchForms
     };
 
     const toggleOpen = () => {

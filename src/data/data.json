@@ -80,9 +80,21 @@
             ]
         },
         {
+            "name": "Design pattern search: Formulieren",
+            "page": "DesignPatternSearchForms",
+            "id": "design-pattern-search-forms",
+            "week": 3,
+            "learningGoals": [
+                {
+                    "id": 2,
+                    "why": "in te vullen"
+                }
+            ]
+        },
+        {
             "name": "Leeswijzer",
             "id": "reading-guide",
-            "week": 9,
+            "week": 1,
             "page": "LeeswijzerRedirect",
             "learningGoals": [
                 {

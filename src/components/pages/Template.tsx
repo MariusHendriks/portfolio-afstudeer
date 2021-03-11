@@ -89,7 +89,7 @@ const Page: React.FC = () => {
                 <p>
                   [conclusie]
                 </p>
-                <ul className="c-double-ul">
+                <ul>
                   <li>
                     [bullet points]
                   </li>

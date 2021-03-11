@@ -147,7 +147,7 @@ const Page: React.FC<Props> = ({ openInfographic }) => {
                   <p>
                     De werkzaamheden die ik bij Stofloos uit zal voeren zijn de volgende onderdelen:
                   </p>
-                  <ul className="c-double-ul">
+                  <ul>
                     <li>
                       Het uitvoeren van een kwalitatief onderzoek naar UI-onderdelen om te achterhalen welke UI-onderdelen voor welke mogelijkheden gebruikt kunnen worden. Dit zal  toevoeging leveren aan de conclusie van {<Tooltip deelvraag={1} />}.
                     </li>
@@ -395,7 +395,7 @@ const Page: React.FC<Props> = ({ openInfographic }) => {
                     </p>
                   <div>
                     <i>Week 1  (8 februari tot 14 februari)</i>
-                    <ul className="c-double-ul">
+                    <ul>
                       <li>Projectdocument</li>
                       <li>Opzetten environments en projecten</li>
                       <li>Juiste software installeren die vanuit Stofloos aangeleverd is</li>
@@ -404,7 +404,7 @@ const Page: React.FC<Props> = ({ openInfographic }) => {
                   </div>
                   <div>
                     <i>Week 2 - 7 (15 februari  tot 27 maart)</i>
-                    <ul className="c-double-ul">
+                    <ul>
                       <li>Onderzoek: Interviews</li>
                       <li>Onderzoek: Design pattern search</li>
                       <li>Onderzoek: Literature study</li>
@@ -413,7 +413,7 @@ const Page: React.FC<Props> = ({ openInfographic }) => {
                   </div>
                   <div>
                     <i>Week 8 - 11 (29 maart tot 25 april)</i>
-                    <ul className="c-double-ul">
+                    <ul>
                       <li>Ontwerpen</li>
                       <li>A/B tests indien nodig</li>
                       <li>Onderzoek: Thinking aloud</li>
@@ -423,20 +423,20 @@ const Page: React.FC<Props> = ({ openInfographic }) => {
                   </div>
                   <div>
                     <i>Week 12 - 18</i>
-                    <ul className="c-double-ul">
+                    <ul>
                       <li>Realisatie ontwerp</li>
                     </ul>
                   </div>
                   <div>
                     <i>Week 19 - 20</i>
-                    <ul className="c-double-ul">
+                    <ul>
                       <li>Onderzoek: Usability test (2/2)</li>
                       <li>Pitch: Eindpresentatie</li>
                     </ul>
                   </div>
                   <div>
                     <i>Alle weken</i>
-                    <ul className="c-double-ul">
+                    <ul>
                       <li>Logboek bijhouden</li>
                       <li>Portfolio aanvullen</li>
                     </ul>
@@ -445,7 +445,7 @@ const Page: React.FC<Props> = ({ openInfographic }) => {
               </div>
               <div ref={Conclusie}>
                 <h2>4.0 Overig</h2>
-                <ul className="c-double-ul">
+                <ul>
                   <li>
                     Door corona zal ik twee dagen per week op kantoor zijn en drie dagen vanuit thuis werken.
                     </li>

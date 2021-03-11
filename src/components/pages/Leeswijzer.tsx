@@ -92,8 +92,7 @@ const Page: React.FC = () => {
                                     </Link>
                                     ).
                                 </p>
-                                <p></p>
-                                <ul className="c-double-ul">
+                                <ul>
                                     <li>
                                         <p>
                                             [Kijk je kan ook ul en li enzo doen]

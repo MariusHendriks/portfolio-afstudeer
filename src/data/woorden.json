@@ -10,5 +10,9 @@
     {
         "woord": "renderen",
         "betekenis": "Renderen is het weergeven van stukken visuele code."
+    },
+    {
+        "woord": "mvp",
+        "betekenis": "MVP is een afkorting voor Minimum Viable Product. Een MVP omvat de minimale functionaliteiten van een website of app om levensvatbaar te zijn."
     }
 ]

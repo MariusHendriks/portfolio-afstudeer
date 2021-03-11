@@ -16,8 +16,8 @@ import UsabilityIcon from "../../img/usability-icon.png";
 import Milestone0 from "../../img/milestone0.png";
 import Milestone1 from "../../img/milestone1.png";
 import Milestone2 from "../../img/milestone2.png";
-import Milestone3 from "../../img/milestone3.png";
-import Milestone4 from "../../img/milestone4.png";
+// import Milestone3 from "../../img/milestone3.png";
+// import Milestone4 from "../../img/milestone4.png";
 import Tooltip from "../common/Tooltip";
 interface Props {
     sortedData?: iWeek[];
@@ -82,65 +82,81 @@ const Producten: React.FC<Props> = ({ sortedData }) => {
                 );
                 aanvulling = (
                     <p>
-                        Als eerst is <Tooltip subDeelvraag={1} white={true} /> onderzocht. Daar is voor gekozen omdat de resultaten hiervan nodig zijn om <Tooltip white={true} subDeelvraag={2} /> te beantwoorden.
+                        Als eerst is <Tooltip subDeelvraag={1} /> onderzocht. Daar is voor gekozen omdat de resultaten hiervan nodig zijn om <Tooltip subDeelvraag={2} /> te beantwoorden.
                     </p>
                 );
                 break;
             case 3:
                 header = (
                     <h3>
-                        <img src={Milestone1} alt="milestone one" />
-                         Deelvraag 1b
+                        <img src={Milestone2} alt="milestone two" />
+                          Deelvraag 1b
                     </h3>
                 );
                 aanvulling =
                     (
                         <p>
-                            <Tooltip subDeelvraag={2} white={true} />.
+                            <Tooltip subDeelvraag={1} /> had als resultaat welke componenten er tijdens de stageperiode gebouwd gaan worden. Er zal diep worden ingegaan op het formulier component en een basis voor het pagina component. Voor <Tooltip subDeelvraag={2} /> is er dus gekeken naar inspiratie voor het formulier component.
                         </p>
                     );
                 break;
-            case 4:
-                header = (
-                    <h3>
-                        <img src={Milestone2} alt="milestone two" />
-                        [pakkende titel voor week 4])
-                    </h3>
-                );
-                aanvulling = <p>[stuff van week 4]</p>;
-                break;
-            case 5:
-                header = (
-                    <h3>
-                        <img src={Milestone3} alt="milestone three" />
-                        implementation Fase (1/2)
-                    </h3>
-                );
-                aanvulling = <p>[stuff van week 5]</p>;
-                break;
-            case 6:
-                header = (
-                    <h3>
-                        <img src={Milestone3} alt="milestone three" />
-                        [stuff van week 6]
-                    </h3>
-                );
-                aanvulling = <p> [stuff van week 6 - 8]</p>;
-                break;
-            case 9:
-                header = (
-                    <h3>
-                        <img src={Milestone4} alt="milestone four" />
-                        Eindfase
-                    </h3>
-                );
-                aanvulling = <p>[stuff van week 9]</p>;
-                break;
-            default:
-                break;
+            // case 4:
+            //     header = (
+            //         <h3>
+            //             <img src={Milestone2} alt="milestone two" />
+            //             [pakkende titel voor week 4])
+            //         </h3>
+            //     );
+            //     aanvulling = <p>[stuff van week 4]</p>;
+            //     break;
+            // case 5:
+            //     header = (
+            //         <h3>
+            //             <img src={Milestone3} alt="milestone three" />
+            //             implementation Fase (1/2)
+            //         </h3>
+            //     );
+            //     aanvulling = <p>[stuff van week 5]</p>;
+            //     break;
+            // case 6:
+            //     header = (
+            //         <h3>
+            //             <img src={Milestone3} alt="milestone three" />
+            //             [stuff van week 6]
+            //         </h3>
+            //     );
+            //     aanvulling = <p> [stuff van week 6 - 8]</p>;
+            //     break;
+            // case 9:
+            //     header = (
+            //         <h3>
+            //             <img src={Milestone4} alt="milestone four" />
+            //             Eindfase
+            //         </h3>
+            //     );
+            //     aanvulling = <p>[stuff van week 9]</p>;
+            //     break;
+            // default:
+            //     break;
         }
         return { header, aanvulling };
     };
+    const getWeekData = (weekNummer: number) => {
+        if (weekNummer === 2) {
+            return "Week 2 tot 5";
+        }
+        else if (weekNummer === 3) {
+            return "Week 6 tot 7";
+        } else if (weekNummer === 4) {
+            return "Week 8 tot 14";
+        } else if (weekNummer === 5) {
+            return "Week 15 tot 18";
+        } else if (weekNummer === 6) {
+            return "Week 19 & 20";
+        } else {
+            return "Week " + weekNummer
+        }
+    }
     if (typeof sortedData !== "undefined") {
         return (
             <div className="o-timeline">
@@ -168,9 +184,7 @@ const Producten: React.FC<Props> = ({ sortedData }) => {
                                                 "7px solid  rgb(110, 174, 249)",
                                         }}
                                         date={
-                                            week.weekNummer === 2
-                                                ? "Week 2 tot 5"
-                                                : "Week " + week.weekNummer
+                                            getWeekData(week.weekNummer)
                                         }
                                         iconStyle={{
                                             background: "rgb(110, 174, 249)",

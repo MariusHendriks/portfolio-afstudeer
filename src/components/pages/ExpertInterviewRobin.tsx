@@ -91,7 +91,7 @@ const Page: React.FC = () => {
                                 </p>
                                 <p>
                                     Volgens Robin is het toevoegen van een nieuwe pagina een lastig proces (6:50). Het is volgens hem belangrijk om het eenvoudig te maken om een nieuwe pagina te maken, met daarin alle mogelijkheden om een complete pagina te maken. Hieronder valt:
-                                    <ul className="c-double-ul">
+                                    <ul>
                                         <li>Welk type view het moet zijn (tabel, kaart) ~ 7:15</li>
                                         <li> Welke data er op moet komen ~ 7:28</li>
                                         <li>Welke kolommen</li>

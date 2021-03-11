@@ -31,22 +31,40 @@
     ol {
         list-style: none;
         counter-reset: li;
+            li::before {
+                content: counter(li);
+                font-weight: bold;
+                color: $color-light-blue;
+                display: inline-block;
+                width: 2em;
+                margin-left: -2em;
+            }
+            li {
+                margin: $spacing-medium 0;
+                counter-increment: li;
+            }
+    }
+    
+    ul{
+        li {
+            margin-left: 22px;
+            list-style-type: disc;
+            
+            &::marker {
+                font-size: 150%;
+                color: $color-light-blue;
+                display: inline-block;
+                width: 1em;
+                margin-left: -1em;
+                margin-bottom: -15px;
+            }
+        }
+    
     }
     p {
         line-height: 1.7em;
     }
-    li::before {
-        content: counter(li);
-        font-weight: bold;
-        color: $color-light-blue;
-        display: inline-block;
-        width: 2em;
-        margin-left: -2em;
-    }
-    li {
-        margin: $spacing-medium 0;
-        counter-increment: li;
-    }
+
     &__content {
         margin: 100px 0;
         padding-bottom: $spacing-extra-large;
