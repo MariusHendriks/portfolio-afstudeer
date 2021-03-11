@@ -30,7 +30,7 @@ const Tooltip: React.FC<Props> = ({ tooltip, text, deelvraag, subDeelvraag, woor
       </>
     )
   } else if (typeof woord !== "undefined" && woord !== "") {
-    content = <> <ReactTooltip /><span data-tip={findWoord(woord)}>{woord}</span> </>
+    content = <><ReactTooltip /><span data-tip={findWoord(woord)}>{woord}</span></>
   } else if (typeof tooltip !== "undefined" && typeof text !== "undefined") {
     content =
       <>
@@ -41,7 +41,7 @@ const Tooltip: React.FC<Props> = ({ tooltip, text, deelvraag, subDeelvraag, woor
   } else {
     content = <>Foutje?</>
   }
-  return <span className={"tooltip"}>{content}</span>;
+  return <span className={"tooltip"}>{content}</span>
 
 };
 export default Tooltip;
