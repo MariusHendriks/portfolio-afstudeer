@@ -58,47 +58,48 @@ const Page: React.FC = () => {
                             <div ref={Aanleiding}>
                                 <h2>Aanleiding</h2>
                                 <p>
-                                    [waarom? is <Tooltip woord="JSON" /> cool ]
-                </p>
+                                Uit de conclusie van <Tooltip subDeelvraag={1} /> is gekomen dat het maken en aanpassen van formulieren verbeterd moet worden. Omdat er meerdere opties hiervoor zijn, is een comparison chart uitgevoerd. 
+
+                                </p>
                             </div>
                             <div ref={Uitvoering}>
                                 <h2>Uitvoering</h2>
                                 <p>
                                     [uitvoering]
-                </p>
+                                </p>
                                 <ol>
                                     <li>
                                         [Lijst item]
-                  </li>
+                                    </li>
                                     <li>
                                         [Lijst item]
-                  </li>
+                                    </li>
                                     <li>
                                         [Lijst item]
-                  </li>
+                                    </li>
                                 </ol>
                             </div>
                             <div ref={GeheleOnderzoek}>
                                 <h2>Gehele Onderzoek</h2>
                                 <p>
                                     Het gehele onderzoek kan worden bekeken op een extern google docs document. Klik daarvoor <InlineLink text="hier" link="https://docs.google.com/document/d/1Gx76nLg9RF7ighhMSi9AHxYvGc6bT6anEdKVC2TYcrY/edit?usp=sharing" />.
-                </p>
+                                </p>
                             </div>
                             <div ref={Conclusie}>
                                 <h2>Conclusie</h2>
                                 <p>
                                     [conclusie]
-                </p>
+                                </p>
                                 <ul>
                                     <li>
                                         [bullet points]
-                  </li>
+                                    </li>
                                     <li>
                                         [bullet points]
-                  </li>
+                                    </li>
                                     <li>
                                         [bullet points]
-                  </li>
+                                    </li>
                                 </ul>
 
                                 <div className="s-page__content__img__container">

@@ -30,109 +30,126 @@
 .test {
     color: Red;
 }
+.red {
+    color: red;
+}
+.orange {
+    color: orange;
+}
+.green {
+    color: green;
+}
+.bolder {
+    font-weight: bolder;
+}
 
 .table-basic {
     display: flex;
 }
 
-ol{
+ol {
     margin-left: 30px;
 }
 
-.tooltip{
+.tooltip {
     color: #6eaef9;
     font-weight: 500;
 }
 
-.link{
+.link {
     text-decoration: underline;
 }
 
-.vertical-timeline-element-content{
-    box-shadow: $shadow-regular!important;
+.vertical-timeline-element-content {
+    box-shadow: $shadow-regular !important;
 }
-.white{
-    color: white!important;
+.white {
+    color: white !important;
     font-weight: bold;
 }
-.tables{
+.tables {
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
-    table{  
-        border: 1px solid #6eaef9;  
+    table {
+        border: 1px solid #6eaef9;
         margin-bottom: 2%;
         max-width: 48%;
         display: block;
-        td{
+        td {
             margin-left: -1px;
-            &:first-child{
+            &:first-child {
                 width: 20%;
             }
-            &:not(:first-child){
+            &:not(:first-child) {
                 width: 80%;
             }
         }
-        td, th {
+        td,
+        th {
             padding: 15px;
         }
-        tr:nth-child(odd){background-color: #f2f2f2;}
-        &:nth-child(odd){
+        tr:nth-child(odd) {
+            background-color: #f2f2f2;
+        }
+        &:nth-child(odd) {
             margin-right: 1%;
         }
-        &:nth-child(even){
+        &:nth-child(even) {
             margin-left: 1%;
         }
 
         .table-header {
-            background-color: #6eaef9;  
+            background-color: #6eaef9;
             color: white;
             margin: 0;
             padding: 15px;
         }
     }
-    
 }
-.table{  
-    border: 1px solid #6eaef9;  
+.table {
+    border: 1px solid #6eaef9;
     margin-bottom: 2%;
     display: block;
-  
-    table{
+
+    table {
         width: 100%;
     }
-    tbody{
+    tbody {
         width: 100%;
     }
-    td, th {
+    td,
+    th {
         padding: 15px;
     }
-    tr:nth-child(odd){background-color: #f2f2f2;}
-    &:nth-child(odd){
+    tr:nth-child(odd) {
+        background-color: #f2f2f2;
+    }
+    &:nth-child(odd) {
         margin-right: 1%;
     }
-    &:nth-child(even){
+    &:nth-child(even) {
         margin-left: 1%;
     }
 
     .table-header {
-        background-color: #6eaef9;  
+        background-color: #6eaef9;
         color: white;
         margin: 0;
         padding: 15px;
     }
-    }
-.sidebar{
+}
+.sidebar {
     position: fixed;
     box-shadow: $shadow-regular;
     width: 25vw;
     height: 100vh;
     z-index: 100;
     background-color: #fff;
-    img{
+    img {
         width: 100%;
     }
-    .cross{
+    .cross {
         cursor: pointer;
         position: fixed;
         left: 26%;
@@ -149,11 +166,11 @@ ol{
     }
 }
 
-.__react_component_tooltip{
+.__react_component_tooltip {
     max-width: 250px;
 }
 
-.loginPopup{
+.loginPopup {
     z-index: 100000;
     height: 100vh;
     width: 100vw;
@@ -166,12 +183,14 @@ ol{
     flex-direction: column;
     align-items: center;
 
-    h1, h2{
+    h1,
+    h2 {
         margin-bottom: 30px;
         color: black;
-    } 
+    }
 
-    input[type=text], select {
+    input[type="text"],
+    select {
         width: 20%;
         padding: 12px 20px;
         margin-bottom: 30px 0;
@@ -180,7 +199,7 @@ ol{
         border-radius: 4px;
         box-sizing: border-box;
     }
-    input[type=submit] {
+    input[type="submit"] {
         width: 10%;
         background-color: white;
         color: black;
@@ -190,7 +209,7 @@ ol{
         border-radius: 4px;
         cursor: pointer;
     }
-    .wrongcode{
+    .wrongcode {
         color: red;
         font-weight: bold;
     }

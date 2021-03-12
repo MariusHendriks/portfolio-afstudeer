@@ -21,6 +21,7 @@ import ExpertInterviewRobin from "../pages/ExpertInterviewRobin";
 import ExpertInterviewFrederik from "../pages/ExpertInterviewFrederik";
 import AntwoordDeelvraag1a from "../pages/AntwoordDeelvraag1a";
 import DesignPatternSearchForms from "../pages/DesignPatternSearchForms"
+import ComparisonChartForms from "../pages/ComparisonChart"
 
 function Routing() {
     const [open, setOpen] = useState(false);
@@ -37,7 +38,8 @@ function Routing() {
         ExpertInterviewRobin,
         ExpertInterviewFrederik,
         AntwoordDeelvraag1a,
-        DesignPatternSearchForms
+        DesignPatternSearchForms,
+        ComparisonChartForms
     };
 
     const toggleOpen = () => {
