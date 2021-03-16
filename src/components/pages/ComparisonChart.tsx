@@ -113,8 +113,7 @@ const Page: React.FC = () => {
               <div ref={Bronnen}>
                 <h2>Bronnen</h2>
                 <p>
-                  [1] Form View in ClickUpTM. (z.d.). Clickup. Geraadpleegd op 12 maart 2021, van https://clickup.com/features/form-view
-
+                  [1] Google Formulieren. (z.d.). Google. Geraadpleegd op 12 maart 2021, van https://docs.google.com/forms/u/0/
                 </p>
               </div>
             </div>
