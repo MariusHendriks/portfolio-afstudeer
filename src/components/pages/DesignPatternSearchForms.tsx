@@ -1,7 +1,5 @@
 import React, { useEffect, useRef } from "react";
 import FadeIn from "react-fade-in";
-import TableDefault from "../../img/a-TableDefault.jpg";
-import Zoom from "react-medium-image-zoom";
 import "react-medium-image-zoom/dist/styles.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
@@ -58,72 +56,52 @@ const Page: React.FC = () => {
                             <div ref={Aanleiding}>
                                 <h2>Aanleiding</h2>
                                 <p>
-                                Uit de conclusie van <Tooltip subDeelvraag={1} /> is gekomen dat het maken en aanpassen van formulieren verbeterd moet worden. Omdat er meerdere opties hiervoor zijn, is een comparison chart uitgevoerd. 
-
+                                    Het resultaat van <Tooltip subDeelvraag={1} /> is dat het maken van formulieren op Data panel niet handig is en veel werkdruk opleverd. Uit de resultaten van de <InlineLink link="/pages/ComparisonChart" text="comparison chart" /> is gekomen dat een <Tooltip woord="form-builder" /> een passende oplossing is.
                                 </p>
                             </div>
                             <div ref={Uitvoering}>
                                 <h2>Uitvoering</h2>
-                                <p>
-                                    [uitvoering]
-                                </p>
+                                In dit onderzoek zijn vijf <Tooltip woord="form-builders" /> bekeken.
                                 <ol>
-                                    <li>
-                                        [Lijst item]
-                                    </li>
-                                    <li>
-                                        [Lijst item]
-                                    </li>
-                                    <li>
-                                        [Lijst item]
-                                    </li>
+                                    <li>Google forms</li>
+                                    <li>Microsoft forms</li>
+                                    <li>Unlayer</li>
+                                    <li>Clickup</li>
+                                    <li>Diamont forms</li>
                                 </ol>
+                                Bij deze <Tooltip woord="form-builders" /> is er gekeken naar hoe ze tekstvelden, optievelden, selectievakken, tabs/pagina's/secties en het conditioneel laten zien van die tabs/pagina's/selecties worden gedaan door de benoemde <Tooltip woord="form-builders" />.
                             </div>
                             <div ref={GeheleOnderzoek}>
                                 <h2>Gehele Onderzoek</h2>
                                 <p>
-                                    Het gehele onderzoek kan worden bekeken op een extern google docs document. Klik daarvoor <InlineLink text="hier" link="https://docs.google.com/document/d/1Gx76nLg9RF7ighhMSi9AHxYvGc6bT6anEdKVC2TYcrY/edit?usp=sharing" />.
+                                    Het gehele onderzoek kan worden bekeken op een extern google docs document. Klik daarvoor <InlineLink text="hier" link="https://docs.google.com/document/d/1JKi41AlxtxisreQDHTXP77iHsoIAhESV-hkg_kdFfnI/edit?usp=sharing" />.
                                 </p>
                             </div>
                             <div ref={Conclusie}>
                                 <h2>Conclusie</h2>
                                 <p>
-                                    [conclusie]
+                                    Op elke <Tooltip woord="form-builder" />. kwamen de volgende elementen terug:
                                 </p>
                                 <ul>
                                     <li>
-                                        [bullet points]
+                                        Een duidelijke manier om elementen toe te voegen door een grote plus knop te laten zien of een duidelijke uitleg over hoe elementen toegevoegd moeten worden
                                     </li>
                                     <li>
-                                        [bullet points]
+                                        Duidelijke naam wat het element is (text, checkbox, opties)
                                     </li>
                                     <li>
-                                        [bullet points]
+                                        Mogelijkheid om elementen gemakkelijk te verplaatsen (vaak door te slepen)
+                                    </li>
+                                    <li>
+                                        Als er een sectie/pagina/tab gemaakt kan worden, is er een scheidingslijn waar onder gedrukt kan worden om een nieuwe sectie toe te voegen.
+                                    </li>
+                                    <li>
+                                        Waar conditioneel secties laten zien kunnen worden, wordt dit altijd gedaan vanuit een checkbox waar een sectie gekozen kan worden bij een specifiek antwoord.
                                     </li>
                                 </ul>
-
-                                <div className="s-page__content__img__container">
-                                    <div className="s-page__content__img__container__img">
-                                        <h3>Foto</h3>
-                                        <Zoom>
-                                            <img
-                                                className="s-page__content__img__full"
-                                                alt="brainstorm"
-                                                src={TableDefault}
-                                            />
-                                        </Zoom>
-                                    </div>
-                                    <div className="s-page__content__img__container__img">
-                                        <h3>How might we</h3>
-                                        <Zoom>
-                                            <img
-                                                className="s-page__content__img__full"
-                                                alt="How might we"
-                                                src={TableDefault}
-                                            />
-                                        </Zoom>
-                                    </div>
-                                </div>
+                                <p>
+                                    De <Tooltip woord="form-builder" /> die voor data panel gemaakt zal worden moet een duidelijke mogelijkheid hebben om elementen toe te voegen. Daarnaast moet het duidelijk zijn wat voor type elementen er toegevoegd kunnen worden (tekstveld, selectieveld, etc.) en moet er conditioneel stappen laten zien kunnen worden.
+                                </p>
                             </div>
                         </div>
                     </FadeIn>

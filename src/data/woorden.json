@@ -14,5 +14,13 @@
     {
         "woord": "mvp",
         "betekenis": "MVP is een afkorting voor Minimum Viable Product. Een MVP omvat de minimale functionaliteiten van een website of app om levensvatbaar te zijn."
+    },
+    {
+        "woord": "form-builder",
+        "betekenis": "Een form builder is een applicatie waarin formulieren en enquêtes in gemaakt kunnen worden."
+    },
+    {
+        "woord": "form-builders",
+        "betekenis": "Een form builder is een applicatie waarin formulieren en enquêtes in gemaakt kunnen worden."
     }
 ]
