@@ -66,22 +66,21 @@ const Page: React.FC = () => {
               <div ref={Aanleiding}>
                 <h2>Aanleiding</h2>
                 <p>
-                Uit de conclusie van <Tooltip subDeelvraag={1} /> is gekomen dat het maken en aanpassen van formulieren verbeterd moet worden. Omdat er meerdere opties hiervoor zijn, is een comparison chart uitgevoerd
+                  Uit de conclusie van <Tooltip subDeelvraag={1} /> is gekomen dat het maken en aanpassen van formulieren verbeterd moet worden. Omdat er meerdere opties hiervoor zijn, is een comparison chart uitgevoerd
                 </p>
               </div>
               <div ref={Vraag}>
                 <h2>Vraag</h2>
                 <p>
-                Welke mogelijkheden zijn er om klanten en personeel van Stofloos de mogelijkheid te geven formulieren te maken en aanpassen. 
+                  Welke mogelijkheden zijn er om klanten en personeel van Stofloos de mogelijkheid te geven formulieren te maken en aanpassen.
                 </p>
               </div>
               <div ref={Uitvoering}>
                 <h2>Uitvoering</h2>
                 <p>
-                De handelingen die het formulier-component van Stofloos moet kunnen uitvoeren zijn in de meest linkse kolom ingevuld. In de ‘header’ van de tabel staan concurrenten en tools die de oplossing uitvoeren. 
+                  Voor de form-builder is Google forms [1] gebruikt. Er is voor Google forms gekozen omdat dit een van de bekendste formulier/enquête bouw websites is die er bestaat. De onderdelen die niet kunnen in Google Forms zouden wel opgepakt kunnen worden in een eigen versie van een formulier bouwer.
                 </p>
-                <p>De formulier builder die is gebruikt is Clickup (bron [1]). In Clickup kon je formulieren in elkaar klikken. Clickup is niet de finale oplossing omdat dit niet te integreren is, maar komt erg dicht in de buurt bij de vraag die moet worden opgelost.</p>
-                <p><span className="red bolder">X</span> betekent dat het niet kan in deze optie. 
+                <p><span className="red bolder">X</span> betekent dat het niet kan in deze optie.
                 </p>
                 <p><span className="green bolder">✔</span> betekent dat het mogelijk is met deze optie.
                 </p>
@@ -108,13 +107,13 @@ const Page: React.FC = () => {
               <div ref={Conclusie}>
                 <h2>Conclusie</h2>
                 <p>
-                    Er zijn niet veel mogelijkheden om de gebruikers de mogelijkheid te geven formulieren te bouwen of bewerken. Het genereren van de formulieren was een mogelijkheid, maar dit heeft te veel restricties. Een form builder is de beste mogelijkheid om klanten de mogelijkheid te geven formulieren te maken en aan te laten passen.
+                  Er zijn niet veel mogelijkheden om de gebruikers de mogelijkheid te geven formulieren te bouwen of bewerken. Het genereren van de formulieren was een mogelijkheid, maar dit heeft te veel restricties. Een form builder is de beste mogelijkheid om klanten de mogelijkheid te geven formulieren te maken en aan te laten passen.
                 </p>
               </div>
               <div ref={Bronnen}>
                 <h2>Bronnen</h2>
                 <p>
-                [1] Form View in ClickUpTM. (z.d.). Clickup. Geraadpleegd op 12 maart 2021, van https://clickup.com/features/form-view
+                  [1] Form View in ClickUpTM. (z.d.). Clickup. Geraadpleegd op 12 maart 2021, van https://clickup.com/features/form-view
 
                 </p>
               </div>
