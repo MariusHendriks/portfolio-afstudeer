@@ -1,6 +1,6 @@
 //import Zoom from "react-medium-image-zoom";
 import React from 'react'
-import Infographic from "../../img/infographic.png";
+import Infographic from "../../img/infographicLong.png";
 import FadeIn from "react-fade-in";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTimes } from "@fortawesome/free-solid-svg-icons";
