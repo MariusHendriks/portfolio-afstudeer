@@ -19,6 +19,7 @@ import Milestone2 from "../../img/milestone2.png";
 // import Milestone3 from "../../img/milestone3.png";
 // import Milestone4 from "../../img/milestone4.png";
 import Tooltip from "../common/Tooltip";
+
 interface Props {
     sortedData?: iWeek[];
 }
@@ -70,19 +71,19 @@ const Producten: React.FC<Props> = ({ sortedData }) => {
                     </h3>
                 );
                 aanvulling = (
-                    <p>Om het project te beginnen is allereest het projectdocument gemaakt.</p>
+                    <p>Om het project te beginnen is allereest het projectplan gemaakt. Hierin werd bepaald welke onderzoeken uitgevoerd moesten worden en waarom.</p>
                 );
                 break;
             case 2:
                 header = (
                     <h3>
                         <img src={Milestone1} alt="milestone one" />
-                        Deelvraag 1a
+                        <Tooltip caps={true} deelvraag={1} />, <Tooltip caps={true} subDeelvraag={1} />
                     </h3>
                 );
                 aanvulling = (
                     <p>
-                        Als eerst is <Tooltip subDeelvraag={1} /> onderzocht. Daar is voor gekozen omdat de resultaten hiervan nodig zijn om <Tooltip subDeelvraag={2} /> te beantwoorden.
+                        Als eerst was het van belang dat het in kaart gebracht werd welke <Tooltip woord="JSON" /> welke componenten liet zien, en welke hiervan de meeste werkdruk opleverde.
                     </p>
                 );
                 break;
@@ -90,13 +91,13 @@ const Producten: React.FC<Props> = ({ sortedData }) => {
                 header = (
                     <h3>
                         <img src={Milestone2} alt="milestone two" />
-                          Deelvraag 1b
+                        <Tooltip caps={true} deelvraag={1} />, <Tooltip caps={true} subDeelvraag={2} />
                     </h3>
                 );
                 aanvulling =
                     (
                         <p>
-                            <Tooltip subDeelvraag={1} /> had als resultaat welke componenten er tijdens de stageperiode gebouwd gaan worden. Er zal diep worden ingegaan op het formulier component en een basis voor het pagina component. Voor <Tooltip subDeelvraag={2} /> is er dus gekeken naar inspiratie voor het formulier component.
+                            <Tooltip caps={true} subDeelvraag={1} /> had als resultaat dat het formulier component tijdens de stageperiode verbeterd moet worden. Voor <Tooltip subDeelvraag={2} /> is er eerst naar de mogelijkheden gekeken en welke oplossing het beste aansluit bij het probleem. Voor deze oplossing is inspiratie voor een form-builder gemaakt.
                         </p>
                     );
                 break;

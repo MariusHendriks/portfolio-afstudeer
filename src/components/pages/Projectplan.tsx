@@ -8,7 +8,6 @@ import Gitflow from "../../img/gitflow.png";
 import InfographicWide from "../../img/infographicWide.png";
 import OnderzoekenPerFase from "../../img/OnderzoekPerFase.png";
 import Zoom from "react-medium-image-zoom";
-import Tooltip from "../common/Tooltip";
 
 
 
@@ -36,10 +35,12 @@ const Page: React.FC<Props> = ({ openInfographic }) => {
     }
     scrollToRef(reference, offset);
   };
-  let deelvragen: any = [];
-  data.deelvragen.forEach(deelvraag => {
-    deelvragen.push(<li key={deelvraag}>{deelvraag}</li>)
-  });
+
+
+
+
+
+
 
   return (
     <>
@@ -154,7 +155,14 @@ const Page: React.FC<Props> = ({ openInfographic }) => {
                 <div>
                   <h3>2.4 Deelvragen</h3>
                   <ol>
-                    {deelvragen}
+                    <li>{data.deelvragen[0]}</li>
+                    <ol>
+                      <li>{data.subdeelvragen[0]}</li>
+                      <li>{data.subdeelvragen[1]}</li>
+                      <li>{data.subdeelvragen[2]}</li>
+                    </ol>
+                    <li>{data.deelvragen[1]}</li>
+                    <li>{data.deelvragen[2]}</li>
                   </ol>
                 </div>
                 <div>
@@ -331,7 +339,7 @@ const Page: React.FC<Props> = ({ openInfographic }) => {
                   <div>
                     <i>Week 1  (8 februari tot 14 februari)</i>
                     <ul>
-                      <li>Projectdocument</li>
+                      <li>Projectplan</li>
                       <li>Opzetten environments en projecten</li>
                       <li>Juiste software installeren die vanuit Stofloos aangeleverd is</li>
                       <li>Eerste opzet van portfolio bouwen</li>

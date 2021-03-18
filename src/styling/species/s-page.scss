@@ -45,22 +45,7 @@
             }
     }
     
-    ul{
-        li {
-            margin-left: 60px;
-            list-style-type: disc;
-            
-            &::marker {
-                font-size: 150%;
-                color: $color-light-blue;
-                display: inline-block;
-                width: 1em;
-                margin-left: -1em;
-                margin-bottom: -15px;
-            }
-        }
-    
-    }
+
     p {
         line-height: 1.7em;
     }
@@ -97,3 +82,19 @@
         }
     }
 }
+    ul{
+        li {
+            margin-left: 60px;
+            list-style-type: disc;
+            
+            &::marker {
+                font-size: 150%;
+                color: $color-light-blue;
+                display: inline-block;
+                width: 1em;
+                margin-left: -1em;
+                margin-bottom: -15px;
+            }
+        }
+    
+    }

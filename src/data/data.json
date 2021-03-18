@@ -106,12 +106,11 @@
         {
             "name": "Leeswijzer",
             "id": "reading-guide",
-            "week": 1,
             "page": "LeeswijzerRedirect",
             "learningGoals": [
                 {
                     "id": 0,
-                    "why": "Dit hoort bij professionele houding omdat hier gereflecteerd word op de werkzaamheden."
+                    "why": ""
                 }
             ]
         }

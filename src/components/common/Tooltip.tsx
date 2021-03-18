@@ -1,5 +1,4 @@
 import React from "react";
-import ReactTooltip from "react-tooltip";
 import data from "../../data/data.json"
 import woordenlijst from "../../data/woorden.json"
 interface Props {
@@ -8,8 +7,9 @@ interface Props {
   deelvraag?: number | undefined;
   subDeelvraag?: number | undefined;
   woord?: string | undefined;
+  caps?: boolean | undefined;
 }
-const Tooltip: React.FC<Props> = ({ tooltip, text, deelvraag, subDeelvraag, woord }) => {
+const Tooltip: React.FC<Props> = ({ tooltip, text, deelvraag, subDeelvraag, woord, caps }) => {
   const findWoord = (woord: string) => {
     for (var i = 0; i < woordenlijst.length; i++) {
       // look for the entry with a matching `code` value
@@ -21,27 +21,48 @@ const Tooltip: React.FC<Props> = ({ tooltip, text, deelvraag, subDeelvraag, woor
 
   let content = <> </>;
 
-  if (typeof deelvraag !== "undefined" && deelvraag < 5) {
-    content = <> <ReactTooltip /><span data-tip={data.deelvragen[deelvraag - 1]}>deelvraag {deelvraag}</span></>
+  if (typeof deelvraag !== "undefined") {
+    content = (
+      <>
+        <span data-tip={data.deelvragen[deelvraag - 1]}>
+          {caps ? "Deelvraag" : "deelvraag"} {deelvraag}
+        </span>
+      </>
+    )
   } else if (typeof subDeelvraag !== "undefined") {
     content = (
       <>
-        <Tooltip deelvraag={1} />, <ReactTooltip /> <span data-tip={data.subdeelvragen[subDeelvraag - 1]}>subdeelvraag {subDeelvraag}</span>
+        <span data-tip={data.subdeelvragen[subDeelvraag - 1]}>
+          {caps ? "Sub-deelvraag" : "sub-deelvraag"} {subDeelvraag}
+        </span>
       </>
     )
   } else if (typeof woord !== "undefined" && woord !== "") {
-    content = <><ReactTooltip /><span data-tip={findWoord(woord)}>{woord}</span></>
-  } else if (typeof tooltip !== "undefined" && typeof text !== "undefined") {
-    content =
+    content = (
       <>
-        <ReactTooltip />
-        <span data-tip={tooltip}>{text} </span>
+        <span data-tip={findWoord(woord)}>
+          {woord}
+        </span>
       </>
-
+    )
+  } else if (typeof tooltip !== "undefined" && typeof text !== "undefined") {
+    content = (
+      <>
+        <span data-tip={tooltip}>{text}</span>
+      </>
+    )
   } else {
-    content = <>Foutje?</>
+    content = (
+      <>
+        Foutje?
+      </>
+    )
   }
-  return <span className={"tooltip"}>{content}</span>
+  return (
+    <>
+      <span className="tooltip">{content}</span>
+    </>
+  )
 
 };
 export default Tooltip;

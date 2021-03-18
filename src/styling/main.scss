@@ -49,10 +49,15 @@
         width: 25%;
     }
 }
-
-ol {
-    margin-left: 30px;
+.underline{
+    text-decoration: underline;
 }
+ol { 
+    counter-reset: item;
+    margin-left: 60px; 
+}
+
+
 
 .tooltip {
     color: #6eaef9;
@@ -65,6 +70,9 @@ ol {
 
 .vertical-timeline-element-content {
     box-shadow: $shadow-regular !important;
+    span{
+        text-decoration: underline;
+    }
 }
 .white {
     color: white !important;
