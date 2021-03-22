@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import ReactTooltip from "react-tooltip";
 
 interface Props {
   data?: iCourseReadingGuide;
@@ -24,27 +23,26 @@ const CourseTable: React.FC<Props> = ({ data }) => {
                 <div className="o-table__right">
                   {typeof learningGoal.documents !== "undefined" &&
                     learningGoal.documents !== [] ? (
-                      learningGoal.documents.map((document: any) => {
-                        return (
-                          <div key={document.id}>
-                            <Link to={`/page/${document.page}`}>
-                              <div
-                                data-tip={
-                                  document.learningGoals.find(
-                                    (item: any) => item.id === learningGoal.id
-                                  ).why
-                                }
-                              >
-                                - {document.name}
-                              </div>
-                              <ReactTooltip />
-                            </Link>
-                          </div>
-                        );
-                      })
-                    ) : (
-                      <></>
-                    )}
+                    learningGoal.documents.map((document: any) => {
+                      return (
+                        <div key={document.id}>
+                          <Link to={`/page/${document.page}`}>
+                            <div
+                              data-tip={
+                                document.learningGoals.find(
+                                  (item: any) => item.id === learningGoal.id
+                                ).why
+                              }
+                            >
+                              - {document.name}
+                            </div>
+                          </Link>
+                        </div>
+                      );
+                    })
+                  ) : (
+                    <></>
+                  )}
                 </div>
               </div>
             );

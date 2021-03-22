@@ -11,6 +11,7 @@ const scrollToRef = (ref: any, offset: number) =>
 const Page: React.FC = () => {
     useEffect(() => {
         window.scrollTo(0, 0);
+
     }, []);
 
     const Aanleiding = useRef(null);

@@ -22,7 +22,6 @@ import ExpertInterviewFrederik from "../pages/ExpertInterviewFrederik";
 import AntwoordDeelvraag1a from "../pages/AntwoordDeelvraag1a";
 import DesignPatternSearchForms from "../pages/DesignPatternSearchForms"
 import ComparisonChartForms from "../pages/ComparisonChart"
-import ReactTooltip from "react-tooltip";
 
 function Routing() {
     const [open, setOpen] = useState(false);
@@ -47,6 +46,7 @@ function Routing() {
         setOpen(!open);
     }
 
+
     if (typeof data !== "undefined") {
         dataByWeek = SortDataByWeek(data);
         dataByLearningGoal = SortDataByCourse(data);
@@ -54,7 +54,6 @@ function Routing() {
         return (
             <Router>
                 <Switch>
-
                     <FadeIn>
                         <Sidebar openInfographic={toggleOpen} open={open} />
                         <Route exact path="/">
@@ -79,12 +78,11 @@ function Routing() {
                             }}
                         />
                         <div className="container">
-                            <ReactTooltip />
                             <Route
                                 path="/documents/:documentId"
                                 render={({ match }) => (
-                                    <>
 
+                                    <>
                                         <Document
                                             pDocument={dataByWeek
                                                 .flatMap((w) => w.documents)

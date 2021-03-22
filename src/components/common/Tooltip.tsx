@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useEffect } from "react";
+import ReactTooltip from "react-tooltip";
 import data from "../../data/data.json"
 import woordenlijst from "../../data/woorden.json"
 interface Props {
@@ -10,6 +11,10 @@ interface Props {
   caps?: boolean | undefined;
 }
 const Tooltip: React.FC<Props> = ({ tooltip, text, deelvraag, subDeelvraag, woord, caps }) => {
+  useEffect(() => {
+    ReactTooltip.rebuild();
+  }, []);
+
   const findWoord = (woord: string) => {
     for (var i = 0; i < woordenlijst.length; i++) {
       // look for the entry with a matching `code` value

@@ -6,6 +6,7 @@ import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 import Tooltip from "../common/Tooltip";
 import Link from "../common/InlineLink";
 import InlineLink from "../common/InlineLink";
+import ReactTooltip from "react-tooltip";
 
 const scrollToRef = (ref: any, offset: number) =>
   window.scrollTo({ top: ref.current.offsetTop + offset, behavior: "smooth" });
@@ -13,6 +14,7 @@ const scrollToRef = (ref: any, offset: number) =>
 const Page: React.FC = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
+    ReactTooltip.rebuild();
   }, []);
 
   const Aanleiding = useRef(null);
