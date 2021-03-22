@@ -86,10 +86,10 @@ const Page: React.FC = () => {
                 <p><span className="green bolder">✔</span> betekent dat het mogelijk is met deze optie.
                 </p>
                 <p><span className="orange bolder">-</span> betekent dat het kan, met de juiste technische kennis.  </p>
-                <p>Er is een telefoongesprek geweest met Diamond forms. Diamond forms is een platform die te gebruiken is tegen een abonnement. Diamond forms kan <Tooltip woord="geïntegreerd" /> worden met bestaande websites.<InlineLink text="Diamond forms" link="https://www.diamondforms.net/nl/" newTab={true} /> kan geen <Tooltip woord="JSON" /> als output geven, dus deze mogelijkheid is direct afgevallen gezien dit de manier is waarop alles in Data panel geregeld wordt.</p>
+
                 <div className="s-page__content__img__container">
                   <div className="s-page__content__img__container__img">
-                    <h3>Foto</h3>
+                    <h3>Comparison Chart</h3>
                     <Zoom>
                       <img
                         className="s-page__content__img__full"
@@ -99,6 +99,7 @@ const Page: React.FC = () => {
                     </Zoom>
                   </div>
                 </div>
+                <p>Er is een telefoongesprek geweest met Diamond forms. Diamond forms is een platform die te gebruiken is tegen een abonnement. Diamond forms kan <Tooltip woord="geïntegreerd" /> worden met bestaande websites.<InlineLink text="Diamond forms" link="https://www.diamondforms.net/nl/" newTab={true} /> kan geen <Tooltip woord="JSON" /> als output geven, dus deze mogelijkheid is afgevallen gezien dit de manier is waarop alles in Data panel geregeld wordt.</p>
               </div>
               <div ref={Conclusie}>
                 <h2>Conclusie</h2>
