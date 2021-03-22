@@ -46,14 +46,14 @@ const Page: React.FC = () => {
           <button onClick={() => executeScroll(Uitvoering, 120)}>
             Uitvoering
           </button>
-          <button onClick={() => executeScroll(GeheleOnderzoek, 120)}>
-            Gehele onderzoek
-          </button>
           <button onClick={() => executeScroll(Conclusie, 120)}>
             Conclusie
           </button>
           <button onClick={() => executeScroll(Bronnen, 120)}>
             Bronnen
+          </button>
+          <button onClick={() => executeScroll(GeheleOnderzoek, 120)}>
+            Gehele onderzoek
           </button>
         </div>
         <div className="o-pagenav__fill"></div>
@@ -78,13 +78,14 @@ const Page: React.FC = () => {
               <div ref={Uitvoering}>
                 <h2>Uitvoering</h2>
                 <p>
-                  Voor de form-builder is Google forms [1] gebruikt. Er is voor Google forms gekozen omdat dit een van de bekendste formulier/enquête bouw websites is die er bestaat. De onderdelen die niet kunnen in Google Forms zouden wel opgepakt kunnen worden in een eigen versie van een formulier bouwer.
+                  Voor de form-builder is Google forms [1] gebruikt. De onderdelen die niet kunnen in Google Forms zouden wel opgepakt kunnen worden in een eigen versie van een formulier bouwer.
                 </p>
                 <p><span className="red bolder">X</span> betekent dat het niet kan in deze optie.
                 </p>
                 <p><span className="green bolder">✔</span> betekent dat het mogelijk is met deze optie.
                 </p>
                 <p><span className="orange bolder">-</span> betekent dat het kan, met de juiste technische kennis.  </p>
+                <p>Er is een telefoongesprek geweest met Diamond forms. Diamond forms is een platform die te gebruiken is tegen een abonnement. Diamond forms kan <Tooltip woord="geïntegreerd" /> worden met bestaande websites.<InlineLink text="Diamond forms" link="https://www.diamondforms.net/nl/" newTab={true} /> kan geen <Tooltip woord="JSON" /> als output geven, dus deze mogelijkheid is direct afgevallen gezien dit de manier is waarop alles in Data panel geregeld wordt.</p>
                 <div className="s-page__content__img__container">
                   <div className="s-page__content__img__container__img">
                     <h3>Foto</h3>
@@ -98,12 +99,6 @@ const Page: React.FC = () => {
                   </div>
                 </div>
               </div>
-              <div ref={GeheleOnderzoek}>
-                <h2>Gehele Onderzoek</h2>
-                <p>
-                  Het gehele onderzoek kan worden bekeken op een extern google docs document. Klik daarvoor <InlineLink text="hier" link="https://docs.google.com/document/d/1TRS519DQJuPfR4Br1H1-cv_T4oKz3taYQORlIzbIppk/edit?usp=sharing" />.
-                </p>
-              </div>
               <div ref={Conclusie}>
                 <h2>Conclusie</h2>
                 <p>
@@ -114,6 +109,12 @@ const Page: React.FC = () => {
                 <h2>Bronnen</h2>
                 <p>
                   [1] Google Formulieren. (z.d.). Google. Geraadpleegd op 12 maart 2021, van https://docs.google.com/forms/u/0/
+                </p>
+              </div>
+              <div ref={GeheleOnderzoek}>
+                <h2>Gehele Onderzoek</h2>
+                <p>
+                  Het gehele onderzoek kan worden bekeken op een extern google docs document. Klik daarvoor <InlineLink text="hier" link="https://docs.google.com/document/d/1TRS519DQJuPfR4Br1H1-cv_T4oKz3taYQORlIzbIppk/edit?usp=sharing" />.
                 </p>
               </div>
             </div>

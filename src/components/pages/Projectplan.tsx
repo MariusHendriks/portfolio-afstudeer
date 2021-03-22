@@ -27,7 +27,7 @@ const Page: React.FC<Props> = ({ openInfographic }) => {
   const Aanleiding = useRef(null);
   const Uitvoering = useRef(null);
   const Verantwoording = useRef(null);
-  const Conclusie = useRef(null);
+  const Overig = useRef(null);
 
   const executeScroll = (reference: any, offset?: number) => {
     if (typeof offset === "undefined") {
@@ -58,7 +58,7 @@ const Page: React.FC<Props> = ({ openInfographic }) => {
           <button onClick={() => executeScroll(Verantwoording, 120)}>
             Aanpak
           </button>
-          <button onClick={() => executeScroll(Conclusie, 120)}>
+          <button onClick={() => executeScroll(Overig, 120)}>
             Overig
           </button>
         </div>
@@ -405,7 +405,7 @@ const Page: React.FC<Props> = ({ openInfographic }) => {
                 </div>
               </div>
             </div>
-            <div ref={Conclusie}>
+            <div ref={Overig}>
               <h2>4.0 Overig</h2>
               <ul>
                 <li>

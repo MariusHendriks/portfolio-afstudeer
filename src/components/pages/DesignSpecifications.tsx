@@ -40,11 +40,11 @@ const Page: React.FC = () => {
           <button onClick={() => executeScroll(Uitvoering, 120)}>
             Uitvoering
           </button>
-          <button onClick={() => executeScroll(GeheleOnderzoek, 120)}>
-            Gehele Onderzoek
-          </button>
           <button onClick={() => executeScroll(Conclusie, 120)}>
             Conclusie
+          </button>
+          <button onClick={() => executeScroll(GeheleOnderzoek, 120)}>
+            Gehele Onderzoek
           </button>
         </div>
         <div className="o-pagenav__fill"></div>
@@ -63,6 +63,7 @@ const Page: React.FC = () => {
               </div>
               <div ref={Uitvoering}>
                 <h2>Uitvoering</h2>
+                <p>In dit onderzoek is er per onderdeel van de website gekeken naar welke JSON het vertaald.</p>
                 <p>Er is <Tooltip woord="JSON" /> die vertaald naar de volgende componenten:</p>
                 <ul>
                   <li>A Tabel</li>
@@ -74,16 +75,16 @@ const Page: React.FC = () => {
                   <li>G Weergave (card, tabel, dashboard)</li>
                 </ul>
               </div>
+              <div ref={Conclusie}>
+                <h2>Conclusie</h2>
+                <p>
+                  Doordat dit onderzoek is uitgevoerd, is er een overzicht welke <Tooltip woord="JSON" /> welke <Tooltip woord="componenten" /> laten zien. Deze resultaten zijn gebruikt voor de <InlineLink link="/page/DataAnalyse" text="Data Analyse" newTab={false} /> om de tickets van de data analyse in een van deze categorieën te plaatsen.
+                </p>
+              </div>
               <div ref={GeheleOnderzoek}>
                 <h2>Gehele Onderzoek</h2>
                 <p>
                   Het gehele onderzoek kan worden bekeken op een extern google docs document. Klik daarvoor <Link text="hier" link="https://docs.google.com/document/d/1Gx76nLg9RF7ighhMSi9AHxYvGc6bT6anEdKVC2TYcrY/edit?usp=sharing" />.
-                </p>
-              </div>
-              <div ref={Conclusie}>
-                <h2>Conclusie</h2>
-                <p>
-                  Doordat dit onderzoek is uitgevoerd, is er een overzicht welke <Tooltip woord="JSON" /> er is. Deze resultaten zijn gebruikt voor de <InlineLink link="/page/DataAnalyse" text="Data Analyse" newTab={false} /> om de tickets van de data analyse in een van deze categorieën te plaatsen.
                 </p>
               </div>
             </div>

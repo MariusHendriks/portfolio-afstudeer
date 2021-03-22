@@ -16,8 +16,8 @@ const Page: React.FC = () => {
 
     const Aanleiding = useRef(null);
     const Uitvoering = useRef(null);
-    const GeheleOnderzoek = useRef(null);
     const Conclusie = useRef(null);
+    const GeheleOnderzoek = useRef(null);
 
     const executeScroll = (reference: any, offset?: number) => {
         if (typeof offset === "undefined") {
@@ -42,11 +42,11 @@ const Page: React.FC = () => {
                     <button onClick={() => executeScroll(Uitvoering, 120)}>
                         Uitvoering
                     </button>
-                    <button onClick={() => executeScroll(GeheleOnderzoek, 120)}>
-                        Gehele onderzoek
-                    </button>
                     <button onClick={() => executeScroll(Conclusie, 120)}>
                         Conclusie
+                    </button>
+                    <button onClick={() => executeScroll(GeheleOnderzoek, 120)}>
+                        Gehele onderzoek
                     </button>
                 </div>
                 <div className="o-pagenav__fill"></div>
@@ -59,10 +59,10 @@ const Page: React.FC = () => {
                             <div ref={Aanleiding}>
                                 <h2>Aanleiding</h2>
                                 <p>
-                                    Een Expert interview is uitgevoerd omdat het relevant is om te weten welke componenten- volgens de expert- het hardst nodig zijn om data platform completer te maken.
+                                    Een Expert Interview is uitgevoerd om de relevantie van componenten te achterhalen welke volgens de expert het belangrijkst zijn voor het completer maken van Data Panel om het aantal.
                                 </p>
                                 <p>
-                                    Omdat Robin alle kennis heeft over het platform, zal hij het beste weten welke componenten toegevoegd moeten worden. Naast de vragen verwacht ik dat Robin ook goede toevoeging kan geven.
+                                    Robin beschikt over alle kennis over het platform. Om die reden beschikt hij over de kennis van welke componenten toegevoegd moeten worden. Daarnaast zal Robin naast de vragen toevoeging kunnen geven.
                                 </p>
                             </div>
                             <div ref={Uitvoering}>
@@ -73,12 +73,6 @@ const Page: React.FC = () => {
                                         videoId={"BVDC89d4Ks4"}
                                         opts={opts}
                                     />
-                                </p>
-                            </div>
-                            <div ref={GeheleOnderzoek}>
-                                <h2>Gehele Onderzoek</h2>
-                                <p>
-                                    Het gehele onderzoek kan worden bekeken op een extern google docs document. Klik daarvoor <InlineLink text="hier" link="https://docs.google.com/document/d/1sUWLI0Bu0lDRY9_mUxforwDQxl5donZ0nFzwGU674MA/edit?usp=sharing" />.
                                 </p>
                             </div>
                             <div ref={Conclusie}>
@@ -98,6 +92,12 @@ const Page: React.FC = () => {
                                         <li>Welke filters</li>
                                         <li>Op dit moment moet er er op alle genoemde plekken JSON geschreven worden die exact matchen met de modellen.</li>
                                     </ul>
+                                </p>
+                            </div>
+                            <div ref={GeheleOnderzoek}>
+                                <h2>Gehele Onderzoek</h2>
+                                <p>
+                                    Het gehele onderzoek kan worden bekeken op een extern google docs document. Klik daarvoor <InlineLink text="hier" link="https://docs.google.com/document/d/1sUWLI0Bu0lDRY9_mUxforwDQxl5donZ0nFzwGU674MA/edit?usp=sharing" />.
                                 </p>
                             </div>
                         </div>

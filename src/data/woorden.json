@@ -22,5 +22,17 @@
     {
         "woord": "form-builders",
         "betekenis": "Een form builder is een applicatie waarin formulieren en enquêtes in gemaakt kunnen worden."
+    },
+    {
+        "woord": "componenten",
+        "betekenis": "Een component is in dit onderzoek een deel code van een groter geheel."
+    },
+    {
+        "woord": "component",
+        "betekenis": "Een component is in dit onderzoek een deel code van een groter geheel."
+    },
+    {
+        "woord": "geïntegreerd",
+        "betekenis": "Integreren is het maken, groeien of opnemen in een groter geheel. In een applicatie kunnen stukken code van een andere partij worden toegevoegd. Hier is sprake van integratie van die code."
     }
 ]

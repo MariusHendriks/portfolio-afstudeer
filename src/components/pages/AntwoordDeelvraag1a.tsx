@@ -75,29 +75,6 @@ const Page: React.FC = () => {
                                 </div>
 
                             </div>
-                            <div ref={Toelichting}>
-                                <h2>Toelichting</h2>
-                                <p>
-                                    Door <InlineLink newTab={false} link="/page/DesignSpecifications" text="Design specifications" /> uit te voeren, is er een overzicht gekomen welke categorieën er zijn binnen Data panel. Door dit in kaart te brengen kon er bepaald worden in welke van deze categorieën de meeste werkdruk ontstaat. In dit onderzoek is per stukje <Tooltip woord="JSON" /> een categorie gemaakt.
-                                </p>
-                                <p>
-                                </p>
-                                    Op dit overzicht is een <InlineLink newTab={false} link="/page/DataAnalyse" text="Data analyse" /> uitgevoerd. In dit onderzoek is er gekeken naar wat voor vragen er gesteld worden aan Stofloos voor onderdelen die zijn voor hun klanten moesten aanpassen. Hierdoor kon worden bepaald waar veel werkdruk over onstond. De uitkomst hiervan is dat de meest aangevraagde wijzigingen komen in de categorie formulieren en de categorie tabellen.
-                                <p>
-                                    Er is een <InlineLink newTab={false} link="/page/ExpertInterviewRobin" text="Expert interview met Robin Dekkers" /> (ontwikkelaar van Data panel) en een <InlineLink newTab={false} link="/page/ExpertInterviewFrederik" text="Expert interview met Frederik Venneman" /> (hoofdgebruiker van Data panel) uitgevoerd om in te zien wat zei denken dat er verbetert moet worden in Data panel. In dit interview zijn open vragen gesteld wat betreft de verbetering van het platform. Zowel Frederik als Robin gaf aan dat het maken van formulieren een probleem is. Dit heeft twee redenen.
-                                    <ol>
-                                        <li>
-                                            Omdat een klant honderde formulieren kan hebben en een wijziging in een formulier op een van deze formulieren, moet het gespecificeerd zijn waar de wijziging gedaan moet worden, of het wordt zoekwerk.
-                                        </li>
-                                        <li>
-                                            Er moet steeds gecontroleerd worden wat de exacte naam is in het model (de backend van de applicatie). Dit zorgt ervoor dat er veel tussen de settings (om de JSON te configureren) en de modellen (om te achterhalen welke naam een veld heeft) moet worden genavigeerd.
-                                            Daarnaast geeft Robin aan dat het maken van een pagina veel werk oplevert. Er moet op veel verschillende plaatsen JSON worden toegevoegd om een pagina te configureren.
-                                        </li>
-                                    </ol>
-                                    Daarnaast werd in beide inverviews het maken van paginas genoemd. In het interview met Robin werd verteld dat er op té veel verschillende plekken <Tooltip woord="JSON" /> moet worden toegevoegd om een simpele pagina te <Tooltip woord="renderen" />.
-
-                                </p>
-                            </div>
 
                             <div ref={Conclusie}>
                                 <h2>Conclusie</h2>
@@ -106,7 +83,7 @@ const Page: React.FC = () => {
                                     <ol>
                                         <li>
                                             <b>Formulier</b><br />
-                                            Frederik geeft in het <InlineLink newTab={false} link="/page/ExpertInterviewFrederik" text="expert interview" /> aan dat het maken van (grote) formulieren is veel werk om te doen. Dit komt omdat alle data overeen moet komen met de gemaakt modellen. Deze data is enkel in te zien door naar de modellen te navigeren.  Daarnaast gingen 15 van de 35 tickets van de <InlineLink newTab={false} link="/page/DataAnalyse" text="data analyse" /> over formulieren. Bij deze tickets moet het duidelijk zijn in welk formulier de aanpassing gemaakt moet worden, anders moet dat eerst worden uitgezocht.
+                                            Frederik geeft in het <InlineLink newTab={false} link="/page/ExpertInterviewFrederik" text="expert interview" /> aan dat het maken van (grote) formulieren is veel werk om te doen. Dit komt omdat alle data overeen moet komen met de gemaakt modellen. Deze data is enkel in te zien door naar de modellen te navigeren.  Daarnaast gingen 43% van de tickets van de <InlineLink newTab={false} link="/page/DataAnalyse" text="data analyse" /> over formulieren. Bij deze tickets moet het duidelijk zijn in welk formulier de aanpassing gemaakt moet worden, anders moet dat eerst worden uitgezocht.
                                         </li>
                                         <li>
                                             <b>Pagina</b><br />

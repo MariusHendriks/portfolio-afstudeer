@@ -39,11 +39,11 @@ const Page: React.FC = () => {
                     <button onClick={() => executeScroll(Uitvoering, 120)}>
                         Uitvoering
           </button>
-                    <button onClick={() => executeScroll(GeheleOnderzoek, 120)}>
-                        Gehele onderzoek
-          </button>
                     <button onClick={() => executeScroll(Conclusie, 120)}>
                         Conclusie
+          </button>
+                    <button onClick={() => executeScroll(GeheleOnderzoek, 120)}>
+                        Gehele onderzoek
           </button>
                 </div>
                 <div className="o-pagenav__fill"></div>
@@ -56,7 +56,7 @@ const Page: React.FC = () => {
                             <div ref={Aanleiding}>
                                 <h2>Aanleiding</h2>
                                 <p>
-                                    Het resultaat van <Tooltip subDeelvraag={1} /> is dat het maken van formulieren op Data panel niet handig is en veel werkdruk opleverd. Uit de resultaten van de <InlineLink link="/pages/ComparisonChart" text="comparison chart" /> is gekomen dat een <Tooltip woord="form-builder" /> een passende oplossing is.
+                                    Het resultaat van <Tooltip subDeelvraag={1} /> is dat het maken van formulieren op Data panel niet handig is en veel werkdruk opleverd. Uit de resultaten van de <InlineLink link="/page/ComparisonChartForms" newTab={false} text="comparison chart" /> is gekomen dat een <Tooltip woord="form-builder" /> een passende oplossing is.
                                 </p>
                             </div>
                             <div ref={Uitvoering}>
@@ -70,12 +70,6 @@ const Page: React.FC = () => {
                                     <li>Diamont forms</li>
                                 </ol>
                                 Bij deze <Tooltip woord="form-builders" /> is er gekeken naar hoe ze tekstvelden, optievelden, selectievakken, tabs/pagina's/secties en het conditioneel laten zien van die tabs/pagina's/selecties worden gedaan door de benoemde <Tooltip woord="form-builders" />.
-                            </div>
-                            <div ref={GeheleOnderzoek}>
-                                <h2>Gehele Onderzoek</h2>
-                                <p>
-                                    Het gehele onderzoek kan worden bekeken op een extern google docs document. Klik daarvoor <InlineLink text="hier" link="https://docs.google.com/document/d/1JKi41AlxtxisreQDHTXP77iHsoIAhESV-hkg_kdFfnI/edit?usp=sharing" />.
-                                </p>
                             </div>
                             <div ref={Conclusie}>
                                 <h2>Conclusie</h2>
@@ -101,6 +95,12 @@ const Page: React.FC = () => {
                                 </ul>
                                 <p>
                                     De <Tooltip woord="form-builder" /> die voor data panel gemaakt zal worden moet een duidelijke mogelijkheid hebben om elementen toe te voegen. Daarnaast moet het duidelijk zijn wat voor type elementen er toegevoegd kunnen worden (tekstveld, selectieveld, etc.) en moet er conditioneel stappen laten zien kunnen worden.
+                                </p>
+                            </div>
+                            <div ref={GeheleOnderzoek}>
+                                <h2>Gehele Onderzoek</h2>
+                                <p>
+                                    Het gehele onderzoek kan worden bekeken op een extern google docs document. Klik daarvoor <InlineLink text="hier" link="https://docs.google.com/document/d/1JKi41AlxtxisreQDHTXP77iHsoIAhESV-hkg_kdFfnI/edit?usp=sharing" />.
                                 </p>
                             </div>
                         </div>

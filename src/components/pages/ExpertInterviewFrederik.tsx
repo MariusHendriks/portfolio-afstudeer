@@ -17,8 +17,8 @@ const Page: React.FC = () => {
 
     const Aanleiding = useRef(null);
     const Uitvoering = useRef(null);
-    const GeheleOnderzoek = useRef(null);
     const Conclusie = useRef(null);
+    const GeheleOnderzoek = useRef(null);
 
     const executeScroll = (reference: any, offset?: number) => {
         if (typeof offset === "undefined") {
@@ -43,11 +43,11 @@ const Page: React.FC = () => {
                     <button onClick={() => executeScroll(Uitvoering, 120)}>
                         Uitvoering
                     </button>
-                    <button onClick={() => executeScroll(GeheleOnderzoek, 120)}>
-                        Gehele onderzoek
-                    </button>
                     <button onClick={() => executeScroll(Conclusie, 120)}>
                         Conclusie
+                    </button>
+                    <button onClick={() => executeScroll(GeheleOnderzoek, 120)}>
+                        Gehele onderzoek
                     </button>
                 </div>
                 <div className="o-pagenav__fill"></div>
@@ -76,12 +76,6 @@ const Page: React.FC = () => {
                                     />
                                 </p>
                             </div>
-                            <div ref={GeheleOnderzoek}>
-                                <h2>Gehele Onderzoek</h2>
-                                <p>
-                                    Het gehele onderzoek kan worden bekeken op een extern google docs document. Klik daarvoor <InlineLink text="hier" link="https://docs.google.com/document/d/13UmE_zY46HrMAtVnO8moyNwPjKErISFjgrVq7ufVIwc/edit?usp=sharing" />.
-                                </p>
-                            </div>
                             <div ref={Conclusie}>
                                 <h2>Conclusie</h2>
                                 <p>
@@ -95,6 +89,12 @@ const Page: React.FC = () => {
                                 </p>
                                 <p>
                                     De tabs zijn ook een vervelend onderdeel om te configureren geeft Frederik aan.
+                                </p>
+                            </div>
+                            <div ref={GeheleOnderzoek}>
+                                <h2>Gehele Onderzoek</h2>
+                                <p>
+                                    Het gehele onderzoek kan worden bekeken op een extern google docs document. Klik daarvoor <InlineLink text="hier" link="https://docs.google.com/document/d/13UmE_zY46HrMAtVnO8moyNwPjKErISFjgrVq7ufVIwc/edit?usp=sharing" />.
                                 </p>
                             </div>
                         </div>
