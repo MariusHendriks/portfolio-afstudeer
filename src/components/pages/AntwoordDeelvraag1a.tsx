@@ -7,6 +7,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 import Tooltip from "../common/Tooltip";
 import InlineLink from "../common/InlineLink";
+import Data from "../../data/data.json"
 
 const scrollToRef = (ref: any, offset: number) =>
     window.scrollTo({ top: ref.current.offsetTop + offset, behavior: "smooth" });
@@ -79,44 +80,50 @@ const Page: React.FC = () => {
                             <div ref={Conclusie}>
                                 <h2>Conclusie</h2>
                                 <p>
-                                    Uit zowel de <InlineLink newTab={false} link="/page/DataAnalyse" text="Data analyse" />, het <InlineLink newTab={false} link="/page/ExpertInterviewRobin" text="Expert interview met Robin Dekkers" /> (developer van Data panel) en het <InlineLink newTab={false} link="/page/ExpertInterviewFrederik" text="Expert interview met Frederik Venneman" /> (<Tooltip woord="hoofdgebruiker" />) is gebleken dat de meeste werkdruk ontstaat door de volgende categorieën.
+                                    De deelvraag die beantwoord wordt in deze conclusie is deelvraag 1a:
+                                </p>
+                                <p> {Data.subdeelvragen[0]}</p>
+                                <p>
+                                    De categorieën zijn bepaald in de <InlineLink newTab={false} link="/page/DesignSpecifications" text="Design specifications" />.
+                                    Deze categorieën zijn gebruikt om de werkdruk per categorie te bepalen in de <InlineLink newTab={false} link="/page/DataAnalyse" text="Data analyse" />.
+                                    Uit zowel de <InlineLink newTab={false} link="/page/DataAnalyse" text="Data analyse" />, het <InlineLink newTab={false} link="/page/ExpertInterviewRobin" text="Expert interview met Robin Dekkers" /> (developer van Data panel) en het <InlineLink newTab={false} link="/page/ExpertInterviewFrederik" text="Expert interview met Frederik Venneman" /> (<Tooltip woord="hoofdgebruiker" />) is gebleken dat de meeste werkdruk ontstaat in de volgende categorieën.
                                     <ol>
                                         <li>
                                             <b>Formulier</b><br />
-                                            Frederik geeft in het <InlineLink newTab={false} link="/page/ExpertInterviewFrederik" text="expert interview" /> aan dat het maken van (grote) formulieren is veel werk om te doen. Dit komt omdat alle data overeen moet komen met de gemaakt modellen. Deze data is enkel in te zien door naar de modellen te navigeren.  Daarnaast gingen 43% van de tickets van de <InlineLink newTab={false} link="/page/DataAnalyse" text="data analyse" /> over formulieren. Bij deze tickets moet het duidelijk zijn in welk formulier de aanpassing gemaakt moet worden, anders moet dat eerst worden uitgezocht.
+                                            Frederik benoemd in het <InlineLink newTab={false} link="/page/ExpertInterviewFrederik" text="expert interview" /> dat het verwerken van (grote) formulieren veel werk vereist. Dit komt omdat alle data overeen moet komen met de database en omdat de tickets vaak niet gespecificeerd zijn. Een klant kan tientallen formulieren hebben waarvan er veel op elkaar lijken. De tickets die over wijzigingen in formulieren gaan duren hierdoor extra lang. 15 van de 35 van de tickets van de <InlineLink newTab={false} link="/page/DataAnalyse" text="data analyse" /> gaan over formulieren.
                                         </li>
                                         <li>
                                             <b>Pagina</b><br />
-                                            Uit de <InlineLink newTab={false} link="/page/DataAnalyse" text="data analyse" /> is gebleken dat er veel vragen komen voor aanpassingen op pagina's. Dit kunnen vragen zijn om bijvoorbeeld een knop groter te maken of om text toe te voegen. Daarnaast gaf Robin aan in zijn <InlineLink newTab={false} link="/page/ExpertInterviewRobin" text="expert interview" /> dat het proces om een pagina toe te voegen omslachtig is. Er moet op té veel plekken <Tooltip woord="JSON" /> worden aanpast om een pagina te maken en content op deze pagina te zetten.
+                                            Uit de <InlineLink newTab={false} link="/page/DataAnalyse" text="data analyse" /> is gebleken dat er veel tickets ontstaan over aanpassingen op pagina's. Dit kunnen vragen zijn om bijvoorbeeld een knop groter te maken of om text toe te voegen. Daarnaast gaf Robin aan in zijn <InlineLink newTab={false} link="/page/ExpertInterviewRobin" text="expert interview" /> dat het proces om een pagina toe te voegen aan data panel omslachtig is. Er moet op vijf plekken <Tooltip woord="JSON" /> worden aangepast om een pagina te maken en content op deze pagina te zetten, terwijl dit normaal gesproken om maar een plek hoeft.
                                         </li>
                                         <li>
                                             <b>Tabellen</b><br />
-                                            Uit de <InlineLink newTab={false} link="/page/DataAnalyse" text="data analyse" /> is gebleken dat er veel vragen komen over het wijziginen maken in tabellen. Door het <InlineLink newTab={false} link="/page/ExpertInterviewFrederik" text="expert interview" /> met Frederik is ondervonden dat er vaak na deze wijziging ook een vraag komt om de filters aan te passen. Hiervoor zijn echter geen tickets gemaakt.
+                                            Uit de <InlineLink newTab={false} link="/page/DataAnalyse" text="data analyse" /> is gebleken dat 12 van de 35 tickets gaan over het maken van wijzigingen in tabellen. Door de informatie die verzameld is tijdens het <InlineLink newTab={false} link="/page/ExpertInterviewFrederik" text="expert interview" /> met Frederik, is ondervonden dat er vaak na deze wijziging ook een vraag komt om de filters aan te passen. Hiervoor zijn echter geen tickets aangemaakt.
                                         </li>
                                     </ol>
                                 </p>
                             </div>
                             <div ref={Aanbeveling}>
                                 <h2>Aanbeveling</h2>
-                                <p>De onderzoeksresultaten zijn besproken met opdrachtgever Lenn Tjin-A-Sie. Het volgende is afgesproken.</p>
+                                <p>De onderzoeksresultaten zijn besproken met opdrachtgever Lenn Tjin-A-Sie. Op basis van de onderzoeksresultaten is het volgende besloten:</p>
                                 <div>
                                     <h3>Formulier</h3>
                                     <p>
-                                        Het formulier component in de diepte zal worden uitgewerkt. In dit component moet een gebruiker met de juist rechten de mogelijkheid hebben om formulieren aan te maken en te bewerken. Er zal gezocht worden in <Tooltip subDeelvraag={2} /> hoe andere
+                                        Het formulier component zal in diepte worden uitgewerkt. In dit component moeten gebruikers met de juist rechten en de medewerkers van Stofloos de mogelijkheid hebben om formulieren aan te maken en te bewerken. In <Tooltip subDeelvraag={2} /> zal worden onderzocht hoe andere programma's dit hebben aangepakt. Met deze resultaten zal een high-fedelity prototype gemaakt worden met de <Tooltip woord="design guidelines" /> van Stofloos.
                                     </p>
 
                                 </div>
                                 <div>
                                     <h3>Pagina</h3>
                                     <p>
-                                        Daarnaast zal er een <Tooltip woord="MVP" /> worden gemaakt om een pagina toe te voegen. Hier is voor gekozen omdat een relatief kleine aanpassing een enorm verschil kan maken. De eissen hieraan zijn het volgende:
+                                        Daarnaast zal er een <Tooltip woord="MVP" /> worden gemaakt om een pagina toe te voegen. Uit het onderzoek is gebleken dat het toevoegen van een pagina omslachtig is. Een relatief kleine verandering hierin kan een enorm verschil maken. De MVP moet het volgende kunnen:
                                     </p>
                                     <ul>
                                         <li>Pagina kunnen toevoegen. De plekken waar JSON nodig is om een pagina toe te voegen (menu items, pagina's, endpoints) moet automatisch worden ingevuld.</li>
                                         <li>In de pagina selecteren welke modellen er ingeladen moeten worden.</li>
                                     </ul>
 
-                                    <p>In de toekomst kunnen hier nieuwe onderdelen aan worden toegevoegd. Maar dit is buiten de scope van dit project.</p>
+                                    <p>In de toekomst kunnen hier nieuwe onderdelen aan worden toegevoegd. Dit valt echter niet binnen de scope van het project</p>
                                 </div>
                             </div>
                         </div>

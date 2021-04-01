@@ -67,7 +67,7 @@ const Page: React.FC = () => {
               <div ref={Aanleiding}>
                 <h2>Aanleiding</h2>
                 <p>
-                  Uit de conclusie van <Tooltip subDeelvraag={1} /> is gekomen dat het maken en aanpassen van formulieren verbeterd moet worden. Omdat er meerdere opties hiervoor zijn, is een comparison chart uitgevoerd
+                  Uit de conclusie van <Tooltip subDeelvraag={1} /> is gekomen dat het maken en aanpassen van formulieren verbeterd moet worden. Omdat er meerdere opties hiervoor zijn, is een comparison chart uitgevoerd.
                 </p>
               </div>
               <div ref={Vraag}>
@@ -79,7 +79,7 @@ const Page: React.FC = () => {
               <div ref={Uitvoering}>
                 <h2>Uitvoering</h2>
                 <p>
-                  Voor de form-builder is Google forms [1] gebruikt. De onderdelen die niet kunnen in Google Forms zouden wel opgepakt kunnen worden in een eigen versie van een formulier bouwer.
+                  Voor de form-builder is Google forms [1] gebruikt. De onderdelen die niet kunnen in Google Forms zouden wel opgepakt kunnen worden in een eigen versie van een formulier bouwer. Google forms is gekozen als representatie voor form-builders omdat dit gratis is, overzichtelijke resultaten biedt, intuïtief- en bekend is.
                 </p>
                 <p><span className="red bolder">X</span> betekent dat het niet kan in deze optie.
                 </p>

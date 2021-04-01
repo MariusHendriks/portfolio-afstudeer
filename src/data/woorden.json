@@ -12,6 +12,10 @@
         "betekenis": "Renderen is het weergeven van stukken visuele code."
     },
     {
+        "woord": "rendered",
+        "betekenis": "Renderen is het weergeven van stukken visuele code."
+    },
+    {
         "woord": "mvp",
         "betekenis": "MVP is een afkorting voor Minimum Viable Product. Een MVP omvat de minimale functionaliteiten van een website of app om levensvatbaar te zijn."
     },
@@ -25,14 +29,18 @@
     },
     {
         "woord": "componenten",
-        "betekenis": "Een component is in dit onderzoek een deel code van een groter geheel."
+        "betekenis": "Een component is een onderdeel van een groter geheel."
     },
     {
         "woord": "component",
-        "betekenis": "Een component is in dit onderzoek een deel code van een groter geheel."
+        "betekenis": "Een component is een onderdeel van een groter geheel."
     },
     {
         "woord": "geïntegreerd",
         "betekenis": "Integreren is het maken, groeien of opnemen in een groter geheel. In een applicatie kunnen stukken code van een andere partij worden toegevoegd. Hier is sprake van integratie van die code."
+    },
+    {
+        "woord": "design guidelines",
+        "betekenis": "Design guidelines zijn regels die bepalen hoe het ontwerp eruit moet komen zien. Kleuren, rondheid van hoeken, afstandgroottes en meer staan hierin beschreven"
     }
 ]

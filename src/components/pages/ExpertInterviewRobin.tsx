@@ -64,6 +64,9 @@ const Page: React.FC = () => {
                                 <p>
                                     Robin beschikt over alle kennis over het platform. Om die reden beschikt hij over de kennis van welke componenten toegevoegd moeten worden. Daarnaast zal Robin naast de vragen toevoeging kunnen geven.
                                 </p>
+                                <p>
+                                    Ook zijn de resultaten van de <InlineLink link="/page/DataAnalyse" text="data analyse" newTab={false} /> besproken om de resulataten te valideren. Frederik is ten slotte een van de personen die de tickets heeft aangemaakt en verwerkt.
+                                </p>
                             </div>
                             <div ref={Uitvoering}>
                                 <h2>Uitvoering</h2>

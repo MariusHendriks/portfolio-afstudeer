@@ -59,13 +59,12 @@ const Page: React.FC = () => {
               <div ref={Aanleiding}>
                 <h2>Aanleiding</h2>
                 <p>
-                  Omdat er geen overzicht was welke <Tooltip woord="JSON" /> er is op Data panel en wat die <Tooltip woord="renderen" />, zijn
-                  <InlineLink text="design specifications" link="https://cmdmethods.nl/cards/stepping-stones/design-specification" /> uitgevoerd.
+                  Omdat er geen overzicht was van welke <Tooltip woord="JSON" /> er op Data panel is en wat deze JSON <Tooltip woord="rendered" />, zijn
+                  <InlineLink text="design specifications" link="https://cmdmethods.nl/cards/stepping-stones/design-specification" /> uitgevoerd. Er is voor Design specifications gekozen omdat er met dit onderzoek duidelijk wordt wat voor categorieën er op data panel zijn. Hier kan in latere onderzoeken op gecategoriseerd worden om per categorie de werkdruk te bepalen.
                 </p>
               </div>
               <div ref={Uitvoering}>
                 <h2>Uitvoering</h2>
-                <p>In dit onderzoek is er per onderdeel van de website gekeken naar welke JSON het vertaald.</p>
                 <p>Er is <Tooltip woord="JSON" /> die vertaald naar de volgende componenten:</p>
                 <ul>
                   <li>A Tabel</li>
@@ -80,7 +79,7 @@ const Page: React.FC = () => {
               <div ref={Conclusie}>
                 <h2>Conclusie</h2>
                 <p>
-                  Doordat dit onderzoek is uitgevoerd, is er een overzicht welke <Tooltip woord="JSON" /> welke <Tooltip woord="componenten" /> laten zien. Deze resultaten zijn gebruikt voor de <InlineLink link="/page/DataAnalyse" text="Data Analyse" newTab={false} /> om de tickets van de data analyse in een van deze categorieën te plaatsen.
+                  Doordat dit onderzoek is uitgevoerd is er een overzicht welke <Tooltip woord="JSON" /> welke <Tooltip woord="componenten" /> laten zien. Deze resultaten zijn gebruikt voor de <InlineLink link="/page/DataAnalyse" text="Data Analyse" newTab={false} /> om de tickets van de data analyse in een van deze categorieën te plaatsen.
                 </p>
               </div>
               <div ref={GeheleOnderzoek}>

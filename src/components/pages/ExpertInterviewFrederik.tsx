@@ -60,10 +60,13 @@ const Page: React.FC = () => {
                             <div ref={Aanleiding}>
                                 <h2>Aanleiding</h2>
                                 <p>
-                                    Een Expert interview is uitgevoerd omdat het relevant is om te weten welke componenten- volgens de expert- het hardst nodig zijn om data platform completer te maken.
+                                    Er is een Expert interview uitgevoerd omdat het relevant is om te weten welke componenten- volgens de expert- het hardst nodig zijn om data platform completer te maken.
                                 </p>
                                 <p>
                                     Frederik Vennemann is de <Tooltip woord="hoofdgebruiker"></Tooltip> van data panel op dit moment. Frederik gaat naar nieuwe klanten legt uit hoe Data panel werkt om het uiteindelijk te verkopen. Ook maakt Frederik voor nieuwe klanten de eerste opzet voor Data panel. Dit proces doet Frederik al ongeveer 1/2e  jaar, en hierdoor heeft hij veel kennis over hoe het programma in elkaar steekt.
+                                </p>
+                                <p>
+                                    Ook zijn de resultaten van de <InlineLink link="/page/DataAnalyse" text="data analyse" newTab={false} /> besproken om de resulataten te valideren. Frederik is ten slotte een van de personen die de tickets heeft aangemaakt en verwerkt.
                                 </p>
                             </div>
                             <div ref={Uitvoering}>

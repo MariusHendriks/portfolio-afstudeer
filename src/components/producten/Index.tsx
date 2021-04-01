@@ -19,6 +19,7 @@ import Milestone2 from "../../img/milestone2.png";
 // import Milestone3 from "../../img/milestone3.png";
 // import Milestone4 from "../../img/milestone4.png";
 import Tooltip from "../common/Tooltip";
+import Data from "../../data/data.json";
 
 interface Props {
     sortedData?: iWeek[];
@@ -71,7 +72,7 @@ const Producten: React.FC<Props> = ({ sortedData }) => {
                     </h3>
                 );
                 aanvulling = (
-                    <p>Om het project te beginnen is allereest het projectplan gemaakt. Hierin werd bepaald welke onderzoeken uitgevoerd moesten worden en waarom.</p>
+                    <p>Om het project te beginnen is allereest het projectplan opgesteld. Hierin is bepaald welke onderzoeken uitgevoerd moesten worden en waarom.</p>
                 );
                 break;
             case 2:
@@ -82,9 +83,14 @@ const Producten: React.FC<Props> = ({ sortedData }) => {
                     </h3>
                 );
                 aanvulling = (
-                    <p>
-                        Als eerst was het van belang dat het in kaart gebracht werd welke <Tooltip woord="JSON" /> welke componenten liet zien, en welke hiervan de meeste werkdruk opleverde.
-                    </p>
+                    <>
+                        <p>
+                            Deelvraag 1a: {Data.subdeelvragen[0]}
+                        </p>
+                        <p>
+                            Om deze deelvraag te beantwoorden zijn de volgende onderzoeken uitgevoerd:
+                        </p>
+                    </>
                 );
                 break;
             case 3:
@@ -96,9 +102,14 @@ const Producten: React.FC<Props> = ({ sortedData }) => {
                 );
                 aanvulling =
                     (
-                        <p>
-                            <Tooltip caps={true} subDeelvraag={1} /> had als resultaat dat het formulier component tijdens de stageperiode verbeterd moet worden. Voor <Tooltip subDeelvraag={2} /> is er eerst naar de mogelijkheden gekeken en welke oplossing het beste aansluit bij het probleem. Voor deze oplossing is inspiratie voor een form-builder gemaakt.
-                        </p>
+                        <>
+                            <p>
+                                Deelvraag 1b: {Data.subdeelvragen[1]}
+                            </p>
+                            <p>
+                                <Tooltip caps={true} subDeelvraag={1} /> had als resultaat dat het formulier component tijdens de stageperiode verbeterd zal worden. Voor <Tooltip subDeelvraag={2} /> is er eerst naar de mogelijkheden gekeken en welke oplossing het beste aansluit bij het probleem.
+                            </p>
+                        </>
                     );
                 break;
             // case 4:

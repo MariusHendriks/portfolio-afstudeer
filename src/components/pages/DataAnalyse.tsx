@@ -71,7 +71,7 @@ const Page: React.FC = () => {
                                     Er zijn in totaal 50 tickets. Van deze tickets, zijn er 35 die duidelijk genoeg waren om de actie onder een of meerdere van de design specifications te plaatsen.
                                 </p>
                                 <p>
-                                    De meeste vraag kwam binnen in de volgende categoriën:
+                                    De meeste vraag kwam binnen in de volgende categorieën:
                                 </p>
                                 <ul>
                                     <li>
@@ -81,6 +81,7 @@ const Page: React.FC = () => {
                                         <b>Formulieren</b> - 15 tickets - Verzoeken om wijzigingen te maken in formulieren.
                                     </li>
                                 </ul>
+                                <p>In de overige categorieën kwamen minder dan vier tickets binnen en leveren daardoor in vergelijking met de categorieën tabellen en formulieren weinig werkdruk op.</p>
                             </div>
                             <div ref={Conclusie}>
                                 <h2>Conclusie</h2>

@@ -24,6 +24,11 @@ const Tooltip: React.FC<Props> = ({ tooltip, text, deelvraag, subDeelvraag, woor
     }
   }
 
+  const getAlfabetic = (nmr: number) => {
+    const alfabet = ["a", "b", "c", "d", "e"]
+    return alfabet[nmr - 1];
+  }
+
   let content = <> </>;
 
   if (typeof deelvraag !== "undefined") {
@@ -38,7 +43,7 @@ const Tooltip: React.FC<Props> = ({ tooltip, text, deelvraag, subDeelvraag, woor
     content = (
       <>
         <span data-tip={data.subdeelvragen[subDeelvraag - 1]}>
-          {caps ? "Sub-deelvraag" : "sub-deelvraag"} {subDeelvraag}
+          {caps ? "Deelvraag" : "deelvraag"} 1{getAlfabetic(subDeelvraag)}
         </span>
       </>
     )
