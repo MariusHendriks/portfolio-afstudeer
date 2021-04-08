@@ -82,7 +82,7 @@ const Page: React.FC = () => {
                                 <p>
                                     De deelvraag die beantwoord wordt in deze conclusie is deelvraag 1a:
                                 </p>
-                                <p> {Data.subdeelvragen[0]}</p>
+                                <i> {Data.subdeelvragen[0]}</i>
                                 <p>
                                     De categorieën zijn bepaald in de <InlineLink newTab={false} link="/page/DesignSpecifications" text="Design specifications" />.
                                     Deze categorieën zijn gebruikt om de werkdruk per categorie te bepalen in de <InlineLink newTab={false} link="/page/DataAnalyse" text="Data analyse" />.

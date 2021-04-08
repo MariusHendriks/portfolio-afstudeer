@@ -76,9 +76,18 @@
     }
 }
 @media only screen and (max-width: 800px) {
+    // s-page__content__img__container
     .s-page {
         &__content {
             width: 85%;
+            &__img {
+                &__container {
+                    flex-wrap: wrap;
+                    &__img {
+                        width: 100%;
+                    }
+                }
+            }
         }
     }
 }

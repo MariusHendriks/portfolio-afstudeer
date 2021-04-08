@@ -68,17 +68,17 @@ const Page: React.FC = () => {
                                     De tickets worden opgeteld en in een hokje geplaatst van de resultaten van de design specifications. Het aantal tickets, met daarbij op welke regel de ticket staat in  <InlineLink text="dit" link="https://drive.google.com/file/d/16ELDxNUSLweraY3GA0YKTgZmqpYuE6d2/view?usp=sharing" /> document wordt bijgehouden.
                                 </p>
                                 <p>
-                                    Er zijn in totaal 50 tickets. Van deze tickets, zijn er 35 die duidelijk genoeg waren om de actie onder een of meerdere van de design specifications te plaatsen.
+                                    Er zijn in totaal 50 tickets. Van deze tickets, waren er 35 die duidelijk genoeg waren om de actie onder een of meerdere van de design specifications te plaatsen. De overige 15 tickets zijn besproken met opdrachtgever Lenn Tjin-A-Sie. Omdat Lenn een groot deel van deze tickets heeft opgelost, wist hij deze te categoriseren.  49 van de 50 tickets zijn nu gecategoriseerd.
                                 </p>
                                 <p>
                                     De meeste vraag kwam binnen in de volgende categorieën:
                                 </p>
                                 <ul>
                                     <li>
-                                        <b>Tabellen</b> - 12 tickets - Verzoeken om wijzigingen te maken in tabellen.
+                                        <b>Formulieren</b> - 15 tickets - Verzoeken om wijzigingen te maken in formulieren.
                                     </li>
                                     <li>
-                                        <b>Formulieren</b> - 15 tickets - Verzoeken om wijzigingen te maken in formulieren.
+                                        <b>Tabellen</b> - 12 tickets - Verzoeken om wijzigingen te maken in tabellen.
                                     </li>
                                 </ul>
                                 <p>In de overige categorieën kwamen minder dan vier tickets binnen en leveren daardoor in vergelijking met de categorieën tabellen en formulieren weinig werkdruk op.</p>
@@ -86,7 +86,7 @@ const Page: React.FC = () => {
                             <div ref={Conclusie}>
                                 <h2>Conclusie</h2>
                                 <p>
-                                    Uit dit onderzoek is dus gebleken dat gebruikers van Data Panel de meeste wijzigingen willen in <i>A1 - Table / kolommen</i> en <i>B - formulieren</i>. Dit betekend dat om de meeste werkdruk af te nemen, dit process verbetert moet worden. De resultaten van dit onderzoek worden gebruikt om te bepalen welke componenten tijdens de stageperiode opgelost zullen worden.
+                                    Uit dit onderzoek is dus gebleken dat gebruikers van Data Panel de meeste wijzigingen verzoeken in de categorieën <i>formulieren</i> en <i>Table / kolommen</i>. Dit betekend dat om de meeste werkdruk af te nemen, dit process verbetert moet worden. De resultaten van dit onderzoek worden gebruikt om te bepalen welke componenten tijdens de stageperiode opgelost zullen worden.
                                 </p>
                             </div>
                             <div ref={GeheleOnderzoek}>
