@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Tooltip from "../common/Tooltip";
 
 const index: React.FC = () => {
     return (
@@ -17,6 +18,13 @@ const index: React.FC = () => {
                     leeswijzer lezen.
                 </p>
                 <Link to="/leeswijzer">Naar leeswijzer!</Link>
+            </div>
+            <div className="o-intro__text">
+                <h1>Verklarende woordenlijst</h1>
+                <p>
+                    Er zijn veel technische woorden in dit document die op de volgende manier worden uitgelegd: <Tooltip woord="JSON" />. Als je de muis over het woord heen houdt komt er uitleg. Om alle woorden op een rijtje te zien, klik op de knop hieronder!
+                </p>
+                <Link to="/woordenlijst">Naar woordenlijst!</Link>
             </div>
         </div>
     );

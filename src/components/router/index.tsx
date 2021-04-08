@@ -10,7 +10,7 @@ import FadeIn from "react-fade-in";
 import data from "../../data/data.json";
 import Leeswijzer from "../readingGuide/Index";
 import Sidebar from "../sidebar/Index";
-
+import Woordenlijst from "../woordenlijst/Woordenlijst"
 
 import Template from "../pages/Template";
 import Projectplan from "../pages/Projectplan"
@@ -66,6 +66,12 @@ function Routing() {
                         <Route exact path="/leeswijzer">
                             <div className="">
                                 <Leeswijzer data={dataByLearningGoal} />
+                            </div>
+                        </Route>
+
+                        <Route exact path="/woordenlijst">
+                            <div className="">
+                                <Woordenlijst />
                             </div>
                         </Route>
 

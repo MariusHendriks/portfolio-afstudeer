@@ -39,8 +39,25 @@
 .hasNav {
   padding-top: $spacing-huge;
 }
-@media only screen and (max-width: 600px) {
-  .o-pagenav {
-    display: none;
-  }
+@media only screen and (max-width: 800px) {
+    .pagenav__nav__buttons{
+      display: flex;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+      text-align: center;
+      align-items: center;
+      button{
+        padding: 10px 0;
+      }
+    }
+    .o-pagenav__nav{
+      width: 30%;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .pagenav__nav__buttons{
+      button{
+        width: 100%;
+      }
+    }
 }

@@ -35,7 +35,7 @@ const Page: React.FC = () => {
                 <div className="o-pagenav__nav" onClick={() => window.history.back()}>
                     <FontAwesomeIcon icon={faArrowLeft} /> <i>Ga terug</i>
                 </div>
-                <div>
+                <div className="pagenav__nav__buttons">
                     <button onClick={() => executeScroll(Aanleiding, 120)}>
                         Aanleiding
                     </button>

@@ -101,3 +101,9 @@ a {
   font-style: italic;
   font-size: 1.2em;
 }
+
+@media only screen and (max-width: 800px) {
+  html {
+    background-image: none;
+  }
+}

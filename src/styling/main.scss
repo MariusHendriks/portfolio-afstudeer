@@ -225,9 +225,30 @@ ol {
         font-weight: bold;
     }
 }
+.woordWrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.woord{
+    width: 22%;
+    padding: 2% 0;
+}
+
+
+@media only screen and (max-width: 1200px) {
+    .woord{
+        width: 48%;
+    }
+}
 
 @media only screen and (max-width: 768px) {
     .table-basic {
         flex-wrap: wrap;
     }
+    .woord{
+        width: 100%;
+    }
 }
+

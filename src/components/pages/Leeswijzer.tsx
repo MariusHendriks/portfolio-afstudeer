@@ -38,7 +38,7 @@ const Page: React.FC = () => {
                 >
                     <FontAwesomeIcon icon={faArrowLeft} /> <i>Ga terug</i>
                 </div>
-                <div>
+                <div className="pagenav__nav__buttons">
                     <button onClick={() => executeScroll(Opdrachtgever, 120)}>
                         De Opdrachtgever
                     </button>
