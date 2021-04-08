@@ -6,6 +6,7 @@ import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 import InlineLink from "../common/InlineLink";
 import YouTube from 'react-youtube';
 import Tooltip from "../common/Tooltip";
+import Data from "../../data/data.json"
 
 const scrollToRef = (ref: any, offset: number) =>
     window.scrollTo({ top: ref.current.offsetTop + offset, behavior: "smooth" });
@@ -80,6 +81,8 @@ const Page: React.FC = () => {
                                 </p>
                             </div>
                             <div ref={Conclusie}>
+                                <p>Dit onderzoek heeft toevoeging geleverd voor deelvraag 1a:</p>
+                                <i>{Data.subdeelvragen[0]}</i>
                                 <h2>Conclusie</h2>
                                 <p>
                                     Het is duidelijk geworden in welke van de categorieën die gespecificeerd zijn tijdens het <InlineLink link="/page/DesignSpecifications" text="Design specifications" /> onderzoek de meeste werkdruk veroorzaken volgens Frederik Vennemann, <Tooltip woord="hoofdgebruiker" /> van Data panel.

@@ -4,6 +4,7 @@ import "react-medium-image-zoom/dist/styles.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 import InlineLink from "../common/InlineLink";
+import Data from "../../data/data.json"
 
 const scrollToRef = (ref: any, offset: number) =>
     window.scrollTo({ top: ref.current.offsetTop + offset, behavior: "smooth" });
@@ -65,17 +66,17 @@ const Page: React.FC = () => {
                                     Sinds november 2020 tot en met 17 februari 2021 zijn tickets bijgehouden in Excel. De tickets zijn in een van de categorieën geplaatst die uit de <InlineLink newTab={false} link="/page/DesignSpecifications" text="Design specifications" /> komen.
                                 </p>
                                 <p>
-                                    De tickets worden opgeteld en in een hokje geplaatst van de resultaten van de design specifications. Het aantal tickets, met daarbij op welke regel de ticket staat in  <InlineLink text="dit" link="https://drive.google.com/file/d/16ELDxNUSLweraY3GA0YKTgZmqpYuE6d2/view?usp=sharing" /> document wordt bijgehouden.
+                                    De tickets worden opgeteld en in een hokje geplaatst van de resultaten van de design specifications. De bekeken tickets staan in  <InlineLink text="dit" link="https://drive.google.com/file/d/16ELDxNUSLweraY3GA0YKTgZmqpYuE6d2/view?usp=sharing" /> document.
                                 </p>
                                 <p>
-                                    Er zijn in totaal 50 tickets. Van deze tickets, waren er 35 die duidelijk genoeg waren om de actie onder een of meerdere van de design specifications te plaatsen. De overige 15 tickets zijn besproken met opdrachtgever Lenn Tjin-A-Sie. Omdat Lenn een groot deel van deze tickets heeft opgelost, wist hij deze te categoriseren.  49 van de 50 tickets zijn nu gecategoriseerd.
+                                    Er zijn in totaal 50 tickets. Van deze tickets, waren er 35 die duidelijk genoeg waren om in een of meerdere van de design specifications te plaatsen. De overige 15 tickets zijn besproken met opdrachtgever Lenn Tjin-A-Sie. Omdat Lenn een groot deel van deze tickets heeft opgelost, wist hij deze te categoriseren. 49 van de 50 tickets zijn nu gecategoriseerd.
                                 </p>
                                 <p>
                                     De meeste vraag kwam binnen in de volgende categorieën:
                                 </p>
                                 <ul>
                                     <li>
-                                        <b>Formulieren</b> - 15 tickets - Verzoeken om wijzigingen te maken in formulieren.
+                                        <b>Formulieren</b> - 25 tickets - Verzoeken om wijzigingen te maken in formulieren.
                                     </li>
                                     <li>
                                         <b>Tabellen</b> - 12 tickets - Verzoeken om wijzigingen te maken in tabellen.
@@ -85,6 +86,8 @@ const Page: React.FC = () => {
                             </div>
                             <div ref={Conclusie}>
                                 <h2>Conclusie</h2>
+                                <p>Dit onderzoek heeft toevoeging geleverd voor deelvraag 1a:</p>
+                                <i> {Data.subdeelvragen[0]}</i>
                                 <p>
                                     Uit dit onderzoek is dus gebleken dat gebruikers van Data Panel de meeste wijzigingen verzoeken in de categorieën <i>formulieren</i> en <i>Table / kolommen</i>. Dit betekend dat om de meeste werkdruk af te nemen, dit process verbetert moet worden. De resultaten van dit onderzoek worden gebruikt om te bepalen welke componenten tijdens de stageperiode opgelost zullen worden.
                                 </p>

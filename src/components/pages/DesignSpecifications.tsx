@@ -68,7 +68,7 @@ const Page: React.FC = () => {
               </div>
               <div ref={Uitvoering}>
                 <h2>Uitvoering</h2>
-                <p>In dit onderzoek is er gekeken naar de configuraties en is er bestudeert welke <Tooltip woord="componenten" /> deze configuraties weergeven. In "figuur 1: voorbeeld configuratie" is een van deze configuraties te zien. Deze configuratie zorgt ervoor dat "figuur 2: restultaat" configuratie weergegeven wordt. Voor dit voorbeeld is de categorie "Tabel" aangemaakt.</p>
+                <p>In dit onderzoek is er gekeken naar de configuraties en is er bestudeert welke <Tooltip woord="componenten" /> deze configuraties weergeven. In <i>figuur 1: voorbeeld configuratie</i> is een van deze configuraties te zien. Deze configuratie zorgt ervoor dat <i>figuur 2: restultaat</i> configuratie weergegeven wordt. Voor dit voorbeeld is de categorie "Tabel" aangemaakt.</p>
                 <div className="s-page__content__img__container">
                   <div className="s-page__content__img__container__img">
                     <h3>Figuur 1: Voorbeeld configuratie</h3>

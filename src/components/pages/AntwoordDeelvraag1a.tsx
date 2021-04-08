@@ -109,7 +109,7 @@ const Page: React.FC = () => {
                                 <div>
                                     <h3>Formulier</h3>
                                     <p>
-                                        Het formulier component zal in diepte worden uitgewerkt. In dit component moeten gebruikers met de juist rechten en de medewerkers van Stofloos de mogelijkheid hebben om formulieren aan te maken en te bewerken. In <Tooltip subDeelvraag={2} /> zal worden onderzocht hoe andere programma's dit hebben aangepakt. Met deze resultaten zal een high-fedelity prototype gemaakt worden met de <Tooltip woord="design guidelines" /> van Stofloos.
+                                        Het formulier component zal tijdens de stageperiode worden uitgewerkt. In dit component moeten gebruikers met de juist rechten en de medewerkers van Stofloos de mogelijkheid hebben om formulieren aan te maken en te bewerken. In <Tooltip subDeelvraag={2} /> zal worden onderzocht hoe andere applicaties dit hebben aangepakt. Met deze resultaten zal een high-fedelity prototype gemaakt worden met de <Tooltip woord="design guidelines" /> van Stofloos.
                                     </p>
 
                                 </div>
@@ -124,6 +124,12 @@ const Page: React.FC = () => {
                                     </ul>
 
                                     <p>In de toekomst kunnen hier nieuwe onderdelen aan worden toegevoegd. Dit valt echter niet binnen de scope van het project</p>
+                                </div>
+                                <div>
+                                    <h3>Tabellen</h3>
+                                    <p>
+                                        Als laatst beveel ik aan dat het tabellen component ook een oplossing krijgt buiten deze stage om. Uit dit onderzoek is gebleken dat ook hier veel tickets over komen. De primaire focus tijdens deze stageperiode blijft echter het formulier component omdat hier meer veel meer tickets over waren in de data analyse en omdat dit prominenter naar voren kwam tijdens de expert interviews.
+                                    </p>
                                 </div>
                             </div>
                         </div>

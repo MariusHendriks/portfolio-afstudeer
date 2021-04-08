@@ -88,7 +88,7 @@ const Producten: React.FC<Props> = ({ sortedData }) => {
                             Deelvraag 1a: {Data.subdeelvragen[0]}
                         </p>
                         <p>
-                            Om deze deelvraag te beantwoorden zijn de volgende onderzoeken uitgevoerd:
+                            Om deze deelvraag te beantwoorden is er eerst vastgesteld wat deze categorieën zijn in de design specifications. Daarna is er door middel van een data analyse achterhaald in welke van deze categorieën de meeste werkdruk ontstaat. Dit is daarna gecontroleerd door de expert interviews.
                         </p>
                     </>
                 );

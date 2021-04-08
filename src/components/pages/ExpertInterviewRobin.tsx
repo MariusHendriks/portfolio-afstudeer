@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 import InlineLink from "../common/InlineLink";
 import YouTube from 'react-youtube';
+import Data from "../../data/data.json"
 
 const scrollToRef = (ref: any, offset: number) =>
     window.scrollTo({ top: ref.current.offsetTop + offset, behavior: "smooth" });
@@ -80,6 +81,8 @@ const Page: React.FC = () => {
                             </div>
                             <div ref={Conclusie}>
                                 <h2>Conclusie</h2>
+                                <p>Dit onderzoek heeft toevoeging geleverd voor deelvraag 1a:</p>
+                                <i>{Data.subdeelvragen[0]}</i>
                                 <p>
                                     Het is duidelijk geworden in welke van de categorieën die gespecificeerd zijn tijdens het <InlineLink newTab={false} text="Design specifications" link="/page/DesignSpecifications" /> onderzoek de meeste werkdruk veroorzaken volgens Robin Dekkers, ontwikkelaar van Data panel.
                                 </p>

@@ -230,7 +230,7 @@ const Page: React.FC<Props> = ({ openInfographic }) => {
                 <h2>3.0 Aanpak</h2>
                 <h3>3.1 Methodiek</h3>
                 <p>
-                  Bij de uitvoering van deze opdracht wordt de watervalmethode gebruikt. De watervalmethode is gekozen omdat er na elke fase een zekerheid is dat producten zijn afgerond. Scrum wordt gebruikt door Stofloos, en ik zal hier ook aan deelnemen. Echter zullen mijn taken niet op het scrumbord komen omdat mijn project los staat van de werkzaamheden die bij Stofloos uitgevoerd worden. Tijdens het programmeren wordt gitflow gebruikt. Dit betekent dat voor elke toevoeging aan het project een aparte tak wordt gemaakt, zoals te zien op figuur 2. Op deze manier zullen gebruikers altijd een werkende website hebben, en is er een duidelijke structuur in de componenten die geschreven zijn. </p>
+                  Bij de uitvoering van deze opdracht wordt de watervalmethode gebruikt. De watervalmethode is gekozen omdat er na elke fase een zekerheid is dat producten zijn afgerond. Scrum wordt gebruikt door Stofloos, en ik zal hier ook aan deelnemen. Echter zullen mijn taken niet op het scrumbord komen omdat mijn project los staat van de werkzaamheden die bij Stofloos uitgevoerd worden. Tijdens het programmeren wordt gitflow gebruikt. Dit betekent dat voor elke toevoeging aan het project een aparte tak wordt gemaakt, zoals te zien op <i>figuur 2: Git flow</i>. Op deze manier zullen gebruikers altijd een werkende website hebben, en is er een duidelijke structuur in de componenten die geschreven zijn. </p>
                 <div className="s-page__content__img__container">
                   <div className="s-page__content__img__container__img">
                     <h3>Figuur 2: Git flow</h3>
