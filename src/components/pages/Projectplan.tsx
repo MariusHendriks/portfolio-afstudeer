@@ -365,7 +365,7 @@ const Page: React.FC<Props> = ({ openInfographic }) => {
                       <li>Onderzoek: Thinking aloud</li>
                       <li>Onderzoek: Usability test (1/2)</li>
                       <li>Pitch: Ontwerp</li>
-                      <li>Voorlopige deadline onderzoeksfase: 27 maart</li>
+                      <li>Voorlopige deadline onderzoeksfase: 25 april</li>
                     </ul>
                   </div>
                   <div>

@@ -16,12 +16,14 @@ export function SortDataByWeek(data: any) {
 }
 
 export function SortDataByCourse(data: any) {
-  let courses: iCourseReadingGuide[] = jp.query(data, "$..courses[*]");
-  const documents: iDocument[] = GetAllDocuments(data);
+  let courses: any[] = jp.query(data, "$..courses[*]");
+  const documents: any[] = GetAllDocuments(data);
   courses.forEach((course) => {
-    course.learningGoals.forEach((learningGoal) => {
+    course.researchQuestions.forEach((learningGoal: any) => {
       let containedDocuments = documents.filter((document) =>
-        document.learningGoals.find((item: any) => item.id === learningGoal.id)
+        document.researchQuestions.find(
+          (item: any) => item.id === learningGoal.id
+        )
       );
       if (containedDocuments && containedDocuments.length > 0) {
         if (!learningGoal.documents) {
@@ -42,7 +44,3 @@ function GetMaxWeek(data: any) {
 function GetAllDocuments(data: any) {
   return jp.query(data, "$..documents[*]");
 }
-
-// function GetAllLearningGoals(data: any) {
-//   return jp.query(data, "$..courses..learningGoals[*]");
-// }

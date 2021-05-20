@@ -1,6 +1,37 @@
 .o-table__container {
   width: 30%;
 }
+
+.leerdoelTable {
+  width: 100%;
+  display: flex;
+  padding: 10px 0;
+  &:not(:last-child) {
+    border-bottom: 1px solid #dddddd;
+  }
+}
+
+.w-100 {
+  width: 100%;
+}
+.mt-10 {
+  margin-top: 10px;
+}
+.w-50 {
+  width: 50%;
+}
+
+.w-30 {
+  width: 30%;
+  padding-right: 10px;
+}
+.w-70 {
+  width: 70%;
+}
+
+.o-table__containera {
+  width: 30%;
+}
 .o-table {
   box-shadow: $shadow-regular;
   display: flex;
@@ -8,7 +39,8 @@
   text-align: left;
   background-color: $color-white;
   border-radius: $border-table-body;
-  padding: 0 $spacing-large;
+  padding: 0 $spacing-large $spacing-medium $spacing-large;
+  margin: $spacing-medium 0;
   h2 {
     color: $color-light-blue;
     line-height: 200%;

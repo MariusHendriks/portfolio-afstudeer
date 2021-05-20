@@ -10,6 +10,7 @@ interface iDocument {
   link2?: string;
   linkText2?: string;
   page?: any;
+  leerdoelen?: any;
 }
 interface iWeek {
   weekNummer: number;

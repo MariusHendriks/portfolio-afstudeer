@@ -1,155 +1,309 @@
 {
-    "deelvragen": [
-        "Wat is er nodig om de update van Data panel te realiseren om klanten de mogelijkheid te geven zelfstandig hun bedrijfsprocessen en dashboards te kunnen laten beheren?",
-        "Hoe kunnen de bevindingen omgezet worden in een high-fidelity prototype?",
-        "Hoe kan het high-fidelity prototype omgezet worden tot een gerealiseerd product?"
-    ],
-    "subdeelvragen": [
-        "Welke categorieën zijn er binnen Data panel waar JSON aangepast kan worden en in welke categorie ontstaat de grootste werkdruk?",
-        "Wat voor componenten gebruiken concurrenten/soortgelijke platformen, en hoe kunnen de positieve aspecten hiervan gebruikt worden voor Data panel?",
-        "Hoe gaat bedrijfsprocessen beheren nu?"
-    ],
-    "documents": [
+  "deelvragen": [
+    "Wat is er nodig om de update van Data panel te realiseren om klanten de mogelijkheid te geven zelfstandig hun bedrijfsprocessen en dashboards te kunnen laten beheren?",
+    "Hoe kunnen de bevindingen omgezet worden in een high-fidelity prototype?",
+    "Hoe kan het high-fidelity prototype omgezet worden tot een gerealiseerd product?"
+  ],
+  "subdeelvragen": [
+    "Welke categorieën zijn er binnen Data panel waar JSON aangepast kan worden en in welke categorie ontstaat de grootste werkdruk?",
+    "Wat voor componenten gebruiken concurrenten/soortgelijke platformen, en hoe kunnen de positieve aspecten hiervan gebruikt worden voor Data panel?",
+    "Hoe gaat bedrijfsprocessen beheren nu?"
+  ],
+  "documents": [
+    {
+      "name": "Projectplan",
+      "page": "Projectplan",
+      "id": "project-plan",
+      "week": 1,
+      "researchQuestions": [{}],
+      "leerdoelen": [
         {
-            "name": "Projectplan",
-            "page": "Projectplan",
-            "id": "project-plan",
-            "week": 1,
-            "learningGoals": [
-                {}
-            ]
+          "id": 0,
+          "why": "In het projectplan wordt uitgelegd wat er gedaan wordt voor de IT lifecycle fases."
         },
         {
-            "name": "Design specifications",
-            "page": "DesignSpecifications",
-            "id": "design-specifications",
-            "week": 2,
-            "learningGoals": [
-                {
-                    "id": 1,
-                    "why": "in te vullen"
-                }
-            ]
+          "id": 1,
+          "why": "In het projectplan staat de originele scope van het project. Deze is niet aangepast Daarnaast staat de probleemanalyse hier in en ook wie de stakeholders zijn (Stofloos zelf en haar klanten)."
         },
         {
-            "name": "Data analyse",
-            "page": "DataAnalyse",
-            "id": "data-analyse",
-            "week": 2,
-            "learningGoals": [
-                {
-                    "id": 1,
-                    "why": "in te vullen"
-                }
-            ]
+          "id": 2,
+          "why": "Het projectplan was de leidraad voor het project met daarin de aanpak, scope en planning"
         },
         {
-            "name": "Expert interview Robin",
-            "page": "ExpertInterviewRobin",
-            "id": "expert-intervew-robin",
-            "week": 2,
-            "learningGoals": [
-                {
-                    "id": 1,
-                    "why": "in te vullen"
-                }
-            ]
+          "id": 5,
+          "why": "Het projectplan is aangehouden tijdens het gehele project en de afgesproken methode's daarin."
         },
         {
-            "name": "Expert interview Frederik",
-            "page": "ExpertInterviewFrederik",
-            "id": "expert-intervew-frederik",
-            "week": 2,
-            "learningGoals": [
-                {
-                    "id": 1,
-                    "why": "in te vullen"
-                }
-            ]
-        },
-        {
-            "name": "Antwoord deelvraag 1a",
-            "page": "AntwoordDeelvraag1a",
-            "id": "antwoord-deelvraag-1-a",
-            "week": 2,
-            "learningGoals": [
-                {
-                    "id": 1,
-                    "why": "in te vullen"
-                }
-            ]
-        },
-        {
-            "name": "Comparison chart: Formulieren",
-            "page": "ComparisonChartForms",
-            "id": "comparison-chart-forms",
-            "week": 3,
-            "learningGoals": [
-                {
-                    "id": 2,
-                    "why": "in te vullen"
-                }
-            ]
-        },
-        {
-            "name": "Design pattern search: Formulieren",
-            "page": "DesignPatternSearchForms",
-            "id": "design-pattern-search-forms",
-            "week": 3,
-            "learningGoals": [
-                {
-                    "id": 2,
-                    "why": "in te vullen"
-                }
-            ]
-        },
-        {
-            "name": "Leeswijzer",
-            "id": "reading-guide",
-            "page": "LeeswijzerRedirect",
-            "learningGoals": [
-                {
-                    "id": 0,
-                    "why": ""
-                }
-            ]
+          "id": 6,
+          "why": "De deelvragen en uitgevoerde in het projectdocument zijn gebaseerd op de probleem."
         }
-    ],
-    "courses": [
+      ]
+    },
+    {
+      "name": "Design specifications",
+      "page": "DesignSpecifications",
+      "id": "design-specifications",
+      "week": 2,
+      "researchQuestions": [],
+      "leerdoelen": []
+    },
+    {
+      "name": "Ontwerp document",
+      "page": "OntwerpDocument",
+      "id": "ontwerp-document",
+      "week": 4,
+      "researchQuestions": [],
+      "leerdoelen": [
         {
-            "name": "Wat is er nodig om de update van Data panel te realiseren om klanten de mogelijkheid te geven zelfstandig hun bedrijfsprocessen en dashboards te kunnen laten beheren?",
-            "learningGoals": [
-                {
-                    "name": "Welke categorieën zijn er binnen Data panel waar JSON aangepast kan worden, en in welke categorie ontstaat de grootste werkdruk?",
-                    "id": 1
-                },
-                {
-                    "name": "Wat voor componenten gebruiken concurrenten/soortgelijke platformen, en hoe kunnen de positieve aspecten hiervan gebruikt worden voor Data panel?",
-                    "id": 2
-                },
-                {
-                    "name": "Hoe gaat bedrijfsprocessen beheren nu?",
-                    "id": 3
-                }
-            ]
-        },
-        {
-            "name": "Hoe kunnen de bevindingen omgezet worden in een high-fidelity prototype?",
-            "learningGoals": [
-                {
-                    "name": "",
-                    "id": 4
-                }
-            ]
-        },
-        {
-            "name": "Hoe gaat bedrijfsprocessen beheren nu?",
-            "learningGoals": [
-                {
-                    "name": "",
-                    "id": 5
-                }
-            ]
+          "id": 3,
+          "why": "In het ontwerpdocument wordt beschreven waarom het ontwerp eruitziet zoals het eruitziet."
         }
-    ]
+      ]
+    },
+    {
+      "name": "Evaluatie document",
+      "page": "Evaluatiedocument",
+      "id": "evaluatie-document",
+      "week": 4,
+      "researchQuestions": [],
+      "leerdoelen": [
+        {
+          "id": 7,
+          "why": "In het evaluatie document wordt beschreven wat goed ging en wat beter had gekunt tijdens deze stage"
+        }
+      ]
+    },
+    {
+      "name": "Realisatie document",
+      "page": "RealisatieDocument",
+      "id": "realisatie-document",
+      "week": 5,
+      "researchQuestions": [],
+      "leerdoelen": [
+        {
+          "id": 4,
+          "why": "In het realisatiedocument worden de overeenkomsten tussen het ontwerp en de realisatie weergegeven. Daarnaast staat er een demo om te bewijzen dat het product werkt."
+        },
+        {
+          "id": 5,
+          "why": "In het realisatiedocument staan de 'commits' die gebruikt zijn om het project geördent te houden en de mogelijkheid te behouden terug te vallen naar vorige versies (versiebeheer)"
+        },
+        {
+          "id": 6,
+          "why": "In het realisatiedocument is het een aantal keer voorgekomen dat pagina's deels opnieuw ingericht moesten worden omdat de code-kwaliteit beter kon"
+        },
+        {
+          "id": 7,
+          "why": "In het realisatiedocument is het een aantal keer voorgekomen dat pagina's deels opnieuw ingericht moesten worden omdat de code-kwaliteit beter kon. Daarnaast was het het project waarin ik moest werken ontzettend ingewikkeld"
+        },
+        {
+          "id": 8,
+          "why": "In het realisatiedocument wordt aangegeven dat er is samengewerkt met de andere ontwikkelaars van Stofloos. Soms ging het om een simpele 'hoe werkt dit' vraag en andere keren zijn er meerdere uren besteedt om een bug op te lossen."
+        }
+      ]
+    },
+    {
+      "name": "Gebruikerstesten",
+      "page": "GebruikersTesten",
+      "id": "gebruikers-Testen",
+      "week": 4,
+      "researchQuestions": [],
+      "leerdoelen": [
+        {
+          "id": 3,
+          "why": "De bruikbaarheid voor de klanten en de medewerkers van Stofloos wordt getoetst en beschreven in de gebruikerstesten."
+        }
+      ]
+    },
+    {
+      "name": "Adviesrapport",
+      "page": "AdviesRapport",
+      "id": "advies-rapport",
+      "week": 7,
+      "researchQuestions": [],
+      "leerdoelen": [
+        {
+          "id": 2,
+          "why": "In het adviesrapport staan adviesen over potentiële toevoegingen aan de form-builder en waar ik zelf data-studio naartoe zou lijden."
+        }
+      ]
+    },
+    {
+      "name": "Data analyse",
+      "page": "DataAnalyse",
+      "id": "data-analyse",
+      "week": 2,
+      "researchQuestions": [],
+      "leerdoelen": []
+    },
+    {
+      "name": "Expert interview Robin",
+      "page": "ExpertInterviewRobin",
+      "id": "expert-intervew-robin",
+      "week": 2,
+      "researchQuestions": [
+        {
+          "id": 1,
+          "why": "in te vullen"
+        }
+      ],
+      "leerdoelen": []
+    },
+    {
+      "name": "Expert interview Frederik",
+      "page": "ExpertInterviewFrederik",
+      "id": "expert-intervew-frederik",
+      "week": 2,
+      "researchQuestions": [
+        {
+          "id": 1,
+          "why": "in te vullen"
+        }
+      ],
+      "leerdoelen": []
+    },
+    {
+      "name": "Antwoord deelvraag 1a",
+      "page": "AntwoordDeelvraag1a",
+      "id": "antwoord-deelvraag-1-a",
+      "week": 2,
+      "researchQuestions": [
+        {
+          "id": 1,
+          "why": "in te vullen"
+        }
+      ],
+      "leerdoelen": [
+        {
+          "id": 2,
+          "why": "In de conclusie van deelvraag 1a "
+        },
+        {
+          "id": 6,
+          "why": "De onderzoeken van deelvraag 1a valideren elkaar. (triangulatie)"
+        }
+      ]
+    },
+    {
+      "name": "Comparison chart: Formulieren",
+      "page": "ComparisonChartForms",
+      "id": "comparison-chart-forms",
+      "week": 3,
+      "researchQuestions": [
+        {
+          "id": 2,
+          "why": "in te vullen"
+        }
+      ],
+      "leerdoelen": []
+    },
+    {
+      "name": "Design pattern search: Formulieren",
+      "page": "DesignPatternSearchForms",
+      "id": "design-pattern-search-forms",
+      "week": 3,
+      "researchQuestions": [
+        {
+          "id": 2,
+          "why": "in te vullen"
+        }
+      ],
+      "leerdoelen": []
+    },
+    {
+      "name": "Leeswijzer",
+      "id": "reading-guide",
+      "page": "LeeswijzerRedirect",
+      "researchQuestions": [
+        {
+          "id": 0,
+          "why": ""
+        }
+      ],
+      "leerdoelen": [
+        {
+          "id": 0,
+          "why": "In deze leeswijzer wordt de diepgang en complexiteit van het project uigelegd."
+        },
+        {
+          "id": 6,
+          "why": "In de leeswijzer staat hoe het werk methodies is uitgevoerd. Ook staat er per onderzoek in het 'aanleiding' kopje een stukje waarom dat specifieke onderzoek is gekozen."
+        }
+      ]
+    },
+    {
+      "name": "Co-reflection",
+      "page": "CoReflection",
+      "id": "co-reflection",
+      "week": 3,
+      "researchQuestions": [
+        {
+          "id": 2,
+          "why": "in te vullen"
+        }
+      ],
+      "leerdoelen": []
+    },
+    {
+      "name": "Antwoord deelvraag 1b",
+      "page": "AntwoordDeelvraag1b",
+      "id": "antwoord-deelvraag-1-b",
+      "week": 3,
+      "researchQuestions": [
+        {
+          "id": 2,
+          "why": "in te vullen"
+        }
+      ],
+      "leerdoelen": []
+    }
+  ],
+  "courses": [
+    {
+      "name": "Wat is er nodig om de update van Data panel te realiseren om klanten de mogelijkheid te geven zelfstandig hun bedrijfsprocessen en dashboards te kunnen laten beheren?",
+      "researchQuestions": [
+        {
+          "name": "Welke categorieën zijn er binnen Data panel waar JSON aangepast kan worden, en in welke categorie ontstaat de grootste werkdruk?",
+          "id": 1
+        },
+        {
+          "name": "Wat voor componenten gebruiken concurrenten/soortgelijke platformen, en hoe kunnen de positieve aspecten hiervan gebruikt worden voor Data panel?",
+          "id": 2
+        },
+        {
+          "name": "Hoe gaat bedrijfsprocessen beheren nu?",
+          "id": 3
+        }
+      ]
+    },
+    {
+      "name": "Hoe kunnen de bevindingen omgezet worden in een high-fidelity prototype?",
+      "researchQuestions": [
+        {
+          "name": "",
+          "id": 4
+        }
+      ]
+    },
+    {
+      "name": "Hoe kan het high-fidelity prototype omgezet worden tot een gerealiseerd product?",
+      "researchQuestions": [
+        {
+          "name": "",
+          "id": 5
+        }
+      ]
+    }
+  ],
+  "leerdoelen": [
+    { "id": 0, "name": "Knowledge and Insight" },
+    { "id": 1, "name": "Analysis" },
+    { "id": 2, "name": "Advise" },
+    { "id": 3, "name": "Design" },
+    { "id": 4, "name": "Realisation" },
+    { "id": 5, "name": "Manage & Control" },
+    { "id": 6, "name": "Judgement" },
+    { "id": 7, "name": "Learning ability" },
+    { "id": 8, "name": "Communication" }
+  ]
 }

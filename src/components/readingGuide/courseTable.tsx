@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 interface Props {
-  data?: iCourseReadingGuide;
+  data?: any;
 }
 const CourseTable: React.FC<Props> = ({ data }) => {
   if (typeof data !== "undefined") {
@@ -11,25 +11,35 @@ const CourseTable: React.FC<Props> = ({ data }) => {
         <div className="o-table">
           <h2>{data.name}</h2>
           <div className="o-table__header">
-            {data.learningGoals[0].name !== "" ? <div className="o-table__header__item o-table__left">Sub-deelvraag</div> : <></>}
+            {data.researchQuestions[0].name !== "" ? (
+              <div className="o-table__header__item o-table__left">
+                Sub-deelvraag
+              </div>
+            ) : (
+              <></>
+            )}
             <div className="o-table__header__item">Uitvoering</div>
           </div>
-          {data.learningGoals.map((learningGoal) => {
+          {data.researchQuestions.map((learningGoal: any) => {
             return (
               <div key={learningGoal.id} className="o-table__row">
-                {learningGoal.name !== "" ? <div className="o-table__row__learning_goal o-table__left">
-                  {learningGoal.name}
-                </div> : <></>}
+                {learningGoal.name !== "" ? (
+                  <div className="o-table__row__learning_goal o-table__left">
+                    {learningGoal.name}
+                  </div>
+                ) : (
+                  <></>
+                )}
                 <div className="o-table__right">
                   {typeof learningGoal.documents !== "undefined" &&
-                    learningGoal.documents !== [] ? (
+                  learningGoal.documents !== [] ? (
                     learningGoal.documents.map((document: any) => {
                       return (
                         <div key={document.id}>
                           <Link to={`/page/${document.page}`}>
                             <div
                               data-tip={
-                                document.learningGoals.find(
+                                document.researchQuestions.find(
                                   (item: any) => item.id === learningGoal.id
                                 ).why
                               }
