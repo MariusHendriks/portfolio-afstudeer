@@ -3,6 +3,7 @@ import FadeIn from "react-fade-in";
 import Infographic from "../../img/infographicWide.png";
 import Ontwerp from "../../img/ontwerpV1.png";
 import Realisatie from "../../img/realisatieV1.png";
+import Commits from "../../img/commits.png";
 import Zoom from "react-medium-image-zoom";
 import "react-medium-image-zoom/dist/styles.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -19,9 +20,9 @@ const Page: React.FC = () => {
   }, []);
 
   const Aanleiding = useRef(null);
-  const Uitvoering = useRef(null);
   const GeheleOnderzoek = useRef(null);
   const Conclusie = useRef(null);
+  const AnderDing = useRef(null);
 
   const executeScroll = (reference: any, offset?: number) => {
     if (typeof offset === "undefined") {
@@ -45,13 +46,11 @@ const Page: React.FC = () => {
           <button onClick={() => executeScroll(Aanleiding, 120)}>
             Van JSON naar UI
           </button>
-          <button onClick={() => executeScroll(Uitvoering, 120)}>
-            Uitvoering
-          </button>
           <button onClick={() => executeScroll(GeheleOnderzoek, 120)}>
-            Gehele onderzoek
+            Realisatie
           </button>
-          <button onClick={() => executeScroll(Conclusie, 120)}>
+          <button onClick={() => executeScroll(Conclusie, 120)}>Process</button>
+          <button onClick={() => executeScroll(AnderDing, 120)}>
             Ontwerp VS Realisatie
           </button>
         </div>
@@ -103,19 +102,6 @@ const Page: React.FC = () => {
                   </div>
                 </div>
               </div>
-
-              <div ref={Uitvoering}>
-                <h2>Co-creation</h2>
-                <p>
-                  Als ik vast kwam zat, hielp Robin Dekkers mij. In plaats van
-                  simpelweg te vertellen wat de oplossing van het probleem was,
-                  gaf hij hints welke richting het op moest of legde hij in een
-                  stappenplan uit wat er moest gebeuren. Als er voor de
-                  oplossing die ik gaf een betere oplossing was legde hij me uit
-                  hoe dit werkte. Op deze manier heb ik veel nieuwe technieken
-                  en functies binnen javascript leren kennen en gebruiken.
-                </p>
-              </div>
               <div ref={GeheleOnderzoek}>
                 <h2>Realisatie</h2>
                 <p>
@@ -144,6 +130,38 @@ const Page: React.FC = () => {
                 </ul>
               </div>
               <div ref={Conclusie}>
+                <h2>Process</h2>
+                <div>
+                  <h3>Algemeen process</h3>
+                  <p>
+                    Over het algmeen verliep het process vrij vlekkeloos. Als er
+                    tegen problemen Als ik vast kwam zat, hielp Robin Dekkers
+                    mij. In plaats van simpelweg te vertellen wat de oplossing
+                    van het probleem was, gaf hij hints welke richting het op
+                    moest of legde hij in een stappenplan uit wat er moest
+                    gebeuren. Als er voor de oplossing die ik gaf een betere
+                    oplossing was legde hij me uit hoe dit werkte. Op deze
+                    manier heb ik veel nieuwe technieken en functies binnen
+                    javascript leren kennen en gebruiken.
+                  </p>
+                </div>
+                <div className="flex">
+                  <div className="w-50">
+                    <h3>Version control</h3>
+                    <p></p>
+                  </div>
+                  <div>
+                    <Zoom>
+                      <img
+                        className="s-page__content__img__full"
+                        alt="brainstorm"
+                        src={Commits}
+                      />
+                    </Zoom>
+                  </div>
+                </div>
+              </div>
+              <div ref={AnderDing}>
                 <h2>Ontwerp vs Realisatie</h2>
                 <p></p>
                 <p>
