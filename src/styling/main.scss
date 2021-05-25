@@ -28,227 +28,230 @@
 @import "./animations/leftTick.scss";
 
 .test {
-    color: Red;
+  color: Red;
 }
 .red {
-    color: red;
+  color: red;
 }
 .orange {
-    color: orange;
+  color: orange;
 }
 .green {
-    color: green;
+  color: green;
 }
 .bolder {
-    font-weight: bolder;
+  font-weight: bolder;
 }
 
 .table-basic {
-    display: flex;
-    .col-25{
-        width: 25%;
-    }
+  display: flex;
+  .col-25 {
+    width: 25%;
+  }
 }
-.underline{
-    text-decoration: underline;
+.underline {
+  text-decoration: underline;
 }
-ol { 
-    counter-reset: item;
-    margin-left: 60px; 
+ol {
+  counter-reset: item;
+  margin-left: 60px;
 }
-
-
 
 .tooltip {
-    color: #6eaef9;
-    font-weight: 500;
+  color: #6eaef9;
+  font-weight: 500;
 }
 
 .link {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .vertical-timeline-element-content {
-    box-shadow: $shadow-regular !important;
-    span{
-        text-decoration: underline;
-    }
+  box-shadow: $shadow-regular !important;
+  span {
+    text-decoration: underline;
+  }
 }
 .white {
-    color: white !important;
-    font-weight: bold;
+  color: white !important;
+  font-weight: bold;
 }
 .tables {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    table {
-        border: 1px solid #6eaef9;
-        margin-bottom: 2%;
-        max-width: 48%;
-        display: block;
-        td {
-            margin-left: -1px;
-            &:first-child {
-                width: 20%;
-            }
-            &:not(:first-child) {
-                width: 80%;
-            }
-        }
-        td,
-        th {
-            padding: 15px;
-        }
-        tr:nth-child(odd) {
-            background-color: #f2f2f2;
-        }
-        &:nth-child(odd) {
-            margin-right: 1%;
-        }
-        &:nth-child(even) {
-            margin-left: 1%;
-        }
-
-        .table-header {
-            background-color: #6eaef9;
-            color: white;
-            margin: 0;
-            padding: 15px;
-        }
-    }
-}
-.table {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  table {
     border: 1px solid #6eaef9;
     margin-bottom: 2%;
+    max-width: 48%;
     display: block;
-
-    table {
-        width: 100%;
-    }
-    tbody {
-        width: 100%;
+    td {
+      margin-left: -1px;
+      &:first-child {
+        width: 20%;
+      }
+      &:not(:first-child) {
+        width: 80%;
+      }
     }
     td,
     th {
-        padding: 15px;
+      padding: 15px;
     }
     tr:nth-child(odd) {
-        background-color: #f2f2f2;
+      background-color: #f2f2f2;
     }
     &:nth-child(odd) {
-        margin-right: 1%;
+      margin-right: 1%;
     }
     &:nth-child(even) {
-        margin-left: 1%;
+      margin-left: 1%;
     }
 
     .table-header {
-        background-color: #6eaef9;
-        color: white;
-        margin: 0;
-        padding: 15px;
+      background-color: #6eaef9;
+      color: white;
+      margin: 0;
+      padding: 15px;
     }
+  }
+}
+.table {
+  border: 1px solid #6eaef9;
+  margin-bottom: 2%;
+  display: block;
+
+  table {
+    width: 100%;
+  }
+  tbody {
+    width: 100%;
+  }
+  td,
+  th {
+    padding: 15px;
+  }
+  tr:nth-child(odd) {
+    background-color: #f2f2f2;
+  }
+  &:nth-child(odd) {
+    margin-right: 1%;
+  }
+  &:nth-child(even) {
+    margin-left: 1%;
+  }
+
+  .table-header {
+    background-color: #6eaef9;
+    color: white;
+    margin: 0;
+    padding: 15px;
+  }
 }
 .sidebar {
+  position: fixed;
+  box-shadow: $shadow-regular;
+  width: 25vw;
+  height: 100vh;
+  z-index: 100;
+  background-color: #fff;
+  img {
+    width: 100%;
+  }
+  .cross {
+    cursor: pointer;
     position: fixed;
-    box-shadow: $shadow-regular;
-    width: 25vw;
-    height: 100vh;
-    z-index: 100;
+    left: 26%;
+    z-index: 101;
+    top: 1%;
     background-color: #fff;
-    img {
-        width: 100%;
-    }
-    .cross {
-        cursor: pointer;
-        position: fixed;
-        left: 26%;
-        z-index: 101;
-        top: 1%;
-        background-color: #fff;
-        border-radius: 50%;
-        padding: 10px;
-        height: 15px;
-        width: 15px;
-        line-height: 10px;
-        text-align: center;
-        box-shadow: $shadow-regular;
-    }
+    border-radius: 50%;
+    padding: 10px;
+    height: 15px;
+    width: 15px;
+    line-height: 10px;
+    text-align: center;
+    box-shadow: $shadow-regular;
+  }
 }
 
 .__react_component_tooltip {
-    max-width: 250px;
+  max-width: 250px;
 }
 
 .loginPopup {
-    z-index: 100000;
-    height: 100vh;
-    width: 100vw;
-    background-color: orange;
-    position: fixed;
-    left: 0;
-    top: 0;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
+  z-index: 100000;
+  height: 100vh;
+  width: 100vw;
+  background-color: orange;
+  position: fixed;
+  left: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 
-    h1,
-    h2 {
-        margin-bottom: 30px;
-        color: black;
-    }
+  h1,
+  h2 {
+    margin-bottom: 30px;
+    color: black;
+  }
 
-    input[type="text"],
-    select {
-        width: 20%;
-        padding: 12px 20px;
-        margin-bottom: 30px 0;
-        display: inline-block;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-        box-sizing: border-box;
-    }
-    input[type="submit"] {
-        width: 10%;
-        background-color: white;
-        color: black;
-        padding: 14px 20px;
-        margin: 8px 0;
-        border: none;
-        border-radius: 4px;
-        cursor: pointer;
-    }
-    .wrongcode {
-        color: red;
-        font-weight: bold;
-    }
+  input[type="text"],
+  select {
+    width: 20%;
+    padding: 12px 20px;
+    margin-bottom: 30px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  input[type="submit"] {
+    width: 10%;
+    background-color: white;
+    color: black;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .wrongcode {
+    color: red;
+    font-weight: bold;
+  }
 }
-.woordWrapper{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.woord{
-    width: 22%;
-    padding: 2% 0;
+.woordWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
+.woord {
+  width: 22%;
+  padding: 2% 0;
+}
+
+.flex {
+  display: flex;
+}
+.w-50 {
+  width: 50%;
+}
 
 @media only screen and (max-width: 1200px) {
-    .woord{
-        width: 48%;
-    }
+  .woord {
+    width: 48%;
+  }
 }
 
 @media only screen and (max-width: 768px) {
-    .table-basic {
-        flex-wrap: wrap;
-    }
-    .woord{
-        width: 100%;
-    }
+  .table-basic {
+    flex-wrap: wrap;
+  }
+  .woord {
+    width: 100%;
+  }
 }
-

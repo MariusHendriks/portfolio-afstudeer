@@ -1,46 +1,54 @@
 [
-    {
-        "woord": "hoofdgebruiker",
-        "betekenis": "De hoofdgebruiker is Frederik Venneman. Frederik voert de beheerstaken uit voor klanten. Daarnaast maake Frederik de eerste versie van het platform voor klanten van Data panel."
-    },
-    {
-        "woord": "json",
-        "betekenis": "JSON is een afkorting voor JavaScript Object Notation. Stofloos gebruikt JSON om al hun configuraties op de website mee te doen. Er wordt door deze JSON bepaald welke data op welke pagina moet, en hoe die data er uit moet zien, maar ook welke velden formulieren hebben. Alles wat er te zien is op de pagina, is daar door een JSON configuratie."
-    },
-    {
-        "woord": "renderen",
-        "betekenis": "Renderen is het weergeven van stukken visuele code."
-    },
-    {
-        "woord": "rendered",
-        "betekenis": "Renderen is het weergeven van stukken visuele code."
-    },
-    {
-        "woord": "mvp",
-        "betekenis": "MVP is een afkorting voor Minimum Viable Product. Een MVP omvat de minimale functionaliteiten van een website of app om levensvatbaar te zijn."
-    },
-    {
-        "woord": "form-builder",
-        "betekenis": "Een form builder is een applicatie waarin formulieren en enquêtes in gemaakt kunnen worden."
-    },
-    {
-        "woord": "form-builders",
-        "betekenis": "Een form builder is een applicatie waarin formulieren en enquêtes in gemaakt kunnen worden."
-    },
-    {
-        "woord": "componenten",
-        "betekenis": "Een component is een onderdeel van een groter geheel."
-    },
-    {
-        "woord": "component",
-        "betekenis": "Een component is een onderdeel van een groter geheel."
-    },
-    {
-        "woord": "geïntegreerd",
-        "betekenis": "Integreren is het maken, groeien of opnemen in een groter geheel. In een applicatie kunnen stukken code van een andere partij worden toegevoegd. Hier is sprake van integratie van die code."
-    },
-    {
-        "woord": "design guidelines",
-        "betekenis": "Design guidelines zijn regels die bepalen hoe het ontwerp eruit moet komen zien. Kleuren, rondheid van hoeken, afstandgroottes en meer staan hierin beschreven"
-    }
+  {
+    "woord": "hoofdgebruiker",
+    "betekenis": "De hoofdgebruiker is Frederik Venneman. Frederik voert de beheerstaken uit voor klanten. Daarnaast maake Frederik de eerste versie van het platform voor klanten van Data panel."
+  },
+  {
+    "woord": "json",
+    "betekenis": "JSON is een afkorting voor JavaScript Object Notation. Stofloos gebruikt JSON om al hun configuraties op de website mee te doen. Er wordt door deze JSON bepaald welke data op welke pagina moet, en hoe die data er uit moet zien, maar ook welke velden formulieren hebben. Alles wat er te zien is op de pagina, is daar door een JSON configuratie."
+  },
+  {
+    "woord": "renderen",
+    "betekenis": "Renderen is het weergeven van stukken visuele code."
+  },
+  {
+    "woord": "rendered",
+    "betekenis": "Renderen is het weergeven van stukken visuele code."
+  },
+  {
+    "woord": "mvp",
+    "betekenis": "MVP is een afkorting voor Minimum Viable Product. Een MVP omvat de minimale functionaliteiten van een website of app om levensvatbaar te zijn."
+  },
+  {
+    "woord": "form-builder",
+    "betekenis": "Een form builder is een applicatie waarin formulieren en enquêtes in gemaakt kunnen worden."
+  },
+  {
+    "woord": "form-builders",
+    "betekenis": "Een form builder is een applicatie waarin formulieren en enquêtes in gemaakt kunnen worden."
+  },
+  {
+    "woord": "componenten",
+    "betekenis": "Een component is een onderdeel van een groter geheel."
+  },
+  {
+    "woord": "component",
+    "betekenis": "Een component is een onderdeel van een groter geheel."
+  },
+  {
+    "woord": "geïntegreerd",
+    "betekenis": "Integreren is het maken, groeien of opnemen in een groter geheel. In een applicatie kunnen stukken code van een andere partij worden toegevoegd. Hier is sprake van integratie van die code."
+  },
+  {
+    "woord": "design guidelines",
+    "betekenis": "Design guidelines zijn regels die bepalen hoe het ontwerp eruit moet komen zien. Kleuren, rondheid van hoeken, afstandgroottes en meer staan hierin beschreven"
+  },
+  {
+    "woord": "user interface",
+    "betekenis": "Een user interface (UI) is de omgeving waarin de gebruiker zijn/haar acties uitvoert op de website."
+  },
+  {
+    "woord": "ui",
+    "betekenis": "Een user interface (UI) is de omgeving waarin de gebruiker zijn/haar acties uitvoert op de website."
+  }
 ]

@@ -114,7 +114,11 @@ function Routing() {
       </Router>
     );
   } else {
-    return <div>Helemaal kapot</div>;
+    return (
+      <div>
+        Er is iets fout gegaan... Hopelijk is het niet mijn assesment....
+      </div>
+    );
   }
 }
 

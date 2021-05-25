@@ -1,12 +1,14 @@
 import React, { useEffect, useRef } from "react";
 import FadeIn from "react-fade-in";
-import TableDefault from "../../img/a-TableDefault.jpg";
+import Infographic from "../../img/infographicWide.png";
+import Ontwerp from "../../img/ontwerpV1.png";
+import Realisatie from "../../img/realisatieV1.png";
 import Zoom from "react-medium-image-zoom";
 import "react-medium-image-zoom/dist/styles.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 import Tooltip from "../common/Tooltip";
-import InlineLink from "../common/InlineLink";
+import YouTube from "react-youtube";
 
 const scrollToRef = (ref: any, offset: number) =>
   window.scrollTo({ top: ref.current.offsetTop + offset, behavior: "smooth" });
@@ -28,6 +30,11 @@ const Page: React.FC = () => {
     scrollToRef(reference, offset);
   };
 
+  const opts = {
+    height: "300",
+    width: "500",
+  };
+
   return (
     <>
       <div className="o-pagenav">
@@ -36,7 +43,7 @@ const Page: React.FC = () => {
         </div>
         <div className="pagenav__nav__buttons">
           <button onClick={() => executeScroll(Aanleiding, 120)}>
-            Aanleiding
+            Van JSON naar UI
           </button>
           <button onClick={() => executeScroll(Uitvoering, 120)}>
             Uitvoering
@@ -45,7 +52,7 @@ const Page: React.FC = () => {
             Gehele onderzoek
           </button>
           <button onClick={() => executeScroll(Conclusie, 120)}>
-            Conclusie
+            Ontwerp VS Realisatie
           </button>
         </div>
         <div className="o-pagenav__fill"></div>
@@ -56,59 +63,112 @@ const Page: React.FC = () => {
             <h1>Realisatie Document</h1>
             <div>
               <div ref={Aanleiding}>
-                <h2>Aanleiding</h2>
-                <p>
-                  [waarom? is <Tooltip woord="JSON" /> cool ]
-                </p>
-              </div>
-              <div ref={Uitvoering}>
-                <h2>Uitvoering</h2>
-                <p>[uitvoering]</p>
-                <ol>
-                  <li>[Lijst item]</li>
-                  <li>[Lijst item]</li>
-                  <li>[Lijst item]</li>
-                </ol>
-              </div>
-              <div ref={GeheleOnderzoek}>
-                <h2>Gehele Onderzoek</h2>
-                <p>
-                  Het gehele onderzoek kan worden bekeken op een extern google
-                  docs document. Klik daarvoor{" "}
-                  <InlineLink
-                    text="hier"
-                    link="https://docs.google.com/document/d/1Gx76nLg9RF7ighhMSi9AHxYvGc6bT6anEdKVC2TYcrY/edit?usp=sharing"
-                  />
-                  .
-                </p>
-              </div>
-              <div ref={Conclusie}>
-                <h2>Conclusie</h2>
-                <p>[conclusie]</p>
-                <ul>
-                  <li>[bullet points]</li>
-                  <li>[bullet points]</li>
-                  <li>[bullet points]</li>
-                </ul>
-
-                <div className="s-page__content__img__container">
-                  <div className="s-page__content__img__container__img">
-                    <h3>Foto</h3>
+                <h2>Van JSON naar UI</h2>
+                <div className="flex">
+                  <div className="w-50">
+                    <h3>Huidige situatie</h3>
+                    <p>
+                      Op dit moment (dus voordat deze opdracht wordt
+                      geïmplementeerd in het systeem) moet er JSON worden
+                      aangepast om formulieren te maken en bewerken zoals
+                      weergegeven op [Figuur 1].
+                    </p>
+                  </div>
+                  <div className="s-page__content__img__container w-50">
+                    <h3>Figuur 1: Hoe werkt data panel</h3>
                     <Zoom>
                       <img
                         className="s-page__content__img__full"
                         alt="brainstorm"
-                        src={TableDefault}
+                        src={Infographic}
+                      />
+                    </Zoom>
+                  </div>
+                </div>
+
+                <div className="flex">
+                  <div className="w-50">
+                    <h3>Nieuwe situatie</h3>
+                    <p>
+                      Als de opdracht wordt geïmplementeerd kunnen de gebruikers
+                      en medewerkers van Stofloos door middel van een{" "}
+                      <Tooltip woord="User Interface" /> (UI).
+                    </p>
+                  </div>
+                  <div className="s-page__content__img__container">
+                    <div className="">
+                      <h3>Figuur 2: Demo (PLACEHOLDER!)</h3>
+                      <YouTube videoId={"BVDC89d4Ks4"} opts={opts} />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div ref={Uitvoering}>
+                <h2>Co-creation</h2>
+                <p>
+                  Als ik vast kwam zat, hielp Robin Dekkers mij. In plaats van
+                  simpelweg te vertellen wat de oplossing van het probleem was,
+                  gaf hij hints welke richting het op moest of legde hij in een
+                  stappenplan uit wat er moest gebeuren. Als er voor de
+                  oplossing die ik gaf een betere oplossing was legde hij me uit
+                  hoe dit werkte. Op deze manier heb ik veel nieuwe technieken
+                  en functies binnen javascript leren kennen en gebruiken.
+                </p>
+              </div>
+              <div ref={GeheleOnderzoek}>
+                <h2>Realisatie</h2>
+                <p>
+                  De gerealiseerde applicatie heeft de volgende
+                  functionaliteiten:
+                </p>
+                <ul>
+                  <li>Formulieren aanmaken & bewerken.</li>
+                  <li>Secties aanmaken & bewerken.</li>
+                  <li>
+                    Kleuren gaan mee met thema applicatie. Hierdoor lijkt het
+                    direct op de huisstijl van de (nieuwe) klant.
+                  </li>
+                  <li>
+                    Elementen uit model met 1 druk op de knop toevoegen aan
+                    formulier.
+                  </li>
+                  <li>
+                    Titels en paragraven toevoegen om eventuele uitleg te geven
+                    over velden die ingevuld moeten worden.
+                  </li>
+                  <li>
+                    Eenvoudige manier om types van elementen te wijzigen door
+                    middel van een dropdown.
+                  </li>
+                </ul>
+              </div>
+              <div ref={Conclusie}>
+                <h2>Ontwerp vs Realisatie</h2>
+                <p></p>
+                <p>
+                  Om een beeld te geven hoe goed de applicatie op het ontwerp
+                  lijkt, worden ze hier naast elkaar gehouden.
+                </p>
+
+                <div className="s-page__content__img__container">
+                  <div className="s-page__content__img__container__img">
+                    <h3>Ontwerp</h3>
+                    <Zoom>
+                      <img
+                        className="s-page__content__img__full"
+                        alt="ontwerp"
+                        src={Ontwerp}
                       />
                     </Zoom>
                   </div>
                   <div className="s-page__content__img__container__img">
-                    <h3>How might we</h3>
+                    <h3>Realisatie</h3>
                     <Zoom>
                       <img
                         className="s-page__content__img__full"
-                        alt="How might we"
-                        src={TableDefault}
+                        alt="realisatie"
+                        src={Realisatie}
                       />
                     </Zoom>
                   </div>
