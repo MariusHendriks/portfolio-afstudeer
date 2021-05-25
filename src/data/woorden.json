@@ -50,5 +50,25 @@
   {
     "woord": "ui",
     "betekenis": "Een user interface (UI) is de omgeving waarin de gebruiker zijn/haar acties uitvoert op de website."
+  },
+  {
+    "woord": "git",
+    "betekenis": "Een website voor versiecontrol van applicaties."
+  },
+  {
+    "woord": "commit",
+    "betekenis": "Een kopie van een stuk code dat is verwijderd, toegevoegd of aangepast."
+  },
+  {
+    "woord": "commits",
+    "betekenis": "Een kopie van een stuk code dat is verwijderd, toegevoegd of aangepast."
+  },
+  {
+    "woord": "branch",
+    "betekenis": "Een kopie van het project waar enkel de veranderingen in de code worden meegenomen als de kopie met het origineel wordt samengevoegt."
+  },
+  {
+    "woord": "model",
+    "betekenis": "Een collectie van data-atributen (elementen) in de database."
   }
 ]

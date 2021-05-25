@@ -244,6 +244,12 @@ ol {
   }
 }
 
+.limited {
+  height: 224px;
+  overflow: hidden;
+  display: block;
+}
+
 @media only screen and (max-width: 1200px) {
   .woord {
     width: 48%;

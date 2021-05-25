@@ -70,10 +70,10 @@ const Page: React.FC = () => {
                       Op dit moment (dus voordat deze opdracht wordt
                       geïmplementeerd in het systeem) moet er JSON worden
                       aangepast om formulieren te maken en bewerken zoals
-                      weergegeven op [Figuur 1].
+                      weergegeven op [Figuur 1: Hoe werkt data panel].
                     </p>
                   </div>
-                  <div className="s-page__content__img__container w-50">
+                  <div className="w-50">
                     <h3>Figuur 1: Hoe werkt data panel</h3>
                     <Zoom>
                       <img
@@ -91,10 +91,13 @@ const Page: React.FC = () => {
                     <p>
                       Als de opdracht wordt geïmplementeerd kunnen de gebruikers
                       en medewerkers van Stofloos door middel van een{" "}
-                      <Tooltip woord="User Interface" /> (UI).
+                      <Tooltip woord="User Interface" /> (UI) formulieren maken,
+                      wijzigen en verwijderen. Dit zorgt ervoor dat de
+                      technische drempel om formulieren aan te passen binnen
+                      data panel lager is.
                     </p>
                   </div>
-                  <div className="s-page__content__img__container">
+                  <div className="">
                     <div className="">
                       <h3>Figuur 2: Demo (PLACEHOLDER!)</h3>
                       <YouTube videoId={"BVDC89d4Ks4"} opts={opts} />
@@ -112,12 +115,14 @@ const Page: React.FC = () => {
                   <li>Formulieren aanmaken & bewerken.</li>
                   <li>Secties aanmaken & bewerken.</li>
                   <li>
-                    Kleuren gaan mee met thema applicatie. Hierdoor lijkt het
-                    direct op de huisstijl van de (nieuwe) klant.
+                    Kleuren gaan mee met het thema van de applicatie. Hierdoor
+                    lijkt het direct op de huisstijl van de (nieuwe) klant. In
+                    het voorbeeld van [Figuur 5: Realisatie] zou de klant een
+                    gele huisstijl hebben.
                   </li>
                   <li>
-                    Elementen uit model met 1 druk op de knop toevoegen aan
-                    formulier.
+                    Elementen uit <Tooltip woord="model" /> met 1 druk op de
+                    knop toevoegen aan formulier.
                   </li>
                   <li>
                     Titels en paragraven toevoegen om eventuele uitleg te geven
@@ -134,13 +139,13 @@ const Page: React.FC = () => {
                 <div>
                   <h3>Algemeen process</h3>
                   <p>
-                    Over het algmeen verliep het process vrij vlekkeloos. Als er
-                    tegen problemen Als ik vast kwam zat, hielp Robin Dekkers
-                    mij. In plaats van simpelweg te vertellen wat de oplossing
-                    van het probleem was, gaf hij hints welke richting het op
-                    moest of legde hij in een stappenplan uit wat er moest
-                    gebeuren. Als er voor de oplossing die ik gaf een betere
-                    oplossing was legde hij me uit hoe dit werkte. Op deze
+                    Het process verliep vrij vlekkeloos. Als er problemen waren
+                    hielp Robin Dekkers ze mee op te lossen. In plaats van
+                    simpelweg te vertellen wat de oplossing van het probleem
+                    was, gaf Robin hints welke richting het op moest of legde
+                    hij in een stappenplan uit wat er moest gebeuren. Als er
+                    voor de oplossing die gegeven was een betere oplossing
+                    beschikbaar was, legde Robin uit hoe dit werkte. Op deze
                     manier heb ik veel nieuwe technieken en functies binnen
                     javascript leren kennen en gebruiken.
                   </p>
@@ -148,9 +153,20 @@ const Page: React.FC = () => {
                 <div className="flex">
                   <div className="w-50">
                     <h3>Version control</h3>
-                    <p></p>
+                    <p>
+                      Tijdens het realiseren van het project is{" "}
+                      <Tooltip woord="Git" /> toegepast. Er is gewerkt op een
+                      eigen <Tooltip woord="branch" /> zodat de live-versie van
+                      de applicatie niet beschadigd kon worden. In deze branch
+                      zijn tientallen <Tooltip woord="commits" /> gebruikt om
+                      bij te houden wat er in die stukken code toegevoegd is.
+                      Als een pagina of functionaliteit stuk is, is het hierdoor
+                      gemakkelijk te traceren in welke{" "}
+                      <Tooltip woord="commit" /> dit is gebeurt.
+                    </p>
                   </div>
-                  <div>
+                  <div className="limited">
+                    <h3>Figuur 3: Git commits</h3>
                     <Zoom>
                       <img
                         className="s-page__content__img__full"
@@ -171,7 +187,7 @@ const Page: React.FC = () => {
 
                 <div className="s-page__content__img__container">
                   <div className="s-page__content__img__container__img">
-                    <h3>Ontwerp</h3>
+                    <h3>Figuur 4: Ontwerp</h3>
                     <Zoom>
                       <img
                         className="s-page__content__img__full"
@@ -181,7 +197,7 @@ const Page: React.FC = () => {
                     </Zoom>
                   </div>
                   <div className="s-page__content__img__container__img">
-                    <h3>Realisatie</h3>
+                    <h3>Figuur 5: Realisatie</h3>
                     <Zoom>
                       <img
                         className="s-page__content__img__full"
