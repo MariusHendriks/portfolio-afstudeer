@@ -61,15 +61,15 @@
       ]
     },
     {
-      "name": "Evaluatie document",
-      "page": "Evaluatiedocument",
-      "id": "evaluatie-document",
-      "week": 4,
+      "name": "Reflectie document",
+      "page": "ReflectieDocument",
+      "id": "reflectie-document",
+      "week": 6,
       "researchQuestions": [],
       "leerdoelen": [
         {
           "id": 7,
-          "why": "In het evaluatie document wordt beschreven wat goed ging en wat beter had gekunt tijdens deze stage"
+          "why": "In het reflectie document wordt beschreven wat goed ging en wat beter had gekunt tijdens deze stage"
         }
       ]
     },
@@ -230,19 +230,6 @@
           "why": "In de leeswijzer staat hoe het werk methodies is uitgevoerd. Ook staat er per onderzoek in het 'aanleiding' kopje een stukje waarom dat specifieke onderzoek is gekozen."
         }
       ]
-    },
-    {
-      "name": "Co-reflection",
-      "page": "CoReflection",
-      "id": "co-reflection",
-      "week": 3,
-      "researchQuestions": [
-        {
-          "id": 2,
-          "why": "in te vullen"
-        }
-      ],
-      "leerdoelen": []
     },
     {
       "name": "Antwoord deelvraag 1b",

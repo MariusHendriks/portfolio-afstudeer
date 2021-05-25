@@ -4,6 +4,7 @@ import FadeIn from "react-fade-in";
 import "react-medium-image-zoom/dist/styles.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
+import Data from "../../data/data.json";
 
 const scrollToRef = (ref: any, offset: number) =>
   window.scrollTo({ top: ref.current.offsetTop + offset, behavior: "smooth" });
@@ -72,7 +73,20 @@ const Page: React.FC = () => {
               </div>
               <div ref={Conclusie}>
                 <h2>Conclusie</h2>
-                <p>De</p>
+                <p>
+                  De deelvraag die beantwoord wordt in deze conclusie is
+                  deelvraag 1b:
+                </p>
+                <i> {Data.subdeelvragen[1]}</i>
+                <p>
+                  Mike Hendriks is voor zijn afstudeerstage ook een form builder
+                  aan het maken. Zijn product wordt een plugin voor de
+                  ontwerpers van Stijlbreuk om formulieren mee te bouwen, geen
+                  werkelijke appliciatie. Mike en ik hebben elkaar een
+                  presentatie gegeven over welke onderzoeken we hebben
+                  uitgevoerd en waarom, welke resultaten hier uit zijn gekomen
+                  en{" "}
+                </p>
               </div>
             </div>
           </FadeIn>

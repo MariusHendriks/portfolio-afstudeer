@@ -24,6 +24,10 @@ import DesignPatternSearchForms from "../pages/DesignPatternSearchForms";
 import ComparisonChartForms from "../pages/ComparisonChart";
 import AntwoordDeelvraag1b from "../pages/AntwoordDeelvraag1b";
 import CoReflection from "../pages/CoReflection";
+import RealisatieDocument from "../pages/RealisatieDocument";
+import GebruikersTesten from "../pages/GebruikersTesten";
+import OntwerpDocument from "../pages/OntwerpDocument";
+import ReflectieDocument from "../pages/ReflectieDocument";
 
 function Routing() {
   const [open, setOpen] = useState(false);
@@ -44,6 +48,10 @@ function Routing() {
     DesignPatternSearchForms,
     ComparisonChartForms,
     AntwoordDeelvraag1b,
+    RealisatieDocument,
+    OntwerpDocument,
+    GebruikersTesten,
+    ReflectieDocument,
   };
 
   const toggleOpen = () => {
