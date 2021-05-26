@@ -47,7 +47,7 @@ const Page: React.FC = () => {
             Van JSON naar UI
           </button>
           <button onClick={() => executeScroll(GeheleOnderzoek, 120)}>
-            Realisatie
+            Functionaliteiten
           </button>
           <button onClick={() => executeScroll(Conclusie, 120)}>Process</button>
           <button onClick={() => executeScroll(AnderDing, 120)}>
@@ -65,11 +65,10 @@ const Page: React.FC = () => {
                 <h2>Van JSON naar UI</h2>
                 <div className="flex">
                   <div className="w-50">
-                    <h3>Huidige situatie</h3>
+                    <h3>Startpunt</h3>
                     <p>
-                      Op dit moment (dus voordat deze opdracht wordt
-                      geïmplementeerd in het systeem) moet er JSON worden
-                      aangepast om formulieren te maken en bewerken zoals
+                      Voordat de form-builder geïmplementeerd was, moest er JSON
+                      worden aangepast om formulieren te maken en bewerken zoals
                       weergegeven op [Figuur 1: Hoe werkt data panel].
                     </p>
                   </div>
@@ -106,7 +105,7 @@ const Page: React.FC = () => {
                 </div>
               </div>
               <div ref={GeheleOnderzoek}>
-                <h2>Realisatie</h2>
+                <h2>Functionaliteiten</h2>
                 <p>
                   De gerealiseerde applicatie heeft de volgende
                   functionaliteiten:
@@ -139,15 +138,19 @@ const Page: React.FC = () => {
                 <div>
                   <h3>Algemeen process</h3>
                   <p>
-                    Het process verliep vrij vlekkeloos. Als er problemen waren
-                    hielp Robin Dekkers ze mee op te lossen. In plaats van
-                    simpelweg te vertellen wat de oplossing van het probleem
-                    was, gaf Robin hints welke richting het op moest of legde
-                    hij in een stappenplan uit wat er moest gebeuren. Als er
-                    voor de oplossing die gegeven was een betere oplossing
-                    beschikbaar was, legde Robin uit hoe dit werkte. Op deze
-                    manier heb ik veel nieuwe technieken en functies binnen
-                    javascript leren kennen en gebruiken.
+                    Het process verliep vrij vlekkeloos. Het kwam wel eens voor
+                    dat de applicatie te ingewikkeld was of er kennis nodig was
+                    die enkel de ontwikkelaars van Data panel hebben. Als dit
+                    het geval was, werd Robin Dekkers om hulp gevraagd. In
+                    plaats van simpelweg te vertellen wat de oplossing van het
+                    probleem was, gaf Robin hints welke richting het op moest of
+                    legde hij in een stappenplan uit wat er moest gebeuren
+                    (eerst data ophalen, dan dit en dit met de data doen en
+                    daarna in het component zetten). Als er voor de oplossing
+                    die door mij gegeven was een betere oplossing beschikbaar
+                    was, legde Robin uit hoe dit werkte. Op deze manier heb ik
+                    veel nieuwe technieken en functies binnen javascript leren
+                    kennen en gebruiken.
                   </p>
                 </div>
                 <div className="flex">

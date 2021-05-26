@@ -16,6 +16,10 @@
     "betekenis": "Renderen is het weergeven van stukken visuele code."
   },
   {
+    "woord": "gerenderde",
+    "betekenis": "Renderen is het weergeven van stukken visuele code."
+  },
+  {
     "woord": "mvp",
     "betekenis": "MVP is een afkorting voor Minimum Viable Product. Een MVP omvat de minimale functionaliteiten van een website of app om levensvatbaar te zijn."
   },
@@ -70,5 +74,33 @@
   {
     "woord": "model",
     "betekenis": "Een collectie van data-atributen (elementen) in de database."
+  },
+  {
+    "woord": "database",
+    "betekenis": "Waar data wordt opgeslagen"
+  },
+  {
+    "woord": "header",
+    "betekenis": "Bovenste gedeelte van een applicatie. Vaak staat hier het menu of kan het menu vanuit hier geopend worden."
+  },
+  {
+    "woord": "sectie",
+    "betekenis": "In deze applicatie is een sectie een gedeelte van een formulier."
+  },
+  {
+    "woord": "secties",
+    "betekenis": "In deze applicatie is een sectie een gedeelte van een formulier."
+  },
+  {
+    "woord": "margins",
+    "betekenis": "Margin is de ruimte tussen een element en haar parent."
+  },
+  {
+    "woord": "paddings",
+    "betekenis": "Padding is de ruimte tussen de buitenste rand van het element en de content."
+  },
+  {
+    "woord": "border-radius",
+    "betekenis": "Scherpte van een hoek."
   }
 ]
