@@ -15,7 +15,20 @@
       "page": "Projectplan",
       "id": "project-plan",
       "week": 1,
-      "researchQuestions": [{}],
+      "researchQuestions": [
+        {
+          "id": 1,
+          "why": "In het projectplan zijn de hoofd- en deelvragen bepaald."
+        },
+        {
+          "id": 4,
+          "why": "In het projectplan zijn de hoofd- en deelvragen bepaald."
+        },
+        {
+          "id": 5,
+          "why": "In het projectplan zijn de hoofd- en deelvragen bepaald."
+        }
+      ],
       "leerdoelen": [
         {
           "id": 0,
@@ -44,7 +57,12 @@
       "page": "DesignSpecifications",
       "id": "design-specifications",
       "week": 2,
-      "researchQuestions": [],
+      "researchQuestions": [
+        {
+          "id": 1,
+          "why": "Door design specifications uit te voeren is achterhaald welke categorieën er zijn binnen data panel."
+        }
+      ],
       "leerdoelen": []
     },
     {
@@ -52,7 +70,12 @@
       "page": "OntwerpDocument",
       "id": "ontwerp-document",
       "week": 4,
-      "researchQuestions": [],
+      "researchQuestions": [
+        {
+          "id": 4,
+          "why": "In het ontwerpdocument wordt uitgelegd waarom het ontwerp eruitziet zoals het eruitziet, en dus hoe de bevindingen van de vorige deelvragen omgezet worden tot een high-fidelity prototype."
+        }
+      ],
       "leerdoelen": [
         {
           "id": 3,
@@ -78,7 +101,12 @@
       "page": "RealisatieDocument",
       "id": "realisatie-document",
       "week": 5,
-      "researchQuestions": [],
+      "researchQuestions": [
+        {
+          "id": 5,
+          "why": "In het realisatiedocument staat beschreven hoe het ontwerp is omgezet tot een product en waar er bij dit proces tegenaan is gelopen."
+        }
+      ],
       "leerdoelen": [
         {
           "id": 4,
@@ -107,7 +135,12 @@
       "page": "GebruikersTesten",
       "id": "gebruikers-Testen",
       "week": 4,
-      "researchQuestions": [],
+      "researchQuestions": [
+        {
+          "id": 4,
+          "why": "Er zijn gebruikerstesten uitgevoerd om te verzekeren dat het ontwerp overeenkomt met de wensen van de gebruiker."
+        }
+      ],
       "leerdoelen": [
         {
           "id": 3,
@@ -120,7 +153,12 @@
       "page": "AdviesRapport",
       "id": "advies-rapport",
       "week": 7,
-      "researchQuestions": [],
+      "researchQuestions": [
+        {
+          "id": 5,
+          "why": "In het adviesrapport staat wat ik zou adviseren dat Stofloos nu met de applicatie doet."
+        }
+      ],
       "leerdoelen": [
         {
           "id": 2,
@@ -133,7 +171,12 @@
       "page": "DataAnalyse",
       "id": "data-analyse",
       "week": 2,
-      "researchQuestions": [],
+      "researchQuestions": [
+        {
+          "id": 1,
+          "why": "In de data-analyse wordt achterhaald in welke categorie de meeste werkdruk ontstaat."
+        }
+      ],
       "leerdoelen": []
     },
     {
@@ -144,7 +187,7 @@
       "researchQuestions": [
         {
           "id": 1,
-          "why": "in te vullen"
+          "why": "In het expert interview met Robin wordt achterhaald of de resultaten van de data-analyse overeenkomen met wat de experts denken."
         }
       ],
       "leerdoelen": []
@@ -157,7 +200,7 @@
       "researchQuestions": [
         {
           "id": 1,
-          "why": "in te vullen"
+          "why": "In het expert interview met Robin wordt achterhaald of de resultaten van de data-analyse overeenkomen met wat de experts denken."
         }
       ],
       "leerdoelen": []
@@ -170,13 +213,13 @@
       "researchQuestions": [
         {
           "id": 1,
-          "why": "in te vullen"
+          "why": "Dit is werkelijk het antwoord"
         }
       ],
       "leerdoelen": [
         {
           "id": 2,
-          "why": "In de conclusie van deelvraag 1a "
+          "why": "In de conclusie van deelvraag 1a wordt een aanbeveling gegeven over hoe het project nu verder moet."
         },
         {
           "id": 6,
@@ -192,7 +235,7 @@
       "researchQuestions": [
         {
           "id": 2,
-          "why": "in te vullen"
+          "why": "Er is een vergelijking gemaakt met de mogelijkheden die er zijn om formulieren te maken."
         }
       ],
       "leerdoelen": []
@@ -205,7 +248,7 @@
       "researchQuestions": [
         {
           "id": 2,
-          "why": "in te vullen"
+          "why": "Er is naar vijf andere formulier bouwers gekeken om vergelijkingen te signaleren."
         }
       ],
       "leerdoelen": []
@@ -214,12 +257,7 @@
       "name": "Leeswijzer",
       "id": "reading-guide",
       "page": "LeeswijzerRedirect",
-      "researchQuestions": [
-        {
-          "id": 0,
-          "why": ""
-        }
-      ],
+      "researchQuestions": [],
       "leerdoelen": [
         {
           "id": 0,
@@ -239,7 +277,7 @@
       "researchQuestions": [
         {
           "id": 2,
-          "why": "in te vullen"
+          "why": "Dit is werkelijk het antwoord op de subdeelvraag."
         }
       ],
       "leerdoelen": []
