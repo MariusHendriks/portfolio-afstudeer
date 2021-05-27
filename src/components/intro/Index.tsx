@@ -8,7 +8,7 @@ const index: React.FC = () => {
       <h1>Afstudeerstage Stofloos </h1>
       <div className="o-intro__text">
         <p>
-          Welkom op het portfolio van Mark Hendriks. Graag vertel ik U meer over
+          Welkom op het portfolio van Mark Hendriks. Graag vertel ik je meer over
           mijn afstudeerstage bij Stofloos.
         </p>
         <p>

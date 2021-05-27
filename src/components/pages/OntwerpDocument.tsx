@@ -63,7 +63,11 @@ const Page: React.FC = () => {
                   Het resultaat wordt als eerste weergegeven omdat het handig is
                   het totaal al gezien te hebben om er delen van uit te kunnen
                   leggen. Het ontwerp is op Figma te bekijken.
-                  <a href="https://www.figma.com/file/1BwfTKnuGsdwQiMK0ra9Bf/form-builder">
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://www.figma.com/file/1BwfTKnuGsdwQiMK0ra9Bf/form-builder"
+                  >
                     <div className="plaatje figma">
                       <img className="image" alt="FigmaIcon" src={Figma} />
                       <p>Bekijk hier het Figma ontwerp</p>
@@ -205,7 +209,11 @@ const Page: React.FC = () => {
                     de hoeken (<Tooltip woord="border-radius" />) en welke
                     kleuren er voor randen gebruikt moeten worden.
                   </p>
-                  <a href="https://www.figma.com/file/V33Xkh7htl861Bt1Wo7T2m/Untitled?node-id=0%3A1">
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://www.figma.com/file/V33Xkh7htl861Bt1Wo7T2m/Untitled?node-id=0%3A1"
+                  >
                     <div className="plaatje figma">
                       <img className="image" alt="FigmaIcon" src={Figma} />
                       <p>Bekijk hier het Figma ontwerp</p>

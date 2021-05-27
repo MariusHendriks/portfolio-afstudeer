@@ -143,14 +143,18 @@ const Page: React.FC = () => {
                       <h3>Figuur 1: Usertest Wietske Hiddink van Rondom</h3>
                       <YouTube videoId={"L4Ae3EjyaTQ"} opts={opts} />
 
-                      <a href="https://www.youtube.com/playlist?list=PLMWlQzQKAU5kOFGXeYwscdSWayXCsgEgx">
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="https://www.youtube.com/playlist?list=PLMWlQzQKAU5kOFGXeYwscdSWayXCsgEgx"
+                      >
                         <div className="plaatje youtube">
                           <img
                             className="image"
                             alt="FigmaIcon"
                             src={YoutubeIcon}
                           />
-                          <p>Bekijk hier alle user tests</p>
+                          <p>Bekijk hier alle user tests in een playlist</p>
                         </div>
                       </a>
                     </div>
