@@ -1,4 +1,9 @@
 .o-intro {
+  h1,
+  h2,
+  h3 {
+    color: $color-light-blue;
+  }
   width: 100%;
   text-align: center;
   display: flex;

@@ -68,10 +68,16 @@ function Routing() {
           <FadeIn>
             <Sidebar openInfographic={toggleOpen} open={open} />
             <Route exact path="/">
-              <Homepage
-                readingGuideData={dataByLearningGoal}
-                sortedData={dataByWeek}
-              />
+              <FadeIn>
+                <a href="/">
+                  <div className="o-me"></div>
+                </a>
+
+                <Homepage
+                  readingGuideData={dataByLearningGoal}
+                  sortedData={dataByWeek}
+                />
+              </FadeIn>
             </Route>
 
             <Route exact path="/leeswijzer">
@@ -93,6 +99,7 @@ function Routing() {
                 return <Component openInfographic={toggleOpen} />;
               }}
             />
+
             <div className="container">
               <Route
                 path="/documents/:documentId"

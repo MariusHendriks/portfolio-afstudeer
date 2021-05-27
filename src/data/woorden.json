@@ -102,5 +102,13 @@
   {
     "woord": "border-radius",
     "betekenis": "Scherpte van een hoek."
+  },
+  {
+    "woord": "modal",
+    "betekenis": "Een modal is een pop-up waar acties in uitgevoerd kunnen worden."
+  },
+  {
+    "woord": "refactoren",
+    "betekenis": "Het verbeteren en herschrijven van code"
   }
 ]

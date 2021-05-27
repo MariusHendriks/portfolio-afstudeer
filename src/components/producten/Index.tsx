@@ -99,8 +99,8 @@ const Producten: React.FC<Props> = ({ sortedData }) => {
           <>
             <p>Deelvraag 2: {Data.deelvragen[1]}</p>
             <p>
-              Met de benodigde data uit de voorgaande leerdoelen kon het ontwerp
-              gemaakt worden.{" "}
+              Met de benodigde data en inpiratie uit de voorgaande leerdoelen
+              kon het ontwerp gemaakt worden.
             </p>
           </>
         );
