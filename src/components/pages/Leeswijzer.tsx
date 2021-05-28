@@ -70,9 +70,9 @@ const Page: React.FC = () => {
                 <p>
                   Stofloos is een internetbureau met als focus: "Complex made
                   simple". Dit doen ze met hun eigen software: Data panel. In
-                  Data panel kunnen de klanten van Stofloos hun bedrijfsprocesen
-                  beheren. Waar veel klanten vroeger met Excel werkte, werken ze
-                  nu met Data panel.
+                  Data panel kunnen de klanten van Stofloos hun
+                  bedrijfsprocessen beheren. Waar veel klanten vroeger met Excel
+                  werkte, werken ze nu met Data panel.
                 </p>
                 <p>
                   Stofloos is gevestigd in Eindhoven en telt 10 medewerkers
@@ -88,30 +88,25 @@ const Page: React.FC = () => {
               <div ref={Opdracht}>
                 <h2>De Opdracht</h2>
                 <p>
-                  Data panel bestaat volledig uit configuraties{" "}
-                  <Tooltip woord="JSON" />
-                  . Deze configuraties bepalen bijvoorbeeld welke componenten
+                  Data panel bestaat volledig uit <Tooltip woord="JSON" />{" "}
+                  configuraties. Deze configuraties bepalen welke componenten
                   waar komen, welke kolommen een tabel moet laten zien en welke
-                  data nodig is om een formulier in te vullen. Eigenlijk is
-                  alles wat er op data panel wordt weergegeven terug te traceren
-                  naar configuraties. Deze configuraties zijn handig als je
-                  kennis hebt van het systeem, van <Tooltip woord="JSON" /> en
-                  van data structuur. Echter is dit voor de meeste klanten van
-                  Stofloos niet te begrijpen, en dus moet Stofloos alle tickets
-                  zelf blijven afhandelen.
+                  data nodig is om een formulier in te vullen. Alles wat op Data
+                  Panel wordt weergegeven terug te traceren naar configuraties.
+                  Deze configuraties zijn handig als je kennis hebt van het
+                  systeem, van <Tooltip woord="JSON" /> en van data structuur.
+                  Echter begrijpen de meeste klanten van Stofloos dit allemaal
+                  niet. De klanten van Stofloos kunnen tickets aanmaken met
+                  verzoeken tot wijzigingen. Een ticket kan bijvoorbeeld zijn:
+                  "Verander de titel van X naar Y" of "Voeg kolom X toe aan
+                  tabel Y".
                 </p>
                 <p>
-                  Stofloos krijgt veel tickets binnen dankzij Data panel.
-                  Ondanks Data panel ervoor zorgt dat Stofloos snel
-                  bedrijfsprocessen op kan zetten, is het lang niet altijd in
-                  een keer goed. Er komen veel tickets binnen voor wijzigingen.
-                  Deze wijzigingen kunnen kleine dingen zijn, zoals een andere
-                  titel geven aan een pagina of een naam veranderen in een
-                  formulier. Stofloos zag hier nog geen probleem in toen ze
-                  weinig klanten hadden. Nu het aantal klanten toeneemd, nemen
-                  ook het aantal ontvangen tickets toe. Stofloos wil minder tijd
-                  spenderen aan tickets oplossen en meer tijd besteden aan de
-                  oplossingen van die tickets.
+                  Stofloos zag hier nog geen probleem in toen ze weinig klanten
+                  hadden. Nu het aantal klanten toeneemt, nemen ook het aantal
+                  ontvangen tickets toe. Stofloos wil minder tijd spenderen aan
+                  tickets oplossen en meer tijd besteden aan het voorkomen van
+                  tickets.
                 </p>
               </div>
               <div ref={Probleemstelling}>
@@ -123,10 +118,17 @@ const Page: React.FC = () => {
                     text="Project plan"
                     newTab={false}
                   />{" "}
-                  gemaakt. Hierin is het plan van het gehele project bepaald.
-                  Het uiteindelijke project is niet ver afgeweken van het
-                  originele plan. Er zijn enkele onderzoeken vervangen omdat het
-                  nog niet duidelijk was wat er precies moest worden opgelost.
+                  gemaakt. Hierin staat het originele plan van het project. Het
+                  uiteindelijke project is niet ver afgeweken van het originele
+                  plan. Er zijn enkele onderzoeken vervangen omdat het nog niet
+                  duidelijk was wat er precies moest worden opgelost toen het
+                  projectplan werd geinitaliseerd.
+                </p>
+                <p>
+                  Voor alle onderzoeken is het DOT-framework gebruikt. Er is
+                  naar dezelfde deelvragen gekeken vanuit andere invalshoeken om
+                  te bekijken of dit dezelfde resultaten leverde. Op deze manier
+                  zijn de antwoorde door meerdere invalshoeken geverifiëerd.{" "}
                 </p>
               </div>
               <div ref={Aanpak}>
