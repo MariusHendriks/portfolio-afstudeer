@@ -134,149 +134,175 @@ const Page: React.FC = () => {
               <div ref={Aanpak}>
                 <h2>Uitvoering</h2>
                 <p>
-                  Het project is erg open gestart met als doel: zorgen dat er zo
-                  min mogelijk tickets binnenkomen. Hiervoor zijn de volgende
-                  deelvragen opgesteld. Als eerst werd deelvraag 1 onderzocht.
+                  Het project is erg open gestart met als doel: zorgen dat het
+                  aantal tickets die binnenkomen reduceerd. Om hierachter te
+                  komen is de volgende hoofdvraag opgezet:
+                  <h3>
+                    Hoe kan ervoor gezorgd worden dat de gebruikers van Data
+                    panel binnen de duur van het project de mogelijkheid krijgen
+                    om zonder programmeerkennis datavisualisaties te kunnen
+                    beheren in data panel, zodat zij zelfstandig
+                    bedrijfsprocessen en dashboards kunnen beheren waardoor data
+                    panel een vollediger product/service is en de werkdruk om
+                    wijzigingen voor gebruikers door te voeren afneemt?
+                  </h3>
+                  Om deze vraag te beantwoorden zijn deelvragen opgezet. Als
+                  deze deelvragen beantwoord zijn, is de hoofdvraag ook
+                  beantwoord. Hieronder zijn de deelvragen te vinden:
                 </p>
-                <h3>{Data.deelvragen[0]}</h3>
-                <p>
-                  Om achter dit antwoord te komen, zijn de volgende
-                  sub-deelvragen onderzocht:
-                </p>
-                <b>1. {Data.subdeelvragen[0]}</b>
-                <p>
-                  Deze deelvraag is als eerst onderzocht omdat het antwoord op
-                  deze deelvraag van belang was voor de rest van het onderzoek.
-                  Om achter het antwoord te komen is er naar de mogelijke
-                  plekken waar veranderingen plaatsvonden gekeken. Deze zijn
-                  gecategoriseerd door{" "}
-                  <InlineLink
-                    link="/page/DesignSpecifications"
-                    text="Design Specifications"
-                    newTab={false}
-                  />{" "}
-                  uit te voeren. Hier kwam een lijst uit met categorieën waar de
-                  tickets onder geplaatst konden worden. De tickets zijn in een
-                  van die categorieën gezet door een
-                  <InlineLink
-                    link="/page/DataAnalyse"
-                    text="Data analyse"
-                    newTab={false}
-                  />{" "}
-                  uit te voeren. Als laatst zijn er twee expert interviews
-                  uitgevoerd met{" "}
-                  <InlineLink
-                    link="/page/ExpertInterviewRobin"
-                    text="Robin Dekkers"
-                    newTab={false}
-                  />{" "}
-                  (eigenaar en programmeur van Data Panel) en{" "}
-                  <InlineLink
-                    link="/page/ExpertInterviewFrederik"
-                    text="Frederik Venneman"
-                    newTab={false}
-                  />{" "}
-                  (Data consultant en verantwoordelijke voor wijzigingen in Data
-                  panel) om hun opinie te achterhalen over waar de drukte van de
-                  tickets vandaan komt om te valideren of dat overeen kwam met
-                  de resultaten van de{" "}
-                  <InlineLink
-                    link="/page/DataAnalyse"
-                    text="Data analyse"
-                    newTab={false}
-                  />
-                  .
-                </p>
-                <p>
-                  Na al deze onderzoeken uitgevoerd te hebben, kon er
-                  geconcludeerd worden dat de formulieren de meeste tickets
-                  veroorzaakte. Toen dit duidelijk was, kon er verder onderzocht
-                  worden door de volgende deelvraag te beantwoorden:
-                </p>
-                <b>2. {Data.subdeelvragen[1]}</b>
-                <p>
-                  Om hier achter te komen, is als eerst onderzocht wat de
-                  mogelijkheden zijn om formulieren te maken en aan te passen.
-                  Hiervoor is een{" "}
-                  <InlineLink
-                    link="/page/ComparisonChartForms"
-                    text="Comparison chart"
-                    newTab={false}
-                  />{" "}
-                  uitgevoerd. Dit gaf als resultaat dat een form-builder de
-                  meest gepaste oplossing was.
-                </p>
-                <p>
-                  Om te achterhalen hoe een goede form-builder werkt is een{" "}
-                  <InlineLink
-                    link="/page/DesignPatternSearchForms"
-                    text="Design pattern search"
-                    newTab={false}
-                  />{" "}
-                  uitgevoerd. Naast enorm veel inspiratie, had dit onderzoek een
-                  duidelijke lijst met elementen die terugkwamen in de bekeken
-                  form-builders. Hiermee was een soort checklist gemaakt voor
-                  het ontwerp.
-                </p>
-                <h3>{Data.deelvragen[1]}</h3>
-                <p>
-                  Zodra alle data die nodig was om het ontwerp te maken
-                  verzameld was, is het ontwerp gemaakt. Stofloos had geen
-                  design guidelines, maar wel wat oude ontwerpen ter
-                  beschikking. Deze ontwerpen zijn bekeken en samen met de
-                  inspiratie die is opgedaan uit de{" "}
-                  <InlineLink
-                    link="/page/DesignPatternSearchForms"
-                    text="Design pattern search"
-                    newTab={false}
-                  />{" "}
-                  is het{" "}
-                  <InlineLink
-                    link="/page/OntwerpDocument"
-                    text="Ontwerp"
-                    newTab={false}
-                  />{" "}
-                  gemaakt. Dit ontwerp is in twee iteraties getest door middel
-                  van{" "}
-                  <InlineLink
-                    link="/page/GebruikersTesten"
-                    text="gebruikers testen"
-                    newTab={false}
-                  />
-                  . In deze gebruikers testen is een combinatie van methodes
-                  gebruikt:{" "}
-                  <InlineLink
-                    link="https://cmdmethods.nl/cards/lab/thinking-aloud"
-                    text="Thinking Aloud"
-                    newTab={true}
-                  />
-                  ,
-                  <InlineLink
-                    link="https://cmdmethods.nl/cards/lab/usability-testing"
-                    text="Usability testing"
-                    newTab={true}
-                  />{" "}
-                  en{" "}
-                  <InlineLink
-                    link="https://cmdmethods.nl/cards/workshop/prototyping"
-                    text="Prototyping"
-                    newTab={true}
-                  />
-                  . Het ontwerp is door twee iteraties heengegaan en was klaar
-                  om gerealiseerd te worden.
-                </p>
-                <h3>{Data.deelvragen[2]}</h3>
-                <p>
-                  Toen het ontwerp klaar was is het{" "}
-                  <InlineLink
-                    link="/page/RealisatieDocument"
-                    text="Gerealiseerd"
-                    newTab={false}
-                  />
-                  . Hier heb ik heel de stage naar uitgekeken omdat ik Data
-                  panel een ontzettend interresant systeem vind en stond te
-                  popelen om te programmeren.
-                </p>
+                <div>
+                  <h4>1. {Data.deelvragen[0]}</h4>
+                  <div className="pl-5">
+                    <p>
+                      Om achter dit antwoord te komen, zijn de volgende
+                      sub-deelvragen onderzocht:
+                    </p>
+                    <i>1.1 {Data.subdeelvragen[0]}</i>
+                    <div className="pl-5">
+                      <p>
+                        Deze deelvraag is als eerst onderzocht omdat het
+                        antwoord op deze deelvraag van belang was voor de rest
+                        van het onderzoek. Om achter het antwoord te komen is er
+                        naar de mogelijke plekken waar veranderingen
+                        plaatsvonden gekeken. Deze zijn gecategoriseerd door{" "}
+                        <InlineLink
+                          link="/page/DesignSpecifications"
+                          text="Design Specifications"
+                          newTab={false}
+                        />{" "}
+                        uit te voeren. Hier kwam een lijst uit met categorieën
+                        waar de tickets onder geplaatst konden worden. De
+                        tickets zijn in een van die categorieën gezet door een
+                        <InlineLink
+                          link="/page/DataAnalyse"
+                          text="Data analyse"
+                          newTab={false}
+                        />{" "}
+                        uit te voeren. Als laatst zijn er twee expert interviews
+                        uitgevoerd met{" "}
+                        <InlineLink
+                          link="/page/ExpertInterviewRobin"
+                          text="Robin Dekkers"
+                          newTab={false}
+                        />{" "}
+                        (eigenaar en programmeur van Data Panel) en{" "}
+                        <InlineLink
+                          link="/page/ExpertInterviewFrederik"
+                          text="Frederik Venneman"
+                          newTab={false}
+                        />{" "}
+                        (Data consultant en verantwoordelijke voor wijzigingen
+                        in Data panel) om hun opinie te achterhalen over waar de
+                        drukte van de tickets vandaan komt om te valideren of
+                        dat overeen kwam met de resultaten van de{" "}
+                        <InlineLink
+                          link="/page/DataAnalyse"
+                          text="Data analyse"
+                          newTab={false}
+                        />
+                        .
+                      </p>
+                      <p>
+                        Na al deze onderzoeken uitgevoerd te hebben, kon er
+                        geconcludeerd worden dat de formulieren de meeste
+                        tickets veroorzaakte. Toen dit duidelijk was, kon er
+                        verder onderzocht worden door de volgende deelvraag te
+                        beantwoorden:
+                      </p>
+                    </div>
+                    <i>1.2 {Data.subdeelvragen[1]}</i>
+                    <div className="pl-5">
+                      <p>
+                        Om hier achter te komen, is als eerst onderzocht wat de
+                        mogelijkheden zijn om formulieren te maken en aan te
+                        passen. Hiervoor is een{" "}
+                        <InlineLink
+                          link="/page/ComparisonChartForms"
+                          text="Comparison chart"
+                          newTab={false}
+                        />{" "}
+                        uitgevoerd. Dit gaf als resultaat dat een form-builder
+                        de meest gepaste oplossing was.
+                      </p>
+                      <p>
+                        Om te achterhalen hoe een goede form-builder werkt is
+                        een{" "}
+                        <InlineLink
+                          link="/page/DesignPatternSearchForms"
+                          text="Design pattern search"
+                          newTab={false}
+                        />{" "}
+                        uitgevoerd. Naast enorm veel inspiratie, had dit
+                        onderzoek een duidelijke lijst met elementen die
+                        terugkwamen in de bekeken form-builders. Hiermee was een
+                        soort checklist gemaakt voor het ontwerp.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <h4>2. {Data.deelvragen[1]}</h4>
+                <div className="pl-5">
+                  <p>
+                    Zodra alle data die nodig was om het ontwerp te maken
+                    verzameld was, is het ontwerp gemaakt. Stofloos had geen
+                    design guidelines, maar wel wat oude ontwerpen ter
+                    beschikking. Deze ontwerpen zijn bekeken en samen met de
+                    inspiratie die is opgedaan uit de{" "}
+                    <InlineLink
+                      link="/page/DesignPatternSearchForms"
+                      text="Design pattern search"
+                      newTab={false}
+                    />{" "}
+                    is het{" "}
+                    <InlineLink
+                      link="/page/OntwerpDocument"
+                      text="Ontwerp"
+                      newTab={false}
+                    />{" "}
+                    gemaakt. Dit ontwerp is in twee iteraties getest door middel
+                    van{" "}
+                    <InlineLink
+                      link="/page/GebruikersTesten"
+                      text="gebruikers testen"
+                      newTab={false}
+                    />
+                    . In deze gebruikers testen is een combinatie van methodes
+                    gebruikt:{" "}
+                    <InlineLink
+                      link="https://cmdmethods.nl/cards/lab/thinking-aloud"
+                      text="Thinking Aloud"
+                      newTab={true}
+                    />
+                    ,
+                    <InlineLink
+                      link="https://cmdmethods.nl/cards/lab/usability-testing"
+                      text="Usability testing"
+                      newTab={true}
+                    />{" "}
+                    en{" "}
+                    <InlineLink
+                      link="https://cmdmethods.nl/cards/workshop/prototyping"
+                      text="Prototyping"
+                      newTab={true}
+                    />
+                    . Het ontwerp is door twee iteraties heengegaan en was klaar
+                    om gerealiseerd te worden.
+                  </p>
+                </div>
+                <h4>3. {Data.deelvragen[2]}</h4>
+                <div className="pl-5">
+                  <p>
+                    Toen het ontwerp klaar was is het{" "}
+                    <InlineLink
+                      link="/page/RealisatieDocument"
+                      text="Gerealiseerd"
+                      newTab={false}
+                    />
+                    . Hier heb ik heel de stage naar uitgekeken omdat ik Data
+                    panel een ontzettend interresant systeem vind en stond te
+                    popelen om te programmeren.
+                  </p>
+                </div>
               </div>
               <div ref={Resultaat}>
                 <h2>Resultaat</h2>

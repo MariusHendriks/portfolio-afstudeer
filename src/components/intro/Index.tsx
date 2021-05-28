@@ -11,7 +11,9 @@ const index: React.FC = () => {
           Welkom op het portfolio van Mark Hendriks. Graag vertel ik je meer
           over mijn afstudeerstage bij Stofloos.
         </p>
-        <p>Om dit project beter te begrijpen, bekijk dan eerst de leeswijzer</p>
+        <p>
+          Om dit project beter te begrijpen, bekijk dan eerst de leeswijzer.
+        </p>
         <p>
           In de leeswijzer wordt uitgelegd wie de opdrachtgever is, welke
           leerdoelen waar zijn aangetoond en hoe het project in zijn werking
