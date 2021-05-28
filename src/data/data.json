@@ -6,8 +6,7 @@
   ],
   "subdeelvragen": [
     "Welke categorieën zijn er binnen Data panel waar JSON aangepast kan worden en in welke categorie ontstaat de grootste werkdruk?",
-    "Wat voor componenten gebruiken concurrenten/soortgelijke platformen, en hoe kunnen de positieve aspecten hiervan gebruikt worden voor Data panel?",
-    "Hoe gaat bedrijfsprocessen beheren nu?"
+    "Wat voor componenten gebruiken concurrenten/soortgelijke platformen, en hoe kunnen de positieve aspecten hiervan gebruikt worden voor Data panel?"
   ],
   "documents": [
     {
@@ -167,7 +166,7 @@
       ]
     },
     {
-      "name": "Data analyse",
+      "name": "Data-analyse",
       "page": "DataAnalyse",
       "id": "data-analyse",
       "week": 2,
@@ -294,10 +293,6 @@
         {
           "name": "Wat voor componenten gebruiken concurrenten/soortgelijke platformen, en hoe kunnen de positieve aspecten hiervan gebruikt worden voor Data panel?",
           "id": 2
-        },
-        {
-          "name": "Hoe gaat bedrijfsprocessen beheren nu?",
-          "id": 3
         }
       ]
     },

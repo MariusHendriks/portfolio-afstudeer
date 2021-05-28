@@ -6,6 +6,8 @@ import Data from "../../data/data.json";
 import InlineLink from "../common/InlineLink";
 import YouTube from "react-youtube";
 import Tooltip from "../common/Tooltip";
+import Zoom from "react-medium-image-zoom";
+import HoeWerktDatapanel from "../../img/infographicWide.png";
 const opts = {
   height: "600",
   width: "100%",
@@ -81,38 +83,55 @@ const Page: React.FC = () => {
                 <p>
                   Stofloos heeft ontzettend gevarieerde klanten. Zo gebruiken
                   RondOm (Podotherapeuten), Havep (werkkleding) en CabMan
-                  (taxi-appertuur) allemaal Data panel om hun bedrijfsprocessen
+                  (taxi-apparatuur) allemaal Data panel om hun bedrijfsprocessen
                   te beheren.
                 </p>
               </div>
               <div ref={Opdracht}>
-                <h2>De Opdracht</h2>
-                <p>
-                  Data panel bestaat volledig uit <Tooltip woord="JSON" />{" "}
-                  configuraties. Deze configuraties bepalen welke componenten
-                  waar komen, welke kolommen een tabel moet laten zien en welke
-                  data nodig is om een formulier in te vullen. Alles wat op Data
-                  Panel wordt weergegeven terug te traceren naar configuraties.
-                  Deze configuraties zijn handig als je kennis hebt van het
-                  systeem, van <Tooltip woord="JSON" /> en van data structuur.
-                  Echter begrijpen de meeste klanten van Stofloos dit allemaal
-                  niet. De klanten van Stofloos kunnen tickets aanmaken met
-                  verzoeken tot wijzigingen. Een ticket kan bijvoorbeeld zijn:
-                  "Verander de titel van X naar Y" of "Voeg kolom X toe aan
-                  tabel Y".
-                </p>
-                <p>
-                  Stofloos zag hier nog geen probleem in toen ze weinig klanten
-                  hadden. Nu het aantal klanten toeneemt, nemen ook het aantal
-                  ontvangen tickets toe. Stofloos wil minder tijd spenderen aan
-                  tickets oplossen en meer tijd besteden aan het voorkomen van
-                  tickets.
-                </p>
+                <div className="flex">
+                  <div className="w-50">
+                    <h2 className="a45">De Opdracht</h2>
+
+                    <p>
+                      Data panel bestaat volledig uit <Tooltip woord="JSON" />-
+                      configuraties. Deze configuraties bepalen welke
+                      componenten waar komen, welke kolommen een tabel moet
+                      laten zien en welke data nodig is om een formulier in te
+                      vullen. In [Figuur 1: Hoe werkt data panel] wordt
+                      uitgelegd in drie stappen hoe het werkt. Alles wat op Data
+                      Panel wordt weergegeven is terug te traceren naar
+                      configuraties. Deze configuraties zijn handig als je
+                      kennis hebt van het systeem, van <Tooltip woord="JSON" />{" "}
+                      en van data structuur. Echter begrijpen de meeste klanten
+                      van Stofloos dit allemaal niet. De klanten van Stofloos
+                      kunnen tickets aanmaken met verzoeken tot wijzigingen. Een
+                      ticket kan bijvoorbeeld zijn: "Verander de titel van X
+                      naar Y" of "Voeg kolom X toe aan tabel Y".
+                    </p>
+                    <p>
+                      Stofloos zag hier nog geen probleem in toen ze weinig
+                      klanten hadden. Nu het aantal klanten toeneemt, nemen ook
+                      het aantal ontvangen tickets toe. Stofloos wil minder tijd
+                      spenderen aan tickets oplossen en meer tijd besteden aan
+                      het voorkomen van tickets.
+                    </p>
+                  </div>
+                  <div className="w-50">
+                    <h3>Figuur 1: Hoe werkt data panel</h3>
+                    <Zoom>
+                      <img
+                        className="s-page__content__img__full"
+                        alt="Uitleg deelvraag 1"
+                        src={HoeWerktDatapanel}
+                      />
+                    </Zoom>
+                  </div>
+                </div>
               </div>
               <div ref={Probleemstelling}>
                 <h2>Aanpak</h2>
                 <p>
-                  Als eerst is er uiteraard een{" "}
+                  Als eerst is er een{" "}
                   <InlineLink
                     link="/page/Projectplan"
                     text="Project plan"
@@ -122,21 +141,21 @@ const Page: React.FC = () => {
                   uiteindelijke project is niet ver afgeweken van het originele
                   plan. Er zijn enkele onderzoeken vervangen omdat het nog niet
                   duidelijk was wat er precies moest worden opgelost toen het
-                  projectplan werd geinitaliseerd.
+                  projectplan werd geïnitialiseerd.
                 </p>
                 <p>
                   Voor alle onderzoeken is het DOT-framework gebruikt. Er is
                   naar dezelfde deelvragen gekeken vanuit andere invalshoeken om
                   te bekijken of dit dezelfde resultaten leverde. Op deze manier
-                  zijn de antwoorde door meerdere invalshoeken geverifiëerd.{" "}
+                  zijn de antwoorde door meerdere invalshoeken geverifieerd.{" "}
                 </p>
               </div>
               <div ref={Aanpak}>
                 <h2>Uitvoering</h2>
                 <p>
-                  Het project is erg open gestart met als doel: zorgen dat het
-                  aantal tickets die binnenkomen reduceerd. Om hierachter te
-                  komen is de volgende hoofdvraag opgezet:
+                  Het project is erg open gestart met als doel: Databeheer,
+                  data-analyse en data ontsluiting zo eenvoudig mogelijk maken.
+                  Om hierachter te komen is de volgende hoofdvraag opgezet:
                   <h3>
                     Hoe kan ervoor gezorgd worden dat de gebruikers van Data
                     panel binnen de duur van het project de mogelijkheid krijgen
@@ -162,24 +181,32 @@ const Page: React.FC = () => {
                       <p>
                         Deze deelvraag is als eerst onderzocht omdat het
                         antwoord op deze deelvraag van belang was voor de rest
-                        van het onderzoek. Om achter het antwoord te komen is er
-                        naar de mogelijke plekken waar veranderingen
-                        plaatsvonden gekeken. Deze zijn gecategoriseerd door{" "}
+                        van het onderzoek.
+                      </p>{" "}
+                      <p>
+                        Als eerst zijn de mogelijke configuraties
+                        gecategoriseerd door{" "}
                         <InlineLink
                           link="/page/DesignSpecifications"
                           text="Design Specifications"
                           newTab={false}
                         />{" "}
                         uit te voeren. Hier kwam een lijst uit met categorieën
-                        waar de tickets onder geplaatst konden worden. De
-                        tickets zijn in een van die categorieën gezet door een
+                        waar de tickets onder geplaatst konden worden.
+                      </p>
+                      <p>
+                        De tickets van november 2020 tot en met februari 2021
+                        zijn in een van die categorieën gezet door een
                         <InlineLink
                           link="/page/DataAnalyse"
-                          text="Data analyse"
+                          text="Data-analyse"
                           newTab={false}
                         />{" "}
-                        uit te voeren. Als laatst zijn er twee expert interviews
-                        uitgevoerd met{" "}
+                        uit te voeren. Hier kwam uit dat de meeste tickets over
+                        de categorie formulieren gaan (25 van de 50).
+                      </p>
+                      <p>
+                        Als laatst zijn er expert interviews uitgevoerd met{" "}
                         <InlineLink
                           link="/page/ExpertInterviewRobin"
                           text="Robin Dekkers"
@@ -197,23 +224,23 @@ const Page: React.FC = () => {
                         dat overeen kwam met de resultaten van de{" "}
                         <InlineLink
                           link="/page/DataAnalyse"
-                          text="Data analyse"
+                          text="Data-analyse"
                           newTab={false}
                         />
                         .
                       </p>
                       <p>
-                        Na al deze onderzoeken uitgevoerd te hebben, kon er
-                        geconcludeerd worden dat de formulieren de meeste
-                        tickets veroorzaakte. Toen dit duidelijk was, kon er
-                        verder onderzocht worden door de volgende deelvraag te
+                        Na deze onderzoeken uitgevoerd te hebben, is
+                        geconcludeerd dat de formulieren de meeste tickets
+                        veroorzaakte. Toen dit duidelijk was, kon er verder
+                        onderzocht worden door de volgende sub-deelvraag te
                         beantwoorden:
                       </p>
                     </div>
                     <i>1.2 {Data.subdeelvragen[1]}</i>
                     <div className="pl-5">
                       <p>
-                        Om hier achter te komen, is als eerst onderzocht wat de
+                        Om hierachter te komen, is als eerst onderzocht wat de
                         mogelijkheden zijn om formulieren te maken en aan te
                         passen. Hiervoor is een{" "}
                         <InlineLink
@@ -234,8 +261,8 @@ const Page: React.FC = () => {
                         />{" "}
                         uitgevoerd. Naast enorm veel inspiratie, had dit
                         onderzoek een duidelijke lijst met elementen die
-                        terugkwamen in de bekeken form-builders. Hiermee was een
-                        soort checklist gemaakt voor het ontwerp.
+                        terugkwamen in de bekeken form-builders als resultaat.
+                        Hiermee is een checklist gemaakt voor het ontwerp.
                       </p>
                     </div>
                   </div>
@@ -292,15 +319,15 @@ const Page: React.FC = () => {
                 <h4>3. {Data.deelvragen[2]}</h4>
                 <div className="pl-5">
                   <p>
-                    Toen het ontwerp klaar was is het{" "}
+                    Toen het ontwerp klaar was is het gerealiseerd. Het
+                    startpunt, process, versiebeheer en een vergelijking met het
+                    ontwerp is te vinden in het{" "}
                     <InlineLink
                       link="/page/RealisatieDocument"
-                      text="Gerealiseerd"
+                      text="Realisatie Document"
                       newTab={false}
                     />
-                    . Hier heb ik heel de stage naar uitgekeken omdat ik Data
-                    panel een ontzettend interresant systeem vind en stond te
-                    popelen om te programmeren.
+                    .
                   </p>
                 </div>
               </div>
@@ -311,11 +338,23 @@ const Page: React.FC = () => {
                   kunnen de gebruikers van Data Panel (zowel de klanten als de
                   data-consultants) formulieren maken en aanpassen.{" "}
                 </p>
-                In de demo wordt laten zien hoe lang het duurt zonder de form
-                buider om een formulier te maken, en welke technieken er nodig
-                zijn dit te doen. En hoe snel en simpel het is met de form
-                builder.
-                <h3>PLACEHOLDER!!!!! Figuur 1: Demo</h3>
+                In [Figuur 2: Demo] wordt laten zien hoelang het duurt zonder de
+                form-builder om een formulier te maken, en welke technieken er
+                nodig zijn dit te doen. En hoe snel en simpel het is met de
+                form-builder.
+                <h3>Reflectie</h3>
+                <p>
+                  Tijdens het project is er niet enorm veel misgegaan, maar er
+                  zijn zeker leermomenten geweest. Zo stelde ik te snel vragen
+                  en heb ik wat code moeten <Tooltip woord="refactoren" />.
+                  Hierover is geschreven in het{" "}
+                  <InlineLink
+                    link="/page/ReflectieDocument"
+                    text="Reflectie Document"
+                    newTab={false}
+                  />
+                </p>
+                <h3>PLACEHOLDER!!!!! Figuur 2: Demo</h3>
                 <YouTube videoId={"BVDC89d4Ks4"} opts={opts} />
               </div>
 

@@ -61,7 +61,7 @@ const Producten: React.FC<Props> = ({ sortedData }) => {
             <p>
               Om deze deelvraag te beantwoorden is er eerst vastgesteld wat deze
               categorieën zijn in de design specifications. Daarna is er door
-              middel van een data analyse achterhaald in welke van deze
+              middel van een data-analyse achterhaald in welke van deze
               categorieën de meeste werkdruk ontstaat. Dit is daarna
               gecontroleerd door de expert interviews.
             </p>

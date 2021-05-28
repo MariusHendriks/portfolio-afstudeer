@@ -1,4 +1,4 @@
-<InlineLink link="/page/DataAnalyse" text="Data Analyse" newTab={false} />
+<InlineLink link="/page/DataAnalyse" text="Data-analyse" newTab={false} />
 
 
 <Tooltip woord="JSON" />

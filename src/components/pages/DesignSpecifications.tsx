@@ -62,13 +62,31 @@ const Page: React.FC = () => {
               <div ref={Aanleiding}>
                 <h2>Aanleiding</h2>
                 <p>
-                  Omdat er geen overzicht was van welke configuraties (<Tooltip woord="JSON" />) er op Data panel zijn en wat deze configuraties weergeven, zijn
-                  <InlineLink text="design specifications" link="https://cmdmethods.nl/cards/stepping-stones/design-specification" /> uitgevoerd. Er is voor Design specifications gekozen omdat er met dit onderzoek duidelijk wordt wat voor categorieën er op data panel zijn. Hier kan in latere onderzoeken op gecategoriseerd worden om per categorie de werkdruk te bepalen.
+                  Omdat er geen overzicht was van welke configuraties (
+                  <Tooltip woord="JSON" />) er op Data panel zijn en wat deze
+                  configuraties weergeven, zijn
+                  <InlineLink
+                    text="design specifications"
+                    link="https://cmdmethods.nl/cards/stepping-stones/design-specification"
+                  />{" "}
+                  uitgevoerd. Er is voor Design specifications gekozen omdat er
+                  met dit onderzoek duidelijk wordt wat voor categorieën er op
+                  data panel zijn. Hier kan in latere onderzoeken op
+                  gecategoriseerd worden om per categorie de werkdruk te
+                  bepalen.
                 </p>
               </div>
               <div ref={Uitvoering}>
                 <h2>Uitvoering</h2>
-                <p>In dit onderzoek is er gekeken naar de configuraties en is er bestudeert welke <Tooltip woord="componenten" /> deze configuraties weergeven. In <i>figuur 1: voorbeeld configuratie</i> is een van deze configuraties te zien. Deze configuratie zorgt ervoor dat <i>figuur 2: restultaat</i> configuratie weergegeven wordt. Voor dit voorbeeld is de categorie "Tabel" aangemaakt.</p>
+                <p>
+                  In dit onderzoek is er gekeken naar de configuraties en is er
+                  bestudeert welke <Tooltip woord="componenten" /> deze
+                  configuraties weergeven. In{" "}
+                  <i>figuur 1: voorbeeld configuratie</i> is een van deze
+                  configuraties te zien. Deze configuratie zorgt ervoor dat{" "}
+                  <i>figuur 2: restultaat</i> configuratie weergegeven wordt.
+                  Voor dit voorbeeld is de categorie "Tabel" aangemaakt.
+                </p>
                 <div className="s-page__content__img__container">
                   <div className="s-page__content__img__container__img">
                     <h3>Figuur 1: Voorbeeld configuratie</h3>
@@ -90,19 +108,25 @@ const Page: React.FC = () => {
                       />
                     </Zoom>
                   </div>
-
-
-
                 </div>
               </div>
               <div ref={Conclusie}>
                 <h2>Conclusie</h2>
-                <p>Dit onderzoek heeft toevoeging geleverd voor deelvraag 1a:</p>
+                <p>
+                  Dit onderzoek heeft toevoeging geleverd voor deelvraag 1a:
+                </p>
                 <i>{Data.subdeelvragen[0]}</i>
                 <p>
-                  Doordat dit onderzoek is uitgevoerd is er een overzicht welke configuraties welke <Tooltip woord="componenten" />  weergeven. Deze configuraties zijn opgedeeld in categorieën, waar alle tabel-gerelateerde configuraties onder de categorie 'tabel' zijn gezet.  Doordat dit inzichtelijk is gemaakt kunnen deze categorieën in latere fases van het project gebruikt worden.
+                  Doordat dit onderzoek is uitgevoerd is er een overzicht welke
+                  configuraties welke <Tooltip woord="componenten" /> weergeven.
+                  Deze configuraties zijn opgedeeld in categorieën, waar alle
+                  tabel-gerelateerde configuraties onder de categorie 'tabel'
+                  zijn gezet. Doordat dit inzichtelijk is gemaakt kunnen deze
+                  categorieën in latere fases van het project gebruikt worden.
                 </p>
-                <p>Dit zijn de categorieën die uit dit onderzoek zijn gekomen: </p>
+                <p>
+                  Dit zijn de categorieën die uit dit onderzoek zijn gekomen:{" "}
+                </p>
                 <ul>
                   <li>Tabel</li>
                   <li>Formulier (om rijen toe te voegen aan de tabel)</li>
@@ -112,13 +136,27 @@ const Page: React.FC = () => {
                   <li>Acties (rows toe kunnen voegen aan kolom)</li>
                   <li>Weergave (card, tabel, dashboard)</li>
                 </ul>
-                <p>Deze categorieën zijn gebruikt in de <InlineLink text="Data analyse" link="/page/DataAnalyse" newTab={false} /> om te bepalen waar de meeste werkdruk onstaat.</p>
+                <p>
+                  Deze categorieën zijn gebruikt in de{" "}
+                  <InlineLink
+                    text="Data-analyse"
+                    link="/page/DataAnalyse"
+                    newTab={false}
+                  />{" "}
+                  om te bepalen waar de meeste werkdruk onstaat.
+                </p>
               </div>
 
               <div ref={GeheleOnderzoek}>
                 <h2>Gehele Onderzoek</h2>
                 <p>
-                  Het gehele onderzoek kan worden bekeken op een extern google docs document. Klik daarvoor <Link text="hier" link="https://docs.google.com/document/d/1Gx76nLg9RF7ighhMSi9AHxYvGc6bT6anEdKVC2TYcrY/edit?usp=sharing" />.
+                  Het gehele onderzoek kan worden bekeken op een extern google
+                  docs document. Klik daarvoor{" "}
+                  <Link
+                    text="hier"
+                    link="https://docs.google.com/document/d/1Gx76nLg9RF7ighhMSi9AHxYvGc6bT6anEdKVC2TYcrY/edit?usp=sharing"
+                  />
+                  .
                 </p>
               </div>
             </div>
