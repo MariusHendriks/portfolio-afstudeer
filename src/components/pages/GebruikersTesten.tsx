@@ -124,8 +124,8 @@ const Page: React.FC = () => {
                                           hieronder, deze konden de testers niet
                                           vinden. onderdelen 'titel' en
                                           'paragraven' zullen in de volgende
-                                          iteratie worden verplaatst, en het
-                                          toevoegen verwijderd.
+                                          iteratie worden verplaatst en de modal
+                                          verwijderd.
                                       </li>
                                       <li>
                                           Drie van de vier testers vond het
@@ -246,21 +246,6 @@ const Page: React.FC = () => {
 
                           <div ref={Conclusie}>
                               <h2>Conclusie</h2>
-                              <p>
-                                  De eerste iteratie was gebaseerd op inspiratie
-                                  die is opgedaan uit de{" "}
-                                  <InlineLink
-                                      text="Design Pattern Search"
-                                      link="/page/DesignPatternSearchForms"
-                                      newTab={false}
-                                  />{" "}
-                                  en de{" "}
-                                  <InlineLink
-                                      text=" voorgaande ontwerpen van Stofloos"
-                                      link="https://www.figma.com/file/V33Xkh7htl861Bt1Wo7T2m/Untitled?node-id=0%3A1"
-                                  />{" "}
-                                  om posities te bepalen.
-                              </p>
                               <p>
                                   Tussen de eerste en de tweede iteratie is een
                                   deel van de applicatie weggelaten omdat dit

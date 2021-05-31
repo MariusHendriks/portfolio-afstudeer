@@ -82,17 +82,23 @@ const Page: React.FC = () => {
                                     <Tooltip woord="form-builder" /> een
                                     passende oplossing is.
                                 </p>
+                                <p>
+                                    Er is voor deze form builders gekozen omdat
+                                    dit de meest bekende waren volgens Guay
+                                    (2020) [1] en omdat deze form-builders al
+                                    bekend bij me waren.{" "}
+                                </p>
                             </div>
                             <div ref={Uitvoering}>
                                 <h2>Uitvoering</h2>
                                 In dit onderzoek zijn vijf{" "}
                                 <Tooltip woord="form-builders" /> bekeken.
                                 <ol>
-                                    <li>Google forms</li>
-                                    <li>Microsoft forms</li>
-                                    <li>Unlayer</li>
-                                    <li>Clickup</li>
-                                    <li>Diamont forms</li>
+                                    <li>Google forms [2]</li>
+                                    <li>Microsoft forms [3]</li>
+                                    <li>Unlayer [4]</li>
+                                    <li>Clickup [5]</li>
+                                    <li>Diamont forms [6]</li>
                                 </ol>
                                 Bij deze <Tooltip woord="form-builders" /> is er
                                 gekeken naar hoe ze tekstvelden, optievelden,
@@ -158,6 +164,39 @@ const Page: React.FC = () => {
                                         link="https://docs.google.com/document/d/1JKi41AlxtxisreQDHTXP77iHsoIAhESV-hkg_kdFfnI/edit?usp=sharing"
                                     />
                                     .
+                                </p>
+                            </div>
+                            <div>
+                                <h2>Bronnen</h2>
+                                <p>
+                                    [1] Guay, M. (2020, 4 september). The 9 best
+                                    online form builder apps in 2020. Zapier.
+                                    https://zapier.com/learn/forms-surveys/best-online-form-builder-software/
+                                </p>
+                                <p>
+                                    [2] Google Formulieren (z.d.). Google Docs.
+                                    Geraadpleegd op 15 maart 2021, van
+                                    https://docs.google.com/forms/
+                                </p>
+                                <p>
+                                    [3] Microsoft Forms. (z.d.). Microsoft
+                                    Forms. Geraadpleegd op 15 maart 2021, van
+                                    https://forms.office.com/
+                                </p>
+                                <p>
+                                    [4] Unlayer. (z.d.). Unlayer. Geraadpleegd
+                                    op 16 maart 2021, van https://unlayer.com/
+                                </p>
+                                <p>
+                                    [5] ClickUp. (z.d.). ClickUp.com.
+                                    Geraadpleegd op 16 maart 2021, van
+                                    https://app.clickup.com/
+                                </p>
+                                <p>
+                                    [6] Diamond Online Formulieren. (z.d.).
+                                    Diamond Online Forms. Geraadpleegd op 16
+                                    maart 2021, van
+                                    https://www.diamondforms.net/nl/
                                 </p>
                             </div>
                         </div>

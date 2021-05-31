@@ -109,7 +109,7 @@ const Page: React.FC = () => {
                                           Als de opdracht wordt geïmplementeerd
                                           kunnen de gebruikers en medewerkers
                                           van Stofloos door middel van een{" "}
-                                          <Tooltip woord="User Interface" />{" "}
+                                          <Tooltip woord="user interface" />{" "}
                                           (UI) formulieren maken, wijzigen en
                                           verwijderen. Dit zorgt ervoor dat de
                                           technische drempel om formulieren aan
