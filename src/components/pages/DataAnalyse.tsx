@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 import InlineLink from "../common/InlineLink";
 import Data from "../../data/data.json";
+import ExcelIcon from "../../img/excel.png";
 
 const scrollToRef = (ref: any, offset: number) =>
   window.scrollTo({ top: ref.current.offsetTop + offset, behavior: "smooth" });
@@ -59,7 +60,7 @@ const Page: React.FC = () => {
                   Er is een Data analysis uitgevoerd om erachter te komen welke
                   klantverzoeken het meest voorkomend zijn. Dit is relevant om
                   te weten omdat er op deze manier achterhaald kon worden in
-                  welke categorie de meeste tickets voor komen. Als de gebruiker
+                  welke categorie de meeste tickets voorkomen. Als de gebruiker
                   deze wijzigingen zelf kon doen, zouden ze hier geen ticket
                   voor hoeven maken en daardoor zal de werkdruk afnemen.
                 </p>
@@ -67,25 +68,28 @@ const Page: React.FC = () => {
               <div ref={Uitvoering}>
                 <h2>Uitvoering</h2>
                 <p>
-                  Sinds november 2020 tot en met 17 februari 2021 zijn tickets
-                  bijgehouden in Excel. De tickets zijn in een van de
-                  categorieën geplaatst die uit de{" "}
+                  Sinds november 2020 tot en met februari 2021 zijn tickets
+                  bijgehouden in Excel.
+                </p>
+                <p>
+                  De tickets zijn in een van de categorieën geplaatst die uit
+                  het resultaat van de{" "}
                   <InlineLink
                     newTab={false}
                     link="/page/DesignSpecifications"
                     text="Design specifications"
                   />{" "}
-                  komen.
-                </p>
-                <p>
-                  De tickets worden opgeteld en in een hokje geplaatst van de
-                  resultaten van de design specifications. De bekeken tickets
-                  staan in{" "}
-                  <InlineLink
-                    text="dit"
-                    link="https://drive.google.com/file/d/16ELDxNUSLweraY3GA0YKTgZmqpYuE6d2/view?usp=sharing"
-                  />{" "}
-                  document.
+                  zijn gekomen.
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://drive.google.com/file/d/16ELDxNUSLweraY3GA0YKTgZmqpYuE6d2/view?usp=sharing"
+                  >
+                    <div className="plaatje excel">
+                      <img className="image" alt="Excel icon" src={ExcelIcon} />
+                      <p>Bekijk hier de bekeken tickets</p>
+                    </div>
+                  </a>
                 </p>
                 <p>
                   Er zijn in totaal 50 tickets. Van deze tickets, waren er 35
@@ -95,7 +99,9 @@ const Page: React.FC = () => {
                   groot deel van deze tickets heeft opgelost, wist hij deze te
                   categoriseren. 49 van de 50 tickets zijn nu gecategoriseerd.
                 </p>
-                <p>De meeste vraag kwam binnen in de volgende categorieën:</p>
+                <p>
+                  De meeste tickets kwamen binnen in de volgende categorieën:
+                </p>
                 <ul>
                   <li>
                     <b>Formulieren</b> - 25 tickets - Verzoeken om wijzigingen
@@ -119,13 +125,12 @@ const Page: React.FC = () => {
                 </p>
                 <i> {Data.subdeelvragen[0]}</i>
                 <p>
-                  Uit dit onderzoek is dus gebleken dat gebruikers van Data
-                  Panel de meeste wijzigingen verzoeken in de categorieën{" "}
-                  <i>formulieren</i> en <i>Table / kolommen</i>. Dit betekend
-                  dat om de meeste werkdruk af te nemen, dit process verbetert
+                  Uit dit onderzoek is gebleken dat gebruikers van Data Panel de
+                  meeste wijzigingen verzoeken in de categorieën{" "}
+                  <i>formulieren</i> en <i>Table / kolommen</i>. Dit betekent
+                  dat om de meeste werkdruk af te nemen, dit proces verbetert
                   moet worden. De resultaten van dit onderzoek worden gebruikt
-                  om te bepalen welke componenten tijdens de stageperiode
-                  opgelost zullen worden.
+                  om te bepalen welk component verbetert zal worden.
                 </p>
               </div>
               <div ref={GeheleOnderzoek}>

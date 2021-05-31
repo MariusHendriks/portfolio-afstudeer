@@ -60,16 +60,21 @@ const Page: React.FC = () => {
               <div ref={Aanleiding}>
                 <h2>Aanleiding</h2>
                 <p>
-                  Een Expert Interview is uitgevoerd om de relevantie van
-                  componenten te achterhalen welke volgens de expert het
-                  belangrijkst zijn voor het completer maken van Data Panel om
-                  het aantal.
+                  Er is een Expert Interview uitgevoerd om te achterhalen in
+                  welke categorie van de{" "}
+                  <InlineLink
+                    link="/page/DesignSpecifications"
+                    text="design specifications"
+                    newTab={false}
+                  />{" "}
+                  Robin Dekkers, ontwikkelaar van Data Panel, de meeste werkdruk
+                  ervaart.
                 </p>
                 <p>
                   Robin beschikt over alle kennis over het platform. Om die
                   reden beschikt hij over de kennis van welke componenten
-                  toegevoegd moeten worden. Daarnaast zal Robin naast de vragen
-                  toevoeging kunnen geven.
+                  toegevoegd moeten worden. Daarnaast zal Robin ook toevoeging
+                  kunnen geven.
                 </p>
                 <p>
                   Ook zijn de resultaten van de{" "}
@@ -78,15 +83,14 @@ const Page: React.FC = () => {
                     text="data-analyse"
                     newTab={false}
                   />{" "}
-                  besproken om de resulataten te valideren. Frederik is ten
-                  slotte een van de personen die de tickets heeft aangemaakt en
-                  verwerkt.
+                  besproken om deze te valideren. Robin is ten slotte een van de
+                  personen die de tickets heeft aangemaakt en verwerkt.
                 </p>
               </div>
               <div ref={Uitvoering}>
                 <h2>Uitvoering</h2>
                 <p>
-                  Robin dekkers is op 02-26-2021 geïnterviewd. Om alle gestelde
+                  Robin Dekkers is op 02-26-2021 geïnterviewd. Om alle gestelde
                   vragen en de antwoorden te bekijken, navigeer dan naar het
                   "Gehele Onderzoek" tabje in het menu.
                 </p>
@@ -101,15 +105,15 @@ const Page: React.FC = () => {
                 </p>
                 <i>{Data.subdeelvragen[0]}</i>
                 <p>
-                  Het is duidelijk geworden in welke van de categorieën die
-                  gespecificeerd zijn tijdens het{" "}
+                  Het is duidelijk geworden in welke van de categorieën die zijn
+                  gespecificeerd in de{" "}
                   <InlineLink
                     newTab={false}
                     text="Design specifications"
                     link="/page/DesignSpecifications"
                   />{" "}
-                  onderzoek de meeste werkdruk veroorzaken volgens Robin
-                  Dekkers, ontwikkelaar van Data panel.
+                  de meeste werkdruk veroorzaken volgens Robin Dekkers,
+                  ontwikkelaar van Data panel.
                 </p>
                 <p>
                   Robin Dekkers geeft aan dat het maken/bewerken van formulieren
@@ -120,21 +124,10 @@ const Page: React.FC = () => {
                   zitten. Dit levert veel werkdruk op.
                 </p>
                 <p>
-                  Volgens Robin is het toevoegen van een nieuwe pagina een
-                  lastig proces (6:50). Het is volgens hem belangrijk om het
-                  eenvoudig te maken om een nieuwe pagina te maken, met daarin
-                  alle mogelijkheden om een complete pagina te maken. Hieronder
-                  valt:
-                  <ul>
-                    <li>Welk type view het moet zijn (tabel, kaart) ~ 7:15</li>
-                    <li> Welke data er op moet komen ~ 7:28</li>
-                    <li>Welke kolommen</li>
-                    <li>Welke filters</li>
-                    <li>
-                      Op dit moment moet er er op alle genoemde plekken JSON
-                      geschreven worden die exact matchen met de modellen.
-                    </li>
-                  </ul>
+                  Ook is het toevoegen van een pagina volgens Robin een lastig
+                  proces (6:50). Het is volgens hem belangrijk om het eenvoudig
+                  te maken om een nieuwe pagina te maken, met daarin alle
+                  mogelijkheden om een complete pagina te maken.
                 </p>
               </div>
               <div ref={GeheleOnderzoek}>

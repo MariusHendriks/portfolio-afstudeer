@@ -81,11 +81,12 @@ const Page: React.FC = () => {
                 <p>
                   In dit onderzoek is er gekeken naar de configuraties en is er
                   bestudeert welke <Tooltip woord="componenten" /> deze
-                  configuraties weergeven. In{" "}
-                  <i>figuur 1: voorbeeld configuratie</i> is een van deze
-                  configuraties te zien. Deze configuratie zorgt ervoor dat{" "}
-                  <i>figuur 2: restultaat</i> configuratie weergegeven wordt.
-                  Voor dit voorbeeld is de categorie "Tabel" aangemaakt.
+                  configuraties weergeven. In [Figuur 1: voorbeeld configuratie]
+                  is een van deze configuraties te zien. Deze configuratie zorgt
+                  ervoor dat [Figuur 2: resultaat] configuratie weergegeven
+                  wordt. Voor dit voorbeeld is de categorie "Tabel" gebruikt.
+                  Met deze <Tooltip woord="JSON" /> wordt de tabel van [Figuur
+                  2: Resultaat configuratie]
                 </p>
                 <div className="s-page__content__img__container">
                   <div className="s-page__content__img__container__img">
@@ -129,7 +130,7 @@ const Page: React.FC = () => {
                 </p>
                 <ul>
                   <li>Tabel</li>
-                  <li>Formulier (om rijen toe te voegen aan de tabel)</li>
+                  <li>Formulier (om rijen toe te voegen aan tabellen)</li>
                   <li>Pagina toevoegen</li>
                   <li>Tabs (om tabs te maken op de website)</li>
                   <li>Rechten (welke groepen wat mag zien)</li>
@@ -143,7 +144,7 @@ const Page: React.FC = () => {
                     link="/page/DataAnalyse"
                     newTab={false}
                   />{" "}
-                  om te bepalen waar de meeste werkdruk onstaat.
+                  om te bepalen waar de meeste werkdruk ontstaat.
                 </p>
               </div>
 
