@@ -188,7 +188,7 @@ const Page: React.FC = () => {
                               <p>
                                   Er is een telefoongesprek geweest met{" "}
                                   <InlineLink
-                                      text="Diamond forms"
+                                      text="Diamond forms (externe website)"
                                       link="https://www.diamondforms.net/nl/"
                                       newTab={true}
                                   />

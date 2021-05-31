@@ -76,8 +76,9 @@ const Page: React.FC = () => {
                                   <Tooltip woord="JSON" />) er op Data panel
                                   zijn en wat deze configuraties weergeven, zijn
                                   <InlineLink
-                                      text="design specifications"
+                                      text="design specifications (externe website)"
                                       link="https://cmdmethods.nl/cards/stepping-stones/design-specification"
+                                      newTab={true}
                                   />{" "}
                                   uitgevoerd. Er is voor Design specifications
                                   gekozen omdat er met dit onderzoek duidelijk

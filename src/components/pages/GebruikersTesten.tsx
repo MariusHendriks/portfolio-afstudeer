@@ -75,8 +75,24 @@ const Page: React.FC = () => {
                                   veranderingen te maken in het ontwerp dan in
                                   een realisatie. Omdat het een high-fidelity
                                   ontwerp is, kon er door middel van
-                                  prototyping, thinking aloud en usability
-                                  testing een onderzoek uitgevoerd worden waar
+                                  <InlineLink
+                                      link="https://cmdmethods.nl/cards/lab/thinking-aloud"
+                                      text="Thinking Aloud (externe website)"
+                                      newTab={true}
+                                  />
+                                  ,
+                                  <InlineLink
+                                      link="https://cmdmethods.nl/cards/lab/usability-testing"
+                                      text="Usability testing (externe website)"
+                                      newTab={true}
+                                  />{" "}
+                                  en{" "}
+                                  <InlineLink
+                                      link="https://cmdmethods.nl/cards/workshop/prototyping"
+                                      text="Prototyping (externe website)"
+                                      newTab={true}
+                                  />{" "}
+                                  een onderzoek uitgevoerd worden waar
                                   imperfecties in de applicatie zichtbaar
                                   werden.
                               </p>

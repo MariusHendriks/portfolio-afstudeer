@@ -67,6 +67,12 @@ const Page: React.FC = () => {
                               <p>
                                   <i>Deelvraag 2: {data.deelvragen[1]}</i>
                               </p>
+                              <p>
+                                  Om deze deelvraag te beantwoorden is dit
+                                  document opgezet waarin wordt uitgelegd waarom
+                                  het ontwerp eruitziet zoals het eruitziet. Dit
+                                  geeft overzicht in het proces.
+                              </p>
                           </div>
                           <div ref={Aanleiding}>
                               <h2>Resultaat</h2>
