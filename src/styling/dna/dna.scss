@@ -26,84 +26,82 @@ $border-regular: 4px;
 $border-table-header: 4px 4px 0 0;
 $border-table-body: 0 0 4px 4px;
 
-$shadow-regular: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+$shadow-regular: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 
 $transition-basic-quick: 0.3s;
 
 * {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 }
 html {
-  background-color: $color-grey-light;
-  background-image: url("../../img/background.png");
-  background-size: 100vw;
+    background-color: $color-grey-light;
+    background-image: url("../../img/background.png");
+    background-size: 100vw;
 }
 body {
-  font-size: 1em;
-  line-height: 1.75em;
-  font-family: "Montserrat", sans-serif;
+    font-size: 1em;
+    line-height: 1.75em;
+    font-family: "Montserrat", sans-serif;
 }
 .container {
-  padding: $spacing-medium 0;
-  width: 80%;
-  margin: 0 auto;
-  font-family: "Montserrat", sans-serif;
+    padding: $spacing-medium 0;
+    width: 80%;
+    margin: 0 auto;
+    font-family: "Montserrat", sans-serif;
 }
 button {
-  transition: $transition-basic-quick;
-  cursor: pointer;
-  width: fit-content;
-  background: unset;
-  border: unset;
-  &:focus {
-    outline: unset;
-  }
-  &:hover {
-    color: $color-light-blue;
-  }
-  &:disabled {
-    cursor: unset;
-    color: $color-grey;
-    &:hover {
-      color: $color-grey;
+    transition: $transition-basic-quick;
+    cursor: pointer;
+    width: fit-content;
+    background: unset;
+    border: unset;
+    &:focus {
+        outline: unset;
     }
-  }
+    &:hover {
+        color: $color-light-blue;
+    }
+    &:disabled {
+        cursor: unset;
+        color: $color-grey;
+        &:hover {
+            color: $color-grey;
+        }
+    }
 }
 .block {
-  margin-top: $spacing-large;
+    margin-top: $spacing-large;
 }
 a {
-  text-decoration: none;
-  color: white;
+    text-decoration: none;
+    color: white;
 }
 h1 {
-  color: $color-light-blue;
+    color: $color-light-blue;
 }
 p {
-  margin: $spacing-small 0;
+    margin: $spacing-small 0;
 }
 a {
-  color: $color-light-blue;
+    color: $color-light-blue;
 }
 .proof {
-  text-align: center;
-  margin-top: $spacing-huge;
-  margin-bottom: $spacing-large;
+    text-align: center;
+    margin-top: $spacing-huge;
+    margin-bottom: $spacing-large;
 }
-.center {
-  text-align: center;
-}
+
 .pointer {
-  cursor: pointer;
+    cursor: pointer;
 }
 .quote {
-  font-style: italic;
-  font-size: 1.2em;
+    font-style: italic;
+    font-size: 1.2em;
 }
 
 @media only screen and (max-width: 800px) {
-  html {
-    background-image: none;
-  }
+    html {
+        background-image: none;
+    }
 }

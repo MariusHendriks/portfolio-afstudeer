@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from "react";
 import FadeIn from "react-fade-in";
 import Ontwerp from "../../img/ontwerpV1.png";
 import OntwerpBorders from "../../img/ontwerpV1Borders.png";
+import Simple from "../../img/simplicity.png";
 import Figma from "../../img/figma.png";
 import Zoom from "react-medium-image-zoom";
 import "react-medium-image-zoom/dist/styles.css";
@@ -219,6 +220,20 @@ const Page: React.FC = () => {
                       <p>Bekijk hier het Figma ontwerp</p>
                     </div>
                   </a>
+                  <p>Daarnaast is [Figuur 4: Simplicity] in het achterhoofd gehouden bij het maken van het ontwerp. Er is focus gelegd het ietwat ingewikkelde proces toch rustig en overzichtelijk te houden.</p>
+                  <div className="s-page__content__img__container">
+                  <div className="s-page__content__img__container__img">
+                    <h3>Figuur 4: Simplicity</h3>
+                  <Zoom>
+                            <img
+                              className="s-page__content__img__full"
+                              alt="Google Apple Company"
+                              src={Simple}
+                            />
+                          </Zoom>
+                          </div>
+                          </div>
+                 
                 </div>
                 {/* <div ref={Conclusie}>
                   <h2>iets</h2>

@@ -43,8 +43,6 @@ const Producten: React.FC<Props> = ({ sortedData }) => {
         aanvulling = (
           <p>
             Om het project te beginnen is allereest het projectplan opgesteld.
-            Hierin is bepaald welke onderzoeken uitgevoerd moesten worden en
-            waarom.
           </p>
         );
         break;

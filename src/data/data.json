@@ -15,18 +15,7 @@
       "id": "project-plan",
       "week": 1,
       "researchQuestions": [
-        {
-          "id": 1,
-          "why": "In het projectplan zijn de hoofd- en deelvragen bepaald."
-        },
-        {
-          "id": 4,
-          "why": "In het projectplan zijn de hoofd- en deelvragen bepaald."
-        },
-        {
-          "id": 5,
-          "why": "In het projectplan zijn de hoofd- en deelvragen bepaald."
-        }
+        {}
       ],
       "leerdoelen": [
         {
@@ -35,7 +24,7 @@
         },
         {
           "id": 1,
-          "why": "In het projectplan staat de originele scope van het project. Deze is niet aangepast Daarnaast staat de probleemanalyse hier in en ook wie de stakeholders zijn (Stofloos zelf en haar klanten)."
+          "why": "In het projectplan staat de originele scope van het project. Deze is niet aangepast. Daarnaast staat de probleemanalyse hier in en ook wie de stakeholders zijn (Stofloos zelf en haar klanten)."
         },
         {
           "id": 2,
@@ -47,7 +36,7 @@
         },
         {
           "id": 6,
-          "why": "De deelvragen en uitgevoerde in het projectdocument zijn gebaseerd op de probleem."
+          "why": "De deelvragen en uitgevoerde onderzoeken in het projectdocument zijn gebaseerd op het probleem."
         }
       ]
     },
@@ -218,11 +207,11 @@
       "leerdoelen": [
         {
           "id": 2,
-          "why": "In de conclusie van deelvraag 1a wordt een aanbeveling gegeven over hoe het project nu verder moet."
+          "why": "In de conclusie van deelvraag 1a wordt een aanbeveling gegeven over wat de volgende stap in het project zal worden."
         },
         {
           "id": 6,
-          "why": "De onderzoeken van deelvraag 1a valideren elkaar. (triangulatie)"
+          "why": "De onderzoeken van deelvraag 1a valideren elkaar."
         }
       ]
     },
@@ -260,11 +249,15 @@
       "leerdoelen": [
         {
           "id": 0,
-          "why": "In deze leeswijzer wordt de diepgang en complexiteit van het project uigelegd."
+          "why": "In deze leeswijzer worden de fases van het project uitgelegd."
         },
         {
           "id": 6,
           "why": "In de leeswijzer staat hoe het werk methodies is uitgevoerd. Ook staat er per onderzoek in het 'aanleiding' kopje een stukje waarom dat specifieke onderzoek is gekozen."
+        },
+        {
+          "id": 1,
+          "why": "In deze leeswijzer wordt het probleem nogmaals uitgelegd."
         }
       ]
     },

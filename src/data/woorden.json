@@ -110,5 +110,14 @@
   {
     "woord": "refactoren",
     "betekenis": "Het verbeteren en herschrijven van code"
+  },
+  {
+    "woord": "data structuur",
+    "betekenis": "Data structuur is de structuur waarop database tabellen met elkaar verbonden zijn"
+  },
+  {
+    "woord": "hoveren",
+    "betekenis": "Hoveren is je muis ergenst overheen houden, zoals je nu doet!"
   }
+ 
 ]

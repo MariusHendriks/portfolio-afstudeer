@@ -3,6 +3,7 @@ import Leeswijzer from "../pages/Leeswijzer";
 import CourseTable from "./courseTable";
 import LeerdoelTable from "./leerdoelTable";
 import rawData from "../../data/data.json";
+import Tooltip from "../common/Tooltip";
 
 interface Props {
   data?: iCourseReadingGuide[];
@@ -26,6 +27,8 @@ const Homepage: React.FC<Props> = ({ data }) => {
       <div className="">
         <Leeswijzer />
         <h1 className="proof">Onderzoeken</h1>
+        <div className="center"> <i>Tip: Je kan over de items heen <Tooltip woord="hoveren" /> om te zien waarom ze hierbij staan.</i></div>
+       
         <div className="s-tables">
           {data.map((course) => {
             return <CourseTable key={course.name} data={course} />;

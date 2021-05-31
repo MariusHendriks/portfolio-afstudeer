@@ -73,7 +73,7 @@ const Page: React.FC = () => {
                   Stofloos is een internetbureau met als focus: "Complex made
                   simple". Dit doen ze met hun eigen software: Data panel. In
                   Data panel kunnen de klanten van Stofloos hun
-                  bedrijfsprocessen beheren. Waar veel klanten vroeger met Excel
+                  bedrijfsprocessen beheren. Waar veel klanten vroeger met bijvoorbeeld Excel
                   werkte, werken ze nu met Data panel.
                 </p>
                 <p>
@@ -97,14 +97,12 @@ const Page: React.FC = () => {
                       configuraties. Deze configuraties bepalen welke
                       componenten waar komen, welke kolommen een tabel moet
                       laten zien en welke data nodig is om een formulier in te
-                      vullen. In [Figuur 1: Hoe werkt data panel] wordt
-                      uitgelegd in drie stappen hoe het werkt. Alles wat op Data
+                      vullen. In [Figuur 1: Hoe werkt data panel] wordt in drie stappen uitgelegd hoe het werkt. Alles wat op Data
                       Panel wordt weergegeven is terug te traceren naar
                       configuraties. Deze configuraties zijn handig als je
                       kennis hebt van het systeem, van <Tooltip woord="JSON" />{" "}
-                      en van data structuur. Echter begrijpen de meeste klanten
-                      van Stofloos dit allemaal niet. De klanten van Stofloos
-                      kunnen tickets aanmaken met verzoeken tot wijzigingen. Een
+                      en van <Tooltip woord="data structuur" />. Echter begrijpen de meeste klanten
+                      van Stofloos dit allemaal niet. Om klanten toch de mogelijkheid te geven om veranderingen te maken, kunnen ze tickets aan maken. Een
                       ticket kan bijvoorbeeld zijn: "Verander de titel van X
                       naar Y" of "Voeg kolom X toe aan tabel Y".
                     </p>
@@ -165,9 +163,7 @@ const Page: React.FC = () => {
                     panel een vollediger product/service is en de werkdruk om
                     wijzigingen voor gebruikers door te voeren afneemt?
                   </h3>
-                  Om deze vraag te beantwoorden zijn deelvragen opgezet. Als
-                  deze deelvragen beantwoord zijn, is de hoofdvraag ook
-                  beantwoord. Hieronder zijn de deelvragen te vinden:
+                  Om deze vraag te beantwoorden zijn deelvragen opgezet.
                 </p>
                 <div>
                   <h4>1. {Data.deelvragen[0]}</h4>

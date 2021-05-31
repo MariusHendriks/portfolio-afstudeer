@@ -39,6 +39,7 @@ const CourseTable: React.FC<Props> = ({ data, leerdoel }) => {
               te vinden in de onderzoeken onder het 'Aanleiding' kopje.
             </i>
           ) : null}
+          
         </div>
       </div>
     );
