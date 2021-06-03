@@ -5,7 +5,6 @@ import Zoom from "react-medium-image-zoom";
 import "react-medium-image-zoom/dist/styles.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
-import Tooltip from "../common/Tooltip";
 import InlineLink from "../common/InlineLink";
 
 const scrollToRef = (ref: any, offset: number) =>
