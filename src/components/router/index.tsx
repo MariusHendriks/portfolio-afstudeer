@@ -27,6 +27,7 @@ import CoReflection from "../pages/CoReflection";
 import RealisatieDocument from "../pages/RealisatieDocument";
 import GebruikersTesten from "../pages/GebruikersTesten";
 import OntwerpDocument from "../pages/OntwerpDocument";
+import AdviesRapport from "../pages/AdviesRapport";
 import ReflectieDocument from "../pages/ReflectieDocument";
 
 function Routing() {
@@ -51,6 +52,7 @@ function Routing() {
     RealisatieDocument,
     OntwerpDocument,
     GebruikersTesten,
+    AdviesRapport,
     ReflectieDocument,
   };
 

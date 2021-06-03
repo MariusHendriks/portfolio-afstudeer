@@ -43,10 +43,11 @@ const Tooltip: React.FC<Props> = ({ tooltip, text, deelvraag, subDeelvraag, woor
     content = (
       <>
         <span data-tip={data.subdeelvragen[subDeelvraag - 1]}>
-          {caps ? "Deelvraag" : "deelvraag"} 1{getAlfabetic(subDeelvraag)}
+          {caps ? "Sub-deelvraag" : "sub-deelvraag"}{" "}
+          1{getAlfabetic(subDeelvraag)}
         </span>
       </>
-    )
+    );
   } else if (typeof woord !== "undefined" && woord !== "") {
     content = (
       <>
