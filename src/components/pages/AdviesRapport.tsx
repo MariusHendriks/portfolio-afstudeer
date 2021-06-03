@@ -56,7 +56,7 @@ const Page: React.FC = () => {
             <div>
               <div ref={Aanleiding}>
                 <h2>Aanleiding</h2>
-                <p>Deze moet nog gemaakt worden...</p>
+                <p>Voor een juiste voortzetting </p>
               </div>
               <div ref={Uitvoering}>
                 <h2>Uitvoering</h2>

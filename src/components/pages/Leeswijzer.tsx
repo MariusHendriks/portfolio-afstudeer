@@ -78,15 +78,34 @@ const Page: React.FC = () => {
         <div className="s-page__content">
           <FadeIn>
             <h1>Leeswijzer</h1>
+            <p>
+              Welkom op de leeswijzer. Hierin wordt beschreven hoe de
+              afstudeerstage is gelopen met daarin welke fases er doorlopen
+              zijn, welke deelvragen er onderzocht zijn en wat de resultaten en
+              conclusies van de onderzoeken zijn. Helemaal onderaan de pagina
+              staan de onderzoeksvragen met daar duidelijk bij welke onderzoeken
+              er uitgevoerd zijn om deze te beantwoorden en de leerdoelen met
+              daarin de onderzoeken en waarom ik vind dat ze bij dat leerdoel
+              horen.
+            </p>
+
+            <p>
+              <i>
+                Tip: Je kan over de items heen <Tooltip woord="hoveren" /> om te
+                zien wat het woord betekent.
+              </i>
+            </p>
+            <p>Veel leesplezier!</p>
             <div>
               <div ref={Opdrachtgever}>
                 <h2>De Opdrachtgever</h2>
                 <p>
-                  Stofloos is een internetbureau met als focus: "Complex made
-                  simple". Dit doen ze met hun eigen software: Data panel. In
-                  Data panel kunnen de klanten van Stofloos hun
-                  bedrijfsprocessen beheren. Waar veel klanten vroeger met
-                  bijvoorbeeld Excel werkte, werken ze nu met Data panel.
+                  Stofloos is een internetbureau met als focus:{" "}
+                  <i>"Complex made simple"</i>. Dit doen ze met hun eigen
+                  software: Data panel. In Data panel kunnen de klanten van
+                  Stofloos hun bedrijfsprocessen beheren. Waar veel klanten
+                  vroeger met bijvoorbeeld Excel werkte, werken ze nu met Data
+                  panel.
                 </p>
                 <p>
                   Stofloos is gevestigd in Eindhoven en telt 10 medewerkers
@@ -131,9 +150,8 @@ const Page: React.FC = () => {
                     <p>
                       Voor de klanten biedt het ook voordelen; ze hoeven
                       Stofloos niet te contacteren voor aanpassingen. Hierdoor
-                      besparen beide partijen tijd. Door de vele aanvragen duurt
-                      het soms meer dan een week voor de wijzigingen worden
-                      doorgevoerd door de opstapeling van de tickets.
+                      besparen beide partijen tijd. Door de vele tickets duurt
+                      het soms meer dan een week voor deze worden verwerkt.
                     </p>
                   </div>
                   <div className="w-50">
@@ -164,15 +182,20 @@ const Page: React.FC = () => {
                   projectplan werd geïnitialiseerd.
                 </p>
                 <p>
+                  Het project is erg open gestart met als doel: Databeheer,
+                  data-analyse en data ontsluiting zo eenvoudig mogelijk maken.
+                </p>
+                <p>
                   Er is tijdens het project gebruik gemaakt van de{" "}
                   <Tooltip woord="watervalmethode" />, in combinatie met de{" "}
                   <Tooltip woord="double diamond" /> manier van denken.{" "}
                 </p>
                 <p>
                   Voor alle onderzoeken is het DOT-framework gebruikt. Er is
-                  naar dezelfde deelvragen gekeken vanuit andere invalshoeken om
-                  te bekijken of dit dezelfde resultaten leverde. Op deze manier
-                  zijn de antwoorde door meerdere invalshoeken geverifieerd.{" "}
+                  naar dezelfde onderzoeksvragen gekeken vanuit andere
+                  invalshoeken om te bekijken of dit dezelfde resultaten leverde
+                  (meer hierover in het volgende stukje). Op deze manier zijn de
+                  antwoorden door meerdere invalshoeken geverifieerd.{" "}
                 </p>
 
                 <p>De volgende hoofdvraag is onderzocht:</p>
@@ -186,9 +209,14 @@ const Page: React.FC = () => {
                 <h4>Deelvraag 1: {Data.deelvragen[0]}</h4>
                 <p>
                   Om deze deelvraag te beantwoorden zijn er twee subdeelvragen
-                  onderzocht. In <Tooltip subDeelvraag={1} /> is onderzocht
-                  welke categorieën er zijn binnen Data panel en waar de
-                  grootste werkdruk in ontstaat (<Tooltip woord="divigeren" />
+                  onderzocht.
+                </p>
+
+                <i>Subdeelvraag 1a: {Data.subdeelvragen[0]}.</i>
+                <p>
+                  In <Tooltip subDeelvraag={1} /> is onderzocht welke
+                  categorieën er zijn binnen Data panel en waar de grootste
+                  werkdruk in ontstaat (<Tooltip woord="divigeren" />
                   ). Dat is gedaan door{" "}
                   <InlineLink
                     link="/page/DesignSpecifications"
@@ -241,6 +269,9 @@ const Page: React.FC = () => {
                   op te lossen (<Tooltip woord="convergeren" />)
                 </p>
                 <p>
+                  <i>Subdeelvraag 1b: {Data.subdeelvragen[1]}.</i>
+                </p>
+                <p>
                   In <Tooltip subDeelvraag={2} /> is eerst onderzocht wat de
                   mogelijkheden zijn om het formulier-probleem op te lossen. Een
                   aantal mogelijkheden waren: het genereren van de formulieren,{" "}
@@ -274,12 +305,12 @@ const Page: React.FC = () => {
                   is (tekst, multiplechoise, nummer, etc.)".
                 </p>
               </div>
-              <hr />
+
               <p>
                 Nu <Tooltip deelvraag={1} /> beantwoord is, kon{" "}
                 <Tooltip deelvraag={2} /> onderzocht en uitgevoerd worden.
               </p>
-
+              <hr />
               <div>
                 <div className="flex">
                   <div className="w-50">
@@ -347,11 +378,12 @@ const Page: React.FC = () => {
                   </div>
                 </div>
               </div>
-              <hr />
+
               <p>
                 Hierna was het ontwerp af en kon de volgende deelvraag
                 onderzocht worden.
               </p>
+              <hr />
               <div className="flex">
                 <div className="w-50">
                   <h4>Deelvraag 3: {Data.deelvragen[2]}</h4>{" "}
@@ -408,11 +440,12 @@ const Page: React.FC = () => {
                   </div>
                 </div>
               </div>
-              <hr />
+
               <p>
                 Nadat de formulier-bouwer was afgerond, zijn de volgende
                 onderdelen nog behandeld:
               </p>
+              <hr />
               <h4>Aanbevelingen</h4>
               <p>
                 Om Data panel door te ontwikkelen zou ik aanraden het probleem
@@ -442,6 +475,7 @@ const Page: React.FC = () => {
                 />
                 .
               </p>
+              <hr />
               <div ref={Resultaat}>
                 <h2>Resultaat</h2>
                 <p>
