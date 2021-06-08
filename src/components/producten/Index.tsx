@@ -55,7 +55,7 @@ const Producten: React.FC<Props> = ({ sortedData }) => {
         );
         aanvulling = (
           <>
-            <p>Deelvraag 1a: {Data.subdeelvragen[0]}</p>
+            <p>Deelvraag 1, subdeelvraag 1a: {Data.subdeelvragen[0]}</p>
             <p>
               Om deze deelvraag te beantwoorden is er eerst vastgesteld wat deze
               categorieën zijn in de design specifications. Daarna is er door
@@ -76,7 +76,7 @@ const Producten: React.FC<Props> = ({ sortedData }) => {
         );
         aanvulling = (
           <>
-            <p>Deelvraag 1b: {Data.subdeelvragen[1]}</p>
+            <p>Deelvraag 1, subdeelvraag 1b: {Data.subdeelvragen[1]}</p>
             <p>
               <Tooltip caps={true} subDeelvraag={1} /> had als resultaat dat het
               formulier component tijdens de stageperiode verbeterd zal worden.

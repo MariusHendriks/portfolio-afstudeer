@@ -121,19 +121,19 @@
   },
   {
     "woord": "double diamond",
-    "betekenis": "Met de Double Diamond methode wordt er eerst heel breedt gekeken naar bijvoorbeeld potentiële oplossingen, daarna wordt het weer nauw getrokken (Divigeren, daarna convergeteren)"
+    "betekenis": "Met de Double Diamond methode wordt er eerst heel breedt gekeken naar bijvoorbeeld potentiële oplossingen, daarna wordt het weer nauw getrokken (Divergeren, daarna convergeren)"
   },
   {
     "woord": "watervalmethode",
     "betekenis": "In de watervalmethode wordt er met duidelijke fases gewerkt. Per 'trap' wordt een fase afgerond."
   },
   {
-    "woord": "divigeren",
-    "betekenis": "Divigeren is een onderwerp in de breedte onderzoeken."
+    "woord": "divergeren",
+    "betekenis": "Divergeren is een onderwerp in de breedte onderzoeken."
   },
   {
     "woord": "convergeren",
-    "betekenis": "Convergeren gebeurt na divigeren door de beste oplossingen te kiezen en het nauwer te maken."
+    "betekenis": "Convergeren gebeurt na divergeren door de beste oplossingen te kiezen en het nauwer te maken."
   },
   {
     "woord": "outsourcing",

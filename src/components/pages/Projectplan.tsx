@@ -404,17 +404,17 @@ const Page: React.FC<Props> = ({ openInfographic }) => {
               <div>
                 <h3>3.2 Onderdeel 1: Onderzoek</h3>
                 <p>
-                  Om achter deelvraag 1a te komen, zullen er eerst design
-                  specifications worden onderzocht. Hier komt een lijst uit met
-                  componenten die gemaakt moeten worden. Daarna wordt er
-                  onderzocht welke vraag het meest voorkomend is door middel van
-                  een data analysis. De tickets worden in een van de componenten
-                  geplaatst uit de design specifications. Daarna worden expert
-                  interviews uitgevoerd. Het resultaat hiervan is een beter
-                  gevalideerde lijst met componenten. Met alle resultaten wordt
-                  er met Stofloos besproken welke componenten tijdens de
-                  stageperiode gebouwd zullen worden, de rest komt in de
-                  aanbevelingen voor ná dit project. Van de componenten die
+                  Om achter deelvraag 1, subdeelvraag 1a te komen, zullen er
+                  eerst design specifications worden onderzocht. Hier komt een
+                  lijst uit met componenten die gemaakt moeten worden. Daarna
+                  wordt er onderzocht welke vraag het meest voorkomend is door
+                  middel van een data analysis. De tickets worden in een van de
+                  componenten geplaatst uit de design specifications. Daarna
+                  worden expert interviews uitgevoerd. Het resultaat hiervan is
+                  een beter gevalideerde lijst met componenten. Met alle
+                  resultaten wordt er met Stofloos besproken welke componenten
+                  tijdens de stageperiode gebouwd zullen worden, de rest komt in
+                  de aanbevelingen voor ná dit project. Van de componenten die
                   tijdens de stageperiode gerealiseerd zullen worden, zullen
                   design pattern searches worden uitgevoerd om inspiratie op te
                   halen bij de componenten. In dit onderzoek zal er ook bij
@@ -477,9 +477,9 @@ const Page: React.FC<Props> = ({ openInfographic }) => {
                   <i>Prototyping - Werkplaats & Thinking aloud - Veld</i>
                   <p>
                     Prototyping met daarbij Thinking aloud worden gebruikt voor
-                    deelvraag 1a en deelvraag 2. Door te prototypen kan een
+                    deelvraag 1, subdeelvraag 1a en deelvraag 2. Door te prototypen kan een
                     concept snel getest worden door de gebruikers. Door gebruik
-                    te maken van de thinking out loud methode tijdens een
+                    te maken van de thinkin g out loud methode tijdens een
                     gebruikerstest kunnen onduidelijkheden en imperfecties
                     gevonden worden. Prototyping en Thinking aloud worden gedaan
                     in de ontwerpfase. De resultaten van het design pattern
@@ -556,7 +556,7 @@ const Page: React.FC<Props> = ({ openInfographic }) => {
                   <i>Design specifications - Stepping stones</i>
                   <p>
                     Design specifications worden uitgevoerd om een analyse te
-                    doen op mogelijke componenten voor deelvraag 1a. Er zal
+                    doen op mogelijke componenten voor deelvraag 1, subdeelvraag 1a. Er zal
                     worden gekeken naar de JSON en hoe deze de componenten
                     genereert. Hier zal een lijst van worden gemaakt, en deze
                     wordt gevalideerd tijdens het expert interview. Er is
@@ -575,7 +575,7 @@ const Page: React.FC<Props> = ({ openInfographic }) => {
                     uit te werken. Hierdoor wordt het duidelijker wat er
                     uiteindelijk in het ontwerp kan komen. Sketching is geen
                     apart document, maar vult andere documenten aan met
-                    zelfgemaakte figuren. Dit draagt bij aan deelvraag 1a.
+                    zelfgemaakte figuren. Dit draagt bij aan deelvraag 1, subdeelvraag 1a.
                   </p>
                 </div>
                 <div>

@@ -216,7 +216,7 @@ const Page: React.FC = () => {
                 <p>
                   In <Tooltip subDeelvraag={1} /> is onderzocht welke
                   categorieën er zijn binnen Data panel en waar de grootste
-                  werkdruk in ontstaat (<Tooltip woord="divigeren" />
+                  werkdruk in ontstaat (<Tooltip woord="divergeren" />
                   ). Dat is gedaan door{" "}
                   <InlineLink
                     link="/page/DesignSpecifications"
@@ -416,7 +416,7 @@ const Page: React.FC = () => {
                   <p>
                     Alle informatie over het ontwerpen is te vinden in het{" "}
                     <InlineLink
-                      link="/page/RealsatieDocument"
+                      link="/page/RealisatieDocument"
                       text="Realisatie Document"
                       newTab={false}
                     />
