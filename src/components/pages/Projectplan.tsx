@@ -408,7 +408,7 @@ const Page: React.FC<Props> = ({ openInfographic }) => {
                   eerst design specifications worden onderzocht. Hier komt een
                   lijst uit met componenten die gemaakt moeten worden. Daarna
                   wordt er onderzocht welke vraag het meest voorkomend is door
-                  middel van een data analysis. De tickets worden in een van de
+                  middel van een data analyse. De tickets worden in een van de
                   componenten geplaatst uit de design specifications. Daarna
                   worden expert interviews uitgevoerd. Het resultaat hiervan is
                   een beter gevalideerde lijst met componenten. Met alle
@@ -477,18 +477,18 @@ const Page: React.FC<Props> = ({ openInfographic }) => {
                   <i>Prototyping - Werkplaats & Thinking aloud - Veld</i>
                   <p>
                     Prototyping met daarbij Thinking aloud worden gebruikt voor
-                    deelvraag 1, subdeelvraag 1a en deelvraag 2. Door te prototypen kan een
-                    concept snel getest worden door de gebruikers. Door gebruik
-                    te maken van de thinkin g out loud methode tijdens een
-                    gebruikerstest kunnen onduidelijkheden en imperfecties
-                    gevonden worden. Prototyping en Thinking aloud worden gedaan
-                    in de ontwerpfase. De resultaten van het design pattern
-                    search worden meegenomen in het maken van een prototype. Er
-                    is voor prototyping gekozen omdat het verstandig is een
-                    ontwerp te maken voordat er een realisatie gemaakt wordt,
-                    omdat je met een prototype snel veranderingen kan maken. Op
-                    deze manier kan een concept snel ontwikkeld en getest
-                    worden.
+                    deelvraag 1, subdeelvraag 1a en deelvraag 2. Door te
+                    prototypen kan een concept snel getest worden door de
+                    gebruikers. Door gebruik te maken van de thinkin g out loud
+                    methode tijdens een gebruikerstest kunnen onduidelijkheden
+                    en imperfecties gevonden worden. Prototyping en Thinking
+                    aloud worden gedaan in de ontwerpfase. De resultaten van het
+                    design pattern search worden meegenomen in het maken van een
+                    prototype. Er is voor prototyping gekozen omdat het
+                    verstandig is een ontwerp te maken voordat er een realisatie
+                    gemaakt wordt, omdat je met een prototype snel veranderingen
+                    kan maken. Op deze manier kan een concept snel ontwikkeld en
+                    getest worden.
                   </p>
                 </div>
                 <div>
@@ -556,13 +556,13 @@ const Page: React.FC<Props> = ({ openInfographic }) => {
                   <i>Design specifications - Stepping stones</i>
                   <p>
                     Design specifications worden uitgevoerd om een analyse te
-                    doen op mogelijke componenten voor deelvraag 1, subdeelvraag 1a. Er zal
-                    worden gekeken naar de JSON en hoe deze de componenten
-                    genereert. Hier zal een lijst van worden gemaakt, en deze
-                    wordt gevalideerd tijdens het expert interview. Er is
-                    gekozen voor design specifications om een overzicht te
-                    creëren van de componenten die nu in data panel zijn
-                    verwerkt. Dit overzicht wordt gebruikt tijdens de
+                    doen op mogelijke componenten voor deelvraag 1, subdeelvraag
+                    1a. Er zal worden gekeken naar de JSON en hoe deze de
+                    componenten genereert. Hier zal een lijst van worden
+                    gemaakt, en deze wordt gevalideerd tijdens het expert
+                    interview. Er is gekozen voor design specifications om een
+                    overzicht te creëren van de componenten die nu in data panel
+                    zijn verwerkt. Dit overzicht wordt gebruikt tijdens de
                     data-analyse om erachter te komen in welke van deze
                     categorieën de meeste vragen komen.
                   </p>
@@ -575,16 +575,17 @@ const Page: React.FC<Props> = ({ openInfographic }) => {
                     uit te werken. Hierdoor wordt het duidelijker wat er
                     uiteindelijk in het ontwerp kan komen. Sketching is geen
                     apart document, maar vult andere documenten aan met
-                    zelfgemaakte figuren. Dit draagt bij aan deelvraag 1, subdeelvraag 1a.
+                    zelfgemaakte figuren. Dit draagt bij aan deelvraag 1,
+                    subdeelvraag 1a.
                   </p>
                 </div>
                 <div>
-                  <i>Data analysis - Lab</i>
+                  <i>Data analyse - Lab</i>
                   <p>
-                    In een data analysis wordt er gekeken naar beschikbare data,
+                    In een data analyse wordt er gekeken naar beschikbare data,
                     om achter gelijkenissen te komen. Zo kunnen er bijvoorbeeld
                     veel dezelfde soort vragen gesteld worden, hier kunnen dan
-                    weer conclusies uit getrokken worden. Data analysis wordt
+                    weer conclusies uit getrokken worden. Data analyse wordt
                     gebruikt om erachter te komen welke klantverzoeken het meest
                     voorkomend zijn. Dit is nodig om meer duidelijkheid te
                     krijgen in welke vragen het meest voorkomen, en dus
@@ -619,7 +620,7 @@ const Page: React.FC<Props> = ({ openInfographic }) => {
                       <li>Onderzoek: Literature study</li>
                       <li>Onderzoek: Quick prototypes</li>
                       <li>Onderzoek: Design specifications</li>
-                      <li>Onderzoek: Data analysis</li>
+                      <li>Onderzoek: Data analyse</li>
                       <li>Pitch: Onderzoek</li>
                       <li>Voorlopige deadline onderzoeksfase: 27 maart</li>
                     </ul>

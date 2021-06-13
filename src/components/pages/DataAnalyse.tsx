@@ -63,7 +63,7 @@ const Page: React.FC = () => {
                   <i>Subdeelvraag 1: {Data.subdeelvragen[0]}</i>
                 </p>
                 <p>
-                  Er is een Data analysis uitgevoerd om erachter te komen welke
+                  Er is een Data analyse uitgevoerd om erachter te komen welke
                   klantverzoeken het meest voorkomend zijn. Dit is relevant om
                   te weten omdat er op deze manier achterhaald kon worden in
                   welke categorie de meeste tickets voorkomen. Als de gebruiker

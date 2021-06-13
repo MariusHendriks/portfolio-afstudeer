@@ -130,8 +130,8 @@ const Page: React.FC = () => {
                   <li>
                     Kleuren gaan mee met het thema van de applicatie. Hierdoor
                     lijkt het direct op de huisstijl van de (nieuwe) klant. In
-                    het voorbeeld van [Figuur 5: Realisatie] zou de klant een
-                    gele huisstijl hebben.
+                    het voorbeeld van [Figuur 4: Ontwerp (links) vs Realisatie
+                    (rechts)] zou de klant een gele huisstijl hebben.
                   </li>
                   <li>
                     Elementen uit <Tooltip woord="model" /> met 1 druk op de
@@ -210,6 +210,7 @@ const Page: React.FC = () => {
                     <i>tip: Gebruik de slider om het verschil te bekijken!</i>
                   </p>
                   <ReactCompareImage
+                    sliderLineColor="#dddddd"
                     leftImage={Ontwerp}
                     rightImage={Realisatie}
                   />
