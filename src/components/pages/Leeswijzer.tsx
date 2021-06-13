@@ -483,12 +483,10 @@ const Page: React.FC = () => {
                   kunnen de gebruikers van Data Panel (zowel de klanten als de
                   data-consultants) formulieren maken en aanpassen.{" "}
                 </p>
-                In [Figuur 2: Demo] wordt laten zien hoelang het duurt zonder de
-                form-builder om een formulier te maken, en welke technieken er
-                nodig zijn dit te doen. En hoe snel en simpel het is met de
-                form-builder.
-                <h3>PLACEHOLDER!!!!! Figuur 2: Demo</h3>
-                <YouTube videoId={"BVDC89d4Ks4"} opts={opts} />
+                In [Figuur 2: Demo] wordt laten zien hoe snel er met de
+                form-builder formulieren gemaakt kunnen worden.
+                <h3>Figuur 2: Demo</h3>
+                <YouTube videoId={"Xs6f0j-NYSw"} opts={opts} />
               </div>
               <div ref={Aanpak}>
                 <h2>Conclusie, Aanbevelingen & Reflectie</h2>

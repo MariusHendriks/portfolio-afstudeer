@@ -112,8 +112,8 @@ const Page: React.FC = () => {
                   </div>
                   <div className="">
                     <div className="">
-                      <h3>Figuur 2: Demo (PLACEHOLDER!)</h3>
-                      <YouTube videoId={"BVDC89d4Ks4"} opts={opts} />
+                      <h3>Figuur 2: Demo</h3>
+                      <YouTube videoId={"Xs6f0j-NYSw"} opts={opts} />
                     </div>
                   </div>
                 </div>
