@@ -134,7 +134,7 @@ const Page: React.FC = () => {
                 <p>
                   Uit dit onderzoek is gebleken dat gebruikers van Data Panel de
                   meeste wijzigingen verzoeken in de categorieën{" "}
-                  <i>formulieren</i> en <i>Table / kolommen</i>. Dit betekent
+                  <i>formulieren</i> en <i>Tabel / kolommen</i>. Dit betekent
                   dat om de meeste werkdruk af te nemen, dit proces verbetert
                   moet worden. De resultaten van dit onderzoek worden gebruikt
                   om te bepalen welk component verbetert zal worden.

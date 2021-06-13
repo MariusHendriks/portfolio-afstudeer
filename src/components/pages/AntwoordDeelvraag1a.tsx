@@ -94,7 +94,7 @@ const Page: React.FC = () => {
                   />{" "}
                   uitgevoerd om te bekijken wat hun beeld is van Data panel, wat
                   eraan verbeterd moet worden en wat de meeste werkdruk voor hen
-                  opleverd. Zie <i>Figuur 1: Proces infographic</i> als
+                  oplevert. Zie <i>Figuur 1: Proces infographic</i> als
                   toelichting.{" "}
                 </p>
                 <div className="s-page__content__img__container">
@@ -144,7 +144,7 @@ const Page: React.FC = () => {
                     link="/page/ExpertInterviewRobin"
                     text="Expert interview met Robin Dekkers"
                   />{" "}
-                  (developer van Data panel) en het{" "}
+                  (ontwikkelaar van Data panel) en het{" "}
                   <InlineLink
                     newTab={false}
                     link="/page/ExpertInterviewFrederik"
@@ -242,45 +242,6 @@ const Page: React.FC = () => {
                     andere applicaties dit hebben aangepakt. Met deze resultaten
                     zal een high-fedelity prototype gemaakt worden met de{" "}
                     <Tooltip woord="design guidelines" /> van Stofloos.
-                  </p>
-                </div>
-                <div>
-                  <h3>Pagina</h3>
-                  <p>
-                    Daarnaast zal er een <Tooltip woord="MVP" /> worden gemaakt
-                    om een pagina toe te voegen. Uit het onderzoek is gebleken
-                    dat het toevoegen van een pagina omslachtig is. Een relatief
-                    kleine verandering hierin kan een enorm verschil maken. De
-                    MVP moet het volgende kunnen:
-                  </p>
-                  <ul>
-                    <li>
-                      Pagina kunnen toevoegen. De plekken waar JSON nodig is om
-                      een pagina toe te voegen (menu items, pagina's, endpoints)
-                      moet automatisch worden ingevuld.
-                    </li>
-                    <li>
-                      In de pagina selecteren welke modellen er ingeladen moeten
-                      worden.
-                    </li>
-                  </ul>
-
-                  <p>
-                    In de toekomst kunnen hier nieuwe onderdelen aan worden
-                    toegevoegd. Dit valt echter niet binnen de scope van het
-                    project
-                  </p>
-                </div>
-                <div>
-                  <h3>Tabellen</h3>
-                  <p>
-                    Als laatst beveel ik aan dat het tabellen component ook een
-                    oplossing krijgt buiten deze stage om. Uit dit onderzoek is
-                    gebleken dat ook hier veel tickets over komen. De primaire
-                    focus tijdens deze stageperiode blijft echter het formulier
-                    component omdat hier meer veel meer tickets over waren in de
-                    data-analyse en omdat dit prominenter naar voren kwam
-                    tijdens de expert interviews.
                   </p>
                 </div>
               </div>

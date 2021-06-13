@@ -138,7 +138,7 @@ const Page: React.FC = () => {
                     knop toevoegen aan formulier.
                   </li>
                   <li>
-                    Titels en paragraven toevoegen om eventuele uitleg te geven
+                    Titels en paragrafen toevoegen om eventuele uitleg te geven
                     over velden die ingevuld moeten worden.
                   </li>
                   <li>
@@ -148,11 +148,11 @@ const Page: React.FC = () => {
                 </ul>
               </div>
               <div ref={Conclusie}>
-                <h2>Process</h2>
+                <h2>Proces</h2>
                 <div>
-                  <h3>Algemeen process</h3>
+                  <h3>Algemeen proces </h3>
                   <p>
-                    Het process verliep vrij vlekkeloos. Het kwam wel eens voor
+                    Het proces verliep vrij vlekkeloos. Het kwam wel eens voor
                     dat de applicatie te ingewikkeld was of er kennis nodig was
                     die enkel de ontwikkelaars van Data panel hebben. Als dit
                     het geval was, werd Robin Dekkers om hulp gevraagd. In

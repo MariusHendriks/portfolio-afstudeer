@@ -345,8 +345,8 @@ const Page: React.FC = () => {
                         text="gebruikers testen"
                         newTab={false}
                       />
-                      . Hieruit bleek dat de manier om titels en paragraven toe
-                      te voegen omslachtig was, de wijziginen waren doorgevoerd
+                      . Hieruit bleek dat de manier om titels en paragrafen toe
+                      te voegen omslachtig was, de wijzigingen waren doorgevoerd
                       in de tweede iteratie van het ontwerp en deze is getest
                       met een medewerker van een klant van Stofloos (Figuur 2:
                       Usertest gebruiker Rondom).
@@ -393,7 +393,7 @@ const Page: React.FC = () => {
                     is namelijk een ingewikkelde applicatie zonder documentatie.
                   </p>
                   <p>
-                    Nadat de eigen omgeving was opgezet, zijn de functionaleiten
+                    Nadat de eigen omgeving was opgezet, zijn de functionaliteit
                     een voor een uitgewerkt. Aan het begin is een nep-formulier
                     gebruikt om een stuk complexiteit op te schuiven naar een
                     moment waar er meer kennis was van Data panel. Met dit nep

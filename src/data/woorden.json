@@ -138,5 +138,9 @@
   {
     "woord": "outsourcing",
     "betekenis": "Een extern bedrijf inschakelen die een oplossing hebben liggen."
+  },
+  {
+    "woord": "wizard",
+    "betekenis": "Een wizard is een dialoog of venster waarmee er stapsgewijs acties worden afgehandeld."
   }
 ]

@@ -113,7 +113,7 @@ const Page: React.FC = () => {
                         text="Design pattern search"
                         newTab={false}
                       />{" "}
-                      is bepaald welke elementen ten minste moesten terug komen.
+                      is bepaald welke elementen tenminste moesten terug komen.
                     </p>
                   </div>
                   <div>
@@ -147,7 +147,7 @@ const Page: React.FC = () => {
                       <p>
                         <b>Paars. </b>In het paarse vak staat de{" "}
                         <Tooltip woord="header" />. Hierin worden de{" "}
-                        <Tooltip woord="secties" /> van de formulieren getoont
+                        <Tooltip woord="secties" /> van de formulieren getoond
                         en daarbij welke van deze secties op dit moment actief
                         is. Hier kan onderscheidt gemaakt worden tussen de
                         secties. Dit was een van de resultaten van de{" "}

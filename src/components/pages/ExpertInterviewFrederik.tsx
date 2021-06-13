@@ -87,7 +87,7 @@ const Page: React.FC = () => {
                     text="data-analyse"
                     newTab={false}
                   />{" "}
-                  besproken om de resulataten te valideren. Frederik is ten
+                  besproken om de resultaten te valideren. Frederik is ten
                   slotte een van de personen die de tickets heeft aangemaakt en
                   verwerkt.
                 </p>

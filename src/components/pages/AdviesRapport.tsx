@@ -1,11 +1,9 @@
 import React, { useEffect, useRef } from "react";
 import FadeIn from "react-fade-in";
-import TableDefault from "../../img/a-TableDefault.jpg";
-import Zoom from "react-medium-image-zoom";
-import "react-medium-image-zoom/dist/styles.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 import InlineLink from "../common/InlineLink";
+import Tooltip from "../common/Tooltip";
 
 const scrollToRef = (ref: any, offset: number) =>
   window.scrollTo({ top: ref.current.offsetTop + offset, behavior: "smooth" });
@@ -52,64 +50,49 @@ const Page: React.FC = () => {
       <div className="s-page">
         <div className="s-page__content">
           <FadeIn>
-            <h1>Design specifications</h1>
+            <h1>Adviesrapport</h1>
             <div>
               <div ref={Aanleiding}>
                 <h2>Aanleiding</h2>
-                <p>Voor een juiste voortzetting </p>
+                <p>
+                  Voor een juiste voortzetting van het project, is dit
+                  adviesrapport geschreven.{" "}
+                </p>
               </div>
               <div ref={Uitvoering}>
-                <h2>Uitvoering</h2>
-                <p>[uitvoering]</p>
-                <ol>
-                  <li>[Lijst item]</li>
-                  <li>[Lijst item]</li>
-                  <li>[Lijst item]</li>
-                </ol>
+                <h2>Form builder</h2>
+                <p>
+                  Form builder is heel uitbreidbaar opgezet. Het is relatief
+                  eenvoudig om elementen toe te voegen mocht er vraag komen naar
+                  extra elementen.
+                </p>
               </div>
               <div ref={GeheleOnderzoek}>
-                <h2>Gehele Onderzoek</h2>
+                <h2>Data panel</h2>
                 <p>
-                  Het gehele onderzoek kan worden bekeken op een extern google
-                  docs document. Klik daarvoor{" "}
-                  <InlineLink
-                    text="hier"
-                    link="https://docs.google.com/document/d/1Gx76nLg9RF7ighhMSi9AHxYvGc6bT6anEdKVC2TYcrY/edit?usp=sharing"
-                  />
-                  .
+                  Uit de{" "}
+                  <InlineLink link="/page/DataAnalyse" text="data analyse" /> is
+                  gebleken dat er ook een groot deel tickets voortkwamen door de
+                  tabellen (12/50). Ik zou adviseren om ook hier een{" "}
+                  <Tooltip woord="wizard" />
+                  /tool voor te maken waarmee bepaald kan worden welke kolommen
+                  er worden weergegeven, kolommen veerplaatst kunen worden en
+                  eventueel een link met de form-builder. Hierdoor krijgen
+                  klanten de mogelijkheid zelf hun tabellen te maken.
                 </p>
               </div>
               <div ref={Conclusie}>
-                <h2>Conclusie</h2>
-                <p>[conclusie]</p>
-                <ul>
-                  <li>[bullet points]</li>
-                  <li>[bullet points]</li>
-                  <li>[bullet points]</li>
-                </ul>
-
-                <div className="s-page__content__img__container">
-                  <div className="s-page__content__img__container__img">
-                    <h3>Foto</h3>
-                    <Zoom>
-                      <img
-                        className="s-page__content__img__full"
-                        alt="brainstorm"
-                        src={TableDefault}
-                      />
-                    </Zoom>
-                  </div>
-                  <div className="s-page__content__img__container__img">
-                    <h3>How might we</h3>
-                    <Zoom>
-                      <img
-                        className="s-page__content__img__full"
-                        alt="How might we"
-                        src={TableDefault}
-                      />
-                    </Zoom>
-                  </div>
-                </div>
+                <h2>Algemeen</h2>
+                <p>
+                  Meer wat de klant kan doen, minder wat Stofloos hoeft te doen.
+                  Na de tabellen zou ik advieseren om verder te kijken wat
+                  jullie als bedrijf nog voor klanten moeten doen. Van de dingen
+                  die jullie nog moeten doen, kun je je afvragen of klanten dit
+                  met de juiste tool eventueel zelf kunnen doen. Dal is voor
+                  beide partijen voordelig gezien Stofloos minder werk hierin
+                  hoeft te verrichten en klanten niet hoeven te wachten totdat
+                  Stofloos de taken verwerkt.{" "}
+                </p>
               </div>
             </div>
           </FadeIn>
