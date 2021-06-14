@@ -88,12 +88,13 @@ const Page: React.FC = () => {
               <div ref={GeheleOnderzoek}>
                 <h2>Programmeren</h2>
                 <p>
-                  Qua programmeren ging het goed. Er waren echter wel dingen die
-                  beter waren geweest om van te voren te plannen. Zo heb ik veel
-                  code moeten <Tooltip woord="refactoren" /> om een hogere
-                  code-kwaliteit te krijgen. Als ik beter had uitgepland waar
-                  alles had moeten komen, had ik mogelijk niet zoveel code
-                  hoeven te verplaatsen.
+                  Qua programmeren ging het goed. Alle functionaliteiten die ik
+                  graag wilde implementeren zijn geimplementeerd. Er waren
+                  echter wel dingen die beter waren geweest om van te voren te
+                  plannen. Zo heb ik veel code moeten{" "}
+                  <Tooltip woord="refactoren" /> om een hogere code-kwaliteit te
+                  krijgen. Als ik beter had uitgepland waar alles had moeten
+                  komen, had ik mogelijk niet zoveel code hoeven te verplaatsen.
                 </p>
               </div>
               <div ref={Conclusie}>
@@ -106,18 +107,9 @@ const Page: React.FC = () => {
                   welke route we gelopen hebben. Ik heb hier inspiratie
                   uitgehaald tijdens het ontwerpen, maar dit niet
                   gedocumenteerd. Ik kon het hierdoor niet echt gebruiken voor
-                  mijn portfolio, terwijl dit wel hardstikkel waardevol is
+                  mijn portfolio, terwijl dit wel waardevol is
                   geweest. Ik heb hiervan geleerd dat ik onderzoeken direct moet
                   documenteren terwijl ik ze uitvoer om dit te voorkomen.
-                </p>
-                <h3>Logboek</h3>
-                <p>
-                  Ik heb geen logboek bijgehouden. Ik heb wel elke week meetings
-                  gehad met Evelien en heb hier feedback vergaard. Echter heb ik
-                  deze feedback na verwerking weggegooid. Achteraf gezien had ik
-                  deze graag bewaard om bijvoorbeeld hier weer te geven om ook
-                  daar weer groei uit te kunnen halen. De volgende keer zorg ik
-                  dat ik de feedback bewaar.
                 </p>
               </div>
             </div>

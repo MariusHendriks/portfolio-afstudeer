@@ -326,7 +326,7 @@ const Page: React.FC = () => {
                     </p>
                     <p>
                       Stofloos heeft geen design guidelines, maar wel ontwerpen
-                      ter beschikking. Deze ontwerpen en de de inspiratie die is
+                      ter beschikking. Deze ontwerpen en de inspiratie die is
                       opgedaan tijdens het bekijken van de soortgelijke
                       platforms in de
                       <InlineLink
@@ -396,18 +396,19 @@ const Page: React.FC = () => {
                     Nadat de eigen omgeving was opgezet, zijn de functionaliteit
                     een voor een uitgewerkt. Aan het begin is een nep-formulier
                     gebruikt om een stuk complexiteit op te schuiven naar een
-                    moment waar er meer kennis was van Data panel. Met dit nep
-                    formulier kon bijna de hele applicatie al gemaakt worden, en
-                    was het later enkel een kwestie van het échte formulier
-                    ophalen. Hierdoor kon er niets per ongeluk kapot gemaakt
-                    worden.
+                    moment waar er meer kennis was van Data panel. Het is
+                    namelijk lastig om het echte formulier meteen te gebruiken.
+                    Met dit nep formulier kon bijna de hele applicatie al
+                    gemaakt worden, en was het later enkel een kwestie van het
+                    échte formulier ophalen. Hierdoor kon er niets per ongeluk
+                    kapot gemaakt worden.
                   </p>
                   <p>
                     Er is ten alle tijden <Tooltip woord="git" /> gebruikt om
                     versies van de code te beheren voor het geval nieuwe code
                     iets anders kapot maakte op de website. Per{" "}
                     <Tooltip woord="commit" /> is ook te zien wat voor code er
-                    is toegevoegd, gewijzijgd of verwijderd.{" "}
+                    is toegevoegd, gewijzigd en verwijderd.{" "}
                   </p>
                   <p>
                     De realisatie is veel op het ontwerp gaan lijken, zoals te
@@ -451,8 +452,7 @@ const Page: React.FC = () => {
                 Om Data panel door te ontwikkelen zou ik aanraden het probleem
                 oplossen dat bij de data analyse op plek twee uitkwam: de
                 tabellen. Als de medewerkers van Stofloos en haar klanten de
-                mogelijkheid zouden hebben de tabellen bijvoorbeeld een wizard
-                te kunnen aanmaken, wijzigen en verwijderen zouden de tickets
+                mogelijkheid zouden hebben om bijvoorbeeld tabellen te bewerken met een wizard, zou ook daar de werkdruk afnemen.
                 die daarin ontstaan zijn af kunnen nemen. Het gehele advies
                 staat beschreven in het{" "}
                 <InlineLink
@@ -464,7 +464,7 @@ const Page: React.FC = () => {
               </p>
               <h4>Reflectie</h4>
               <p>
-                Tijdens het project is er niet enorm veel misgegaan, maar er
+                Tijdens het project is er niet veel misgegaan, maar er
                 zijn zeker leermomenten geweest. Zo stelde ik te snel vragen en
                 heb ik wat code moeten <Tooltip woord="refactoren" />. Hierover
                 is geschreven in het{" "}
@@ -493,8 +493,8 @@ const Page: React.FC = () => {
                 <h3 className="hoofdvraag">{Data.hoofdvraag}</h3>
                 <p>
                   Er waren meerdere potentiële oplossingen voor de hoofdvraag.
-                  De grootste probleemveroorzaker is tijdens deze
-                  afstudeerperiode opgelost.
+                  Tijdens deze
+                  afstudeerperiode is het component dat de meeste werkdruk veroorzaakte opgelost, de form-builder.
                 </p>
                 <p>
                   Door eerst onderzocht te hebben waar de grootste werkdruk

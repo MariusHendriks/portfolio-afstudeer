@@ -96,7 +96,7 @@ const Page: React.FC<Props> = ({ openInfographic }) => {
                   <p>
                     Stofloos heeft een systeem waarmee zij hun dashboards,
                     bedrijfsprocessen en andere applicaties maken: “Data panel”.
-                    Stofloos wil er naartoe dat klanten zelfstandig wijzigingen
+                    Stofloos wil graag dat klanten zelfstandig wijzigingen
                     kunnen maken in Data Panel. Het probleem is dat Data panel
                     nu te technisch is en daardoor niet gebruiksvriendelijk
                     genoeg is voor klanten zonder technische achtergrond.
@@ -250,12 +250,14 @@ const Page: React.FC<Props> = ({ openInfographic }) => {
                 <div>
                   <h3>2.4 Deelvragen</h3>
                   <ol>
-                    <li>{data.deelvragen[0]}</li>
-                    <ol>
-                      <li>{data.subdeelvragen[0]}</li>
-                      <li>{data.subdeelvragen[1]}</li>
-                      <li>{data.subdeelvragen[2]}</li>
-                    </ol>
+                    <li>
+                      {data.deelvragen[0]}{" "}
+                      <ol>
+                        <li>{data.subdeelvragen[0]}</li>
+                        <li>{data.subdeelvragen[1]}</li>
+                      </ol>
+                    </li>
+
                     <li>{data.deelvragen[1]}</li>
                     <li>{data.deelvragen[2]}</li>
                   </ol>
@@ -479,7 +481,7 @@ const Page: React.FC<Props> = ({ openInfographic }) => {
                     Prototyping met daarbij Thinking aloud worden gebruikt voor
                     deelvraag 1, subdeelvraag 1a en deelvraag 2. Door te
                     prototypen kan een concept snel getest worden door de
-                    gebruikers. Door gebruik te maken van de thinkin g out loud
+                    gebruikers. Door gebruik te maken van de thinking out loud
                     methode tijdens een gebruikerstest kunnen onduidelijkheden
                     en imperfecties gevonden worden. Prototyping en Thinking
                     aloud worden gedaan in de ontwerpfase. De resultaten van het
@@ -511,9 +513,9 @@ const Page: React.FC<Props> = ({ openInfographic }) => {
                   <i>Literature study - Bieb</i>
                   <p>
                     Literature study wordt gebruikt om antwoorden van andere
-                    onderzoeken te controleren. Als er twijfels zijn of niet
+                    onderzoeken te valideren. Als er twijfels zijn of niet
                     voldoende bewijs voor de conclusie van een deelvraag, kan
-                    een literature study meer steun en bevestiging geven aan de
+                    een literature study meer bevestiging geven aan de
                     conclusie. Er is voor een literature study gekozen omdat er
                     heel specifiek gezocht kan worden naar vragen waar twijfel
                     over is.

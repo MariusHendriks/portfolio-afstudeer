@@ -235,9 +235,9 @@ const Page: React.FC = () => {
                   <h3>Formulier</h3>
                   <p>
                     Het formulier component zal tijdens de stageperiode worden
-                    uitgewerkt. In dit component moeten gebruikers met de juist
-                    rechten en de medewerkers van Stofloos de mogelijkheid
-                    hebben om formulieren aan te maken en te bewerken. In{" "}
+                    uitgewerkt. In dit component moeten gebruikers en de
+                    medewerkers van Stofloos de mogelijkheid hebben om
+                    formulieren aan te maken en te bewerken. In{" "}
                     <Tooltip subDeelvraag={2} /> zal worden onderzocht hoe
                     andere applicaties dit hebben aangepakt. Met deze resultaten
                     zal een high-fedelity prototype gemaakt worden met de{" "}

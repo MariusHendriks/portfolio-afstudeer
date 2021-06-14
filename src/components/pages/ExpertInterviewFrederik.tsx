@@ -74,7 +74,7 @@ const Page: React.FC = () => {
                 <p>
                   Frederik Vennemann is de{" "}
                   <Tooltip woord="hoofdgebruiker"></Tooltip> van data panel op
-                  dit moment. Frederik gaat naar nieuwe klanten legt uit hoe
+                  dit moment. Frederik gaat naar nieuwe klanten en legt uit hoe
                   Data panel werkt om het uiteindelijk te verkopen. Ook maakt
                   Frederik voor nieuwe klanten de eerste opzet voor Data panel.
                   Dit proces doet Frederik al ongeveer 1/2e jaar, en hierdoor
@@ -129,7 +129,7 @@ const Page: React.FC = () => {
                   moet worden om namen en labels te checken.
                 </p>
                 <p>
-                  Ook het maken van (grote) formulieren is erg veel moeite
+                  Ook het maken van (grote) formulieren is veel moeite
                   (6:45). Dit is volgens Frederik een van de vervelendste dingen
                   om aan te passen/aan te maken op data panel.
                 </p>

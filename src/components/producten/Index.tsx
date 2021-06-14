@@ -42,7 +42,7 @@ const Producten: React.FC<Props> = ({ sortedData }) => {
         header = <h3>Initialisatiefase</h3>;
         aanvulling = (
           <p>
-            Om het project te beginnen is allereest het projectplan opgesteld.
+            Om het project te beginnen is allereerst het projectplan opgesteld.
           </p>
         );
         break;
