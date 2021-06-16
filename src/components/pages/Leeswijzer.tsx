@@ -79,6 +79,28 @@ const Page: React.FC = () => {
           <FadeIn>
             <h1>Leeswijzer</h1>
             <p>
+              <h2>Gegevens Student</h2>
+              <p>Naam + voorletters: Mark Hendriks, M.A.T.</p>
+              <p>Studentnummer: 384816</p>
+              <p>Afstudeerrichting: Voltijd ICT & Media design</p>
+              <p>Afstudeerperiode: 8 februari 2021 t/m 27 juni 2021 </p>
+              <h2>Gegevens bedrijf</h2>
+              <p>Naam: Stofloos</p>
+              <p>Afdeling: Software Development</p>
+              <p>Plaats: Klokgebouw 269, 6e etage, 5617 AC Eindhoven.</p>
+              <p>
+                Bedrijfsbegeleider: Lenn Tjin a Sie, Product manager, : Master
+                Human Aspects of Information Technology{" "}
+              </p>
+              <h2>Gegevens docentbegeleidster</h2>
+              <p>Naam: Garde-Perik,Evelien E.M. van de</p>
+              <h2>Gegevens afstudeerproject</h2>
+              <p>Titel: Data panel Form-builder</p>
+              <p>Datum uitgifte: 15-06-2021</p>
+              <p>Vertrouwelijk: Ja</p>
+            </p>
+            <h2>Welkom</h2>
+            <p>
               Welkom op de leeswijzer. Hierin wordt beschreven hoe de
               afstudeerstage is gelopen met daarin welke fases er doorlopen
               zijn, welke deelvragen er onderzocht zijn en wat de resultaten en
@@ -452,9 +474,10 @@ const Page: React.FC = () => {
                 Om Data panel door te ontwikkelen zou ik aanraden het probleem
                 oplossen dat bij de data analyse op plek twee uitkwam: de
                 tabellen. Als de medewerkers van Stofloos en haar klanten de
-                mogelijkheid zouden hebben om bijvoorbeeld tabellen te bewerken met een wizard, zou ook daar de werkdruk afnemen.
-                die daarin ontstaan zijn af kunnen nemen. Het gehele advies
-                staat beschreven in het{" "}
+                mogelijkheid zouden hebben om bijvoorbeeld tabellen te bewerken
+                met een wizard, zou ook daar de werkdruk afnemen. die daarin
+                ontstaan zijn af kunnen nemen. Het gehele advies staat
+                beschreven in het{" "}
                 <InlineLink
                   link="/page/AdviesRapport"
                   text="Advies Rapport"
@@ -464,10 +487,10 @@ const Page: React.FC = () => {
               </p>
               <h4>Reflectie</h4>
               <p>
-                Tijdens het project is er niet veel misgegaan, maar er
-                zijn zeker leermomenten geweest. Zo stelde ik te snel vragen en
-                heb ik wat code moeten <Tooltip woord="refactoren" />. Hierover
-                is geschreven in het{" "}
+                Tijdens het project is er niet veel misgegaan, maar er zijn
+                zeker leermomenten geweest. Zo stelde ik te snel vragen en heb
+                ik wat code moeten <Tooltip woord="refactoren" />. Hierover is
+                geschreven in het{" "}
                 <InlineLink
                   link="/page/ReflectieDocument"
                   text="Reflectie Document"
@@ -493,8 +516,8 @@ const Page: React.FC = () => {
                 <h3 className="hoofdvraag">{Data.hoofdvraag}</h3>
                 <p>
                   Er waren meerdere potentiële oplossingen voor de hoofdvraag.
-                  Tijdens deze
-                  afstudeerperiode is het component dat de meeste werkdruk veroorzaakte opgelost, de form-builder.
+                  Tijdens deze afstudeerperiode is het component dat de meeste
+                  werkdruk veroorzaakte opgelost, de form-builder.
                 </p>
                 <p>
                   Door eerst onderzocht te hebben waar de grootste werkdruk
